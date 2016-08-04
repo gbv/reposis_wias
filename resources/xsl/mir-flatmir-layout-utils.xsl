@@ -22,7 +22,7 @@
           </a>
         </div>
         <div class="col-md-8">
-          <a href="/index.jsp?lang=0"><span>Weierstraß-Institut</span><br />Publikationsserver</a>
+          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"><span>Weierstraß-Institut</span><br />Publikationsserver</a>
         </div>
       </div>
     </div>

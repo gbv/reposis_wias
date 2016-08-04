@@ -17,3 +17,13 @@ html body #powered_by {
   color: #d1d1d1;
   border: none;
 }
+
+#project_logo_box a {
+  color: #000;
+}
+
+html body header #header_box #project_logo_box a:hover,
+html body header #header_box #project_logo_box a:focus {
+  color: #004A9A;
+  text-decoration: underline;
+}
