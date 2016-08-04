@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Kontakt">
+  <div>
+    <h2>Kontakt</h2>
+    <p>
+      Medienarchiv Günter Grass - Stiftung Bremen<br />
+      Jacobs University Bremen<br />
+      Campusring 1/RLH<br />
+      28759 Bremen<br /><br />
+
+      Geschäftsführerin<br />
+      Anja Hillerts-Lichtenberg<br /><br />
+
+      Assistentin<br />
+      Bettina Meyer-Jovy<br /><br />
+
+      E-Mail: office@grass-medienarchiv.de<br />
+      Tel.: +49(0)421/200-4840 / -4841<br />
+      Fax: +49(0)421/200-4839<br /><br />
+
+      Medienarchivarin<br />
+      Dipl.-Bibliothekarin Sonja Wohllaib<br />
+      Tel.: +49(0)421/200-4838<br />
+      Fax: +49(0)421/200-4842<br />
+      E-Mail: archiv@grass-medienarchiv.de
+    </p>
+  </div>
+  </section>
+  <meta>
+    <log date="2016-03-31" time="12:07" labelPath=" » Kontakt" lastEditor="Kathleen Neumann" />
+  </meta>
+</MyCoReWebPage>

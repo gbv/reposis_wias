@@ -1,0 +1,8 @@
+Sitemap: http://grass-medienarchiv.gbv.de/sitemap_google.xml
+User-agent: *
+Allow: /servlets/MCRFileNodeServlet/
+Disallow: /*?
+Disallow: /servlets/
+Disallow: /browse/
+Disallow: /rsc/
+Disallow: /api/

@@ -1,0 +1,15 @@
+html body .jumbotron {
+  color: #83B4BA;
+  background: unset;
+  background-color: #ecf0f1;
+}
+
+html body #powered_by {
+  background-color: white;
+  border: none;
+}
+
+.flatmir-footer {
+  color: #d1d1d1;
+  border: none;
+}
