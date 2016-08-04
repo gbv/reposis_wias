@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="actionmapping">
+<xsl:stylesheet version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
+    exclude-result-prefixes="mcrver">
+
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
   <xsl:template name="mir.navigation">
 
@@ -37,10 +41,10 @@
         </div>
 
         <div class="searchfield_box">
-          <form action="{$WebApplicationBaseURL}servlets/solr/find?qry={0}" class="navbar-form navbar-left pull-right" role="search">
+          <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form navbar-left pull-right" role="search">
             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
             <div class="form-group">
-              <input name="qry" placeholder="Suche" class="form-control search-query" id="searchInput" type="text" />
+              <input name="q" placeholder="Suche" class="form-control search-query" id="searchInput" type="text" />
             </div>
           </form>
         </div>
@@ -63,7 +67,7 @@
     <xsl:if test="//div/@class='jumbotwo'">
       <div class="jumbotron">
         <div class="container">
-          <h1>Webdatenbank für die Günter Grass Stiftung Bremen</h1>
+          <h1>Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
           <h2>Dieser Auftritt befindet sich derzeit im Aufbau.</h2>
         </div>
       </div>
@@ -76,10 +80,9 @@
         <div class="col-xs-12 col-sm-6 col-md-4">
           <h4>Über uns</h4>
           <p>
-            Hier wird Ihnen ab dem 2. Halbjahr 2016 die Datenbank des Medienarchivs
-            der Günter Grass Stiftung Bremen für Recherchen zur Verfügung stehen.
+            Hier wird im 3. Quartal 2016 ein Publikationsserver für das WIAS aufgebaut
             <span class="read_more">
-              <a href="http://grass-medienarchiv.gbv.de/">Mehr erfahren ...</a>
+              <a href="https://www.wias-berlin.de/">Mehr erfahren ...</a>
             </span>
           </p>
         </div>
@@ -108,4 +111,14 @@
       </div>
     </div>
   </xsl:template>
+
+  <xsl:template name="mir.powered_by">
+    <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+    <div id="powered_by">
+      <a href="http://www.mycore.de">
+        <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+      </a>
+    </div>
+  </xsl:template>
+
 </xsl:stylesheet>
