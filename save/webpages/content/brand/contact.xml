@@ -4,31 +4,50 @@
   <section xml:lang="de" title="Kontakt">
   <div>
     <h2>Kontakt</h2>
+
+    <h3>Telefon, Fax, E-Mail:</h3>
+
+    Tel: +49 30 20372-0<br />
+    Fax: +49 30 20372-303<br />
+    E-Mail: <a href="mailto:contact@wias-berlin.de">contact@wias-berlin.de</a>
+
+    <h3>Ansprechpartner</h3>
+
+    <h4>Direktor</h4>
+
     <p>
-      Medienarchiv Günter Grass - Stiftung Bremen<br />
-      Jacobs University Bremen<br />
-      Campusring 1/RLH<br />
-      28759 Bremen<br /><br />
-
-      Geschäftsführerin<br />
-      Anja Hillerts-Lichtenberg<br /><br />
-
-      Assistentin<br />
-      Bettina Meyer-Jovy<br /><br />
-
-      E-Mail: office@grass-medienarchiv.de<br />
-      Tel.: +49(0)421/200-4840 / -4841<br />
-      Fax: +49(0)421/200-4839<br /><br />
-
-      Medienarchivarin<br />
-      Dipl.-Bibliothekarin Sonja Wohllaib<br />
-      Tel.: +49(0)421/200-4838<br />
-      Fax: +49(0)421/200-4842<br />
-      E-Mail: archiv@grass-medienarchiv.de
+    <a href="http://www.wias-berlin.de/%7Ehintermueller/">Prof. Dr. Michael Hintermüller</a><br />
+          Tel: +49 30 20372-586<br />
+          E-Mail: <a href="mailto:michael.hintermueller@wias-berlin.de">michael.hintermueller@wias-berlin.de</a><br />
     </p>
+
+    <h4>Technologietransfer; Presse-Erstkontakt</h4>
+    <p><a href="http://www.wias-berlin.de/people/koehler/">Dr. Torsten  Köhler</a><br />
+      Tel: +49 30 20372-582<br />
+      E-Mail: <a href="mailto:Torsten.Koehler@wias-berlin.de">Torsten.Koehler@wias-berlin.de</a>
+    </p>
+
+    <h3>Standort</h3>
+
+    <h4>Hauptgebäude (gleichzeitig Postanschrift):</h4>
+
+    Weierstraß-Institut<br />
+    Mohrenstr. 39<br />
+    10117 Berlin
+
+    <h4>Nebengebäude:</h4>
+
+    Hausvogteiplatz 11A<br />
+    10117 Berlin
+
+    <h4>Sekretariat der <i>International Mathematical Union</i> (IMU):</h4>
+
+    Markgrafenstr. 32<br />
+    10117 Berlin
+
   </div>
   </section>
   <meta>
-    <log date="2016-03-31" time="12:07" labelPath=" » Kontakt" lastEditor="Kathleen Neumann" />
+    <log date="2016-08-04" time="10:31" labelPath=" » Kontakt" lastEditor="Kathleen Neumann" />
   </meta>
 </MyCoReWebPage>

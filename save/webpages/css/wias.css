@@ -1,11 +1,15 @@
 html body .jumbotron {
-  color: #83B4BA;
-  background: unset;
-  background-color: #ecf0f1;
+    color: #002F66;
+    background: unset;
+    background-color: #EEE;
+}
+
+html body {
+  color: #2C3E50;
 }
 
 html body #powered_by {
-  background-color: white;
+  background-color: #002F66;
   border: none;
 }
 

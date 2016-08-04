@@ -15,12 +15,15 @@
           </ul>
         </nav>
       </div>
-      <div id="project_logo_box">
-        <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
-           class="">
-          <img src="{$WebApplicationBaseURL}images/logos/WIAS_Logo.png" alt="WIAS-logo" style="height:4em; width:4em;" />
-        </a>
-        <a href="/index.jsp?lang=0"><span>Weierstraß-Institut</span><br />Publikationsserver</a>
+      <div id="project_logo_box" class="row">
+        <div class="col-md-4">
+          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" class="">
+            <img src="{$WebApplicationBaseURL}images/logos/WIAS_Logo.png" alt="WIAS-logo" style="height:4em; width:4em;" />
+          </a>
+        </div>
+        <div class="col-md-8">
+          <a href="/index.jsp?lang=0"><span>Weierstraß-Institut</span><br />Publikationsserver</a>
+        </div>
       </div>
     </div>
 

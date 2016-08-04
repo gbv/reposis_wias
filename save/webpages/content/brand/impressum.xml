@@ -3,35 +3,21 @@
 <MyCoReWebPage>
   <section xml:lang="de" title="Impressum">
   <div>
-    <h2>Impressum</h2>
+    <h2>Impressum und Copyright</h2>
+    <h3>Impressum</h3>
     <p>
-      Günter Grass Stiftung Bremen<br />
-      Jacobs University Bremen<br />
-      Campusring  1/RLH<br />
-      28759 Bremen<br /><br />
-      Telefon: 0421 – 200 4840<br />
-      Fax: 0421 – 200 4839<br /><br />
-      E-Mail: office@grass-medienarchiv.de<br />
-      www.grass-medienarchiv.de
+      Zu den gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung siehe das Impressum (mit Ausfürungen zum Datenschutz) des Forschungsverbundes , dessen Bestandteil das WIAS ist.
     </p>
     <p>
-      Die Günter Grass Stiftung Bremen ist eine rechtsfähige Stiftung bürgerlichen Rechts.
-      Sitz der Stiftung ist Bremen.
+      Der lokale Web-Administrator kann über diese E-Mail-Adresse erreicht werden. Für andere Fragen siehe die Seite der Hauptkontaktpersonen.
     </p>
+    <h3>Copyright</h3>
     <p>
-      Vertretungsberechtigte Personen:<br />
-      Dr. Klaus Meier (Vorsitzender des Vorstands), Anja Hillerts-Lichtenberg (Geschäftsführerin),
-      Dr. h.c. Hanjo Kesting (Vorsitzender des Kuratoriums).
-    </p>
-    <p>
-      Zuständige Aufsichtsbehörde:<br />
-      Freie Hansestadt Bremen, Senator für Inneres und Sport, Contrescarpe 22/24, 28203 Bremen<br />
-      Finanzamt Bremen-Mitte, Rudolf-Hilferding-Platz 1, 28195 Bremen<br />
-      Steuernummer: 71/609/100636
+      Alle Web-Inhalte sind urheberrechtlich geschützt. Jede über die Betrachtung mit einem Web-Browser hinausgehende Nutzung bedarf der schriftlichen Erlaubnis durch das WIAS.
     </p>
   </div>
   </section>
   <meta>
-    <log date="2016-03-31" time="12:14" labelPath=" » Kontakt" lastEditor="Kathleen Neumann" />
+    <log date="2016-08-04" time="10:33" labelPath=" » Impressum" lastEditor="Kathleen Neumann" />
   </meta>
 </MyCoReWebPage>

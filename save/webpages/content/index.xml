@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="Willkommen bei der Digitalen Bibliothek">
+  <section xml:lang="de" title="Willkommen beim Publikationsserver des WIAS">
     <div class="jumbotwo">
       <div class="row">
         <div class="col-md-6" lang="de">
@@ -8,11 +8,12 @@
             Inhalt
           </h3>
           <p>
-            Ab dem 2. Halbjahr 2016 wird die Datenbankrecherche mit diversen Suchfunktionen komfortabel
-            über das World Wide Web möglich. Sie erhalten Zugang zu den Metadaten von rund 2500
-            audiovisuellen Dokumenten von, über und mit Günter Grass. Der Zugang zu den jeweiligen
-            Audio- und Videobeiträgen über das Internet ist aufgrund der Urheberrechte zunächst noch
-            nicht möglich. Zu rechtlich freigegebenen Dokumenten ist eine Sichtung als Stream in Planung.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
         </div>
         <div class="col-md-1" lang="de">
@@ -23,14 +24,15 @@
             Förderung
           </h3>
           <p>
-            Die Umsetzung ist durch die Förderung der DFG möglich.<br />
-            <img src="../images/logos/Logo_DFG.jpg" alt="Logo der DFG" height="78" border="0" width="182" />
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
           </p>
         </div>
       </div>
     </div>
     </section>
     <meta>
-        <log lastEditor="administrator" date="2016-03-31" time="12:16"/>
+        <log lastEditor="administrator" date="2016-08-04" time="10:35"/>
     </meta>
 </MyCoReWebPage>
