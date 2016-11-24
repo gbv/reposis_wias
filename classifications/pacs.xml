@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="PACS" xmlns:xlink="http://www.w3.org/1999/xlink"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <label xml:lang="en" text="Physics and Astronomy Classification Scheme" />
+  <categories>
+    <category ID="00.01.">
+      <label xml:lang="en" text="00.01." description="education, history, and philosophy" />
+      <category ID="00.01.10.-m">
+        <label xml:lang="en" text="00.01.10.-m" description="Announcements, news, and organizational activities" />
+        <category ID="00.01.10.Cr">
+          <label xml:lang="en" text="00.01.10.Cr" description="Announcements, news, and awards" />
+        </category>
+        <category ID="00.01.10.Fv">
+          <label xml:lang="en" text="00.01.10.Fv" description="Conferences, lectures, and institutes" />
+        </category>
+        <category ID="00.01.10.Hx">
+          <label xml:lang="en" text="00.01.10.Hx" description="Physics organizational activities" />
+        </category>
+      </category>
+      <category ID="00.01.20.+x">
+        <label xml:lang="en" text="00.01.20.+x"
+               description="Communication forms and techniques (written, oral, electronic, etc.)" />
+      </category>
+      <category ID="00.01.30.-y">
+        <label xml:lang="en" text="00.01.30.-y" description="Physics literature and publications" />
+        <category ID="00.01.30.Bb">
+          <label xml:lang="en" text="00.01.30.Bb"
+                 description="Publications of lectures (advanced institutes, summer schools, etc.)" />
+        </category>
+        <category ID="00.01.30.Cc">
+          <label xml:lang="en" text="00.01.30.Cc" description="Conference proceedings" />
+        </category>
+        <category ID="00.01.30.Ee">
+          <label xml:lang="en" text="00.01.30.Ee" description="Monographs and collections" />
+        </category>
+        <category ID="00.01.30.Kj">
+          <label xml:lang="en" text="00.01.30.Kj"
+                 description="Handbooks, dictionaries, tables, and data compilations" />
+        </category>
+        <category ID="00.01.30.L-">
+          <label xml:lang="en" text="00.01.30.L-" description="Physics laboratory manuals" />
+        </category>
+        <category ID="00.01.30.la">
+          <label xml:lang="en" text="00.01.30.la" description="Secondary schools" />
+        </category>
+        <category ID="00.01.30.lb">
+          <label xml:lang="en" text="00.01.30.lb" description="Undergraduate schools" />
+        </category>
+        <category ID="00.01.30.M-">
+          <label xml:lang="en" text="00.01.30.M-" description="Textbooks" />
+        </category>
+        <category ID="00.01.30.mm">
+          <label xml:lang="en" text="00.01.30.mm" description="Textbooks for graduates and researchers" />
+        </category>
+        <category ID="00.01.30.mp">
+          <label xml:lang="en" text="00.01.30.mp" description="Textbooks for undergraduates" />
+        </category>
+        <category ID="00.01.30.mr">
+          <label xml:lang="en" text="00.01.30.mr" description="Textbooks for students in grades 9-12" />
+        </category>
+        <category ID="00.01.30.mt">
+          <label xml:lang="en" text="00.01.30.mt" description="Textbooks for students in grades K-8" />
+        </category>
+        <category ID="00.01.30.Os">
+          <label xml:lang="en" text="00.01.30.Os" description="Books of general interest to physics teachers" />
+        </category>
+        <category ID="00.01.30.Rr">
+          <label xml:lang="en" text="00.01.30.Rr" description="Surveys and tutorial papers; resource letters" />
+        </category>
+        <category ID="00.01.30.Tt">
+          <label xml:lang="en" text="00.01.30.Tt" description="Bibliographies" />
+        </category>
+        <category ID="00.01.30.Vv">
+          <label xml:lang="en" text="00.01.30.Vv" description="Book reviews" />
+        </category>
+        <category ID="00.01.30.Ww">
+          <label xml:lang="en" text="00.01.30.Ww" description="Editorials" />
+        </category>
+        <category ID="00.01.30.Xx">
+          <label xml:lang="en" text="00.01.30.Xx"
+                 description="Publications in electronic media (for the topic of electronic publishing, see 01.20.+x)" />
+        </category>
+      </category>
+      <category ID="00.01.40.-d">
+        <label xml:lang="en" text="00.01.40.-d" description="Education" />
+        <category ID="00.01.40.Di">
+          <label xml:lang="en" text="00.01.40.Di" description="Course design and evaluation" />
+        </category>
+        <category ID="00.01.40.E-">
+          <label xml:lang="en" text="00.01.40.E-" description="Science in school" />
+        </category>
+        <category ID="00.01.40.eg">
+          <label xml:lang="en" text="00.01.40.eg" description="Elementary school" />
+        </category>
+        <category ID="00.01.40.ek">
+          <label xml:lang="en" text="00.01.40.ek" description="Secondary school" />
+        </category>
+        <category ID="00.01.40.Fk">
+          <label xml:lang="en" text="00.01.40.Fk" description="Research in physics education" />
+        </category>
+        <category ID="00.01.40.G-">
+          <label xml:lang="en" text="00.01.40.G-" description="Curricula and evaluation" />
+        </category>
+        <category ID="00.01.40.gb">
+          <label xml:lang="en" text="00.01.40.gb" description="Teaching methods and strategies" />
+        </category>
+        <category ID="00.01.40.gf">
+          <label xml:lang="en" text="00.01.40.gf" description="Theory of testing and techniques" />
+        </category>
+        <category ID="00.01.40.Ha">
+          <label xml:lang="en" text="00.01.40.Ha" description="Learning theory and science teaching" />
+        </category>
+        <category ID="00.01.40.J-">
+          <label xml:lang="en" text="00.01.40.J-" description="Teacher training" />
+        </category>
+        <category ID="00.01.40.jc">
+          <label xml:lang="en" text="00.01.40.jc" description="Preservice training" />
+        </category>
+        <category ID="00.01.40.jh">
+          <label xml:lang="en" text="00.01.40.jh" description="Inservice training" />
+        </category>
+      </category>
+      <category ID="00.01.50.-i">
+        <label xml:lang="en" text="00.01.50.-i" description="Educational aids" />
+        <category ID="00.01.50.F-">
+          <label xml:lang="en" text="00.01.50.F-" description="Audio and visual aids" />
+        </category>
+        <category ID="00.01.50.fd">
+          <label xml:lang="en" text="00.01.50.fd" description="Audio devices" />
+        </category>
+        <category ID="00.01.50.ff">
+          <label xml:lang="en" text="00.01.50.ff" description="Films; electronic video devices" />
+        </category>
+        <category ID="00.01.50.fh">
+          <label xml:lang="en" text="00.01.50.fh" description="Posters, cartoons, art, etc." />
+        </category>
+        <category ID="00.01.50.H-">
+          <label xml:lang="en" text="00.01.50.H-" description="Computers in education" />
+        </category>
+        <category ID="00.01.50.ht">
+          <label xml:lang="en" text="00.01.50.ht" description="Instructional computer use" />
+        </category>
+        <category ID="00.01.50.hv">
+          <label xml:lang="en" text="00.01.50.hv" description="Computer software and software reviews" />
+        </category>
+        <category ID="00.01.50.Kw">
+          <label xml:lang="en" text="00.01.50.Kw" description="Techniques of testing" />
+        </category>
+        <category ID="00.01.50.Lc">
+          <label xml:lang="en" text="00.01.50.Lc" description="Laboratory computer use (see also 01.50.Pa)" />
+        </category>
+        <category ID="00.01.50.My">
+          <label xml:lang="en" text="00.01.50.My" description="Demonstration experiments and apparatus" />
+        </category>
+        <category ID="00.01.50.Pa">
+          <label xml:lang="en" text="00.01.50.Pa"
+                 description="Laboratory experiments and apparatus (see also 01.50.Lc)" />
+        </category>
+        <category ID="00.01.50.Qb">
+          <label xml:lang="en" text="00.01.50.Qb"
+                 description="Laboratory course design, organization, and evaluation" />
+        </category>
+        <category ID="00.01.50.Rt">
+          <label xml:lang="en" text="00.01.50.Rt" description="Physics tournaments and contests" />
+        </category>
+        <category ID="00.01.50.Wg">
+          <label xml:lang="en" text="00.01.50.Wg" description="Physics of toys" />
+        </category>
+        <category ID="00.01.50.Zv">
+          <label xml:lang="en" text="00.01.50.Zv" description="Errors in physics classroom materials" />
+        </category>
+      </category>
+      <category ID="00.01.52.+r">
+        <label xml:lang="en" text="00.01.52.+r" description="National and international laboratory facilities" />
+      </category>
+      <category ID="00.01.55.+b">
+        <label xml:lang="en" text="00.01.55.+b" description="General physics" />
+      </category>
+      <category ID="00.01.60.+q">
+        <label xml:lang="en" text="00.01.60.+q" description="Biographies, tributes, personal notes, and obituaries" />
+      </category>
+      <category ID="00.01.65.+g">
+        <label xml:lang="en" text="00.01.65.+g" description="History of science" />
+      </category>
+      <category ID="00.01.70.+w">
+        <label xml:lang="en" text="00.01.70.+w" description="Philosophy of science" />
+      </category>
+      <category ID="00.01.75.+m">
+        <label xml:lang="en" text="00.01.75.+m"
+               description="Science and society (for science and government, see 01.78.+p; for social issues regarding wind energy, see 88.50.Xy; for social issues regarding biomass energy, see 88.20.Y-)" />
+      </category>
+      <category ID="00.01.78.+p">
+        <label xml:lang="en" text="00.01.78.+p"
+               description="Science and government (funding, politics, etc.) (see also 88.05.Jk Policy issues; resource assessment) " />
+      </category>
+      <category ID="00.01.80.+b">
+        <label xml:lang="en" text="00.01.80.+b" description="Physics of games and sports" />
+      </category>
+      <category ID="00.01.85.+f">
+        <label xml:lang="en" text="00.01.85.+f" description="Careers in physics and science" />
+      </category>
+      <category ID="00.01.90.+g">
+        <label xml:lang="en" text="00.01.90.+g"
+               description="Other topics of general interest (restricted to new topics in section 01)" />
+      </category>
+    </category>
+    <category ID="00.02.">
+      <label xml:lang="en" text="00.02." description="methods in physics" />
+      <category ID="00.02.10.-v">
+        <label xml:lang="en" text="00.02.10.-v" description="Logic, set theory, and algebra" />
+        <category ID="00.02.10.Ab">
+          <label xml:lang="en" text="00.02.10.Ab" description="Logic and set theory" />
+        </category>
+        <category ID="00.02.10.De">
+          <label xml:lang="en" text="00.02.10.De" description="Algebraic structures and number theory" />
+        </category>
+        <category ID="00.02.10.Hh">
+          <label xml:lang="en" text="00.02.10.Hh" description="Rings and algebras" />
+        </category>
+        <category ID="00.02.10.Kn">
+          <label xml:lang="en" text="00.02.10.Kn" description="Knot theory" />
+        </category>
+        <category ID="00.02.10.Ox">
+          <label xml:lang="en" text="00.02.10.Ox" description="Combinatorics; graph theory" />
+        </category>
+        <category ID="00.02.10.Ud">
+          <label xml:lang="en" text="00.02.10.Ud" description="Linear algebra" />
+        </category>
+        <category ID="00.02.10.Xm">
+          <label xml:lang="en" text="00.02.10.Xm" description="Multilinear algebra" />
+        </category>
+        <category ID="00.02.10.Yn">
+          <label xml:lang="en" text="00.02.10.Yn" description="Matrix theory" />
+        </category>
+      </category>
+      <category ID="00.02.20.-a">
+        <label xml:lang="en" text="00.02.20.-a"
+               description="Group theory (for algebraic methods in quantum mechanics, see 03.65.Fd; for symmetries in elementary particle physics, see 11.30.-j)" />
+        <category ID="00.02.20.Bb">
+          <label xml:lang="en" text="00.02.20.Bb" description="General structures of groups" />
+        </category>
+        <category ID="00.02.20.Hj">
+          <label xml:lang="en" text="00.02.20.Hj" description="Classical groups" />
+        </category>
+        <category ID="00.02.20.Qs">
+          <label xml:lang="en" text="00.02.20.Qs"
+                 description="General properties, structure, and representation of Lie groups" />
+        </category>
+        <category ID="00.02.20.Rt">
+          <label xml:lang="en" text="00.02.20.Rt" description="Discrete subgroups of Lie groups" />
+        </category>
+        <category ID="00.02.20.Sv">
+          <label xml:lang="en" text="00.02.20.Sv" description="Lie algebras of Lie groups" />
+        </category>
+        <category ID="00.02.20.Tw">
+          <label xml:lang="en" text="00.02.20.Tw" description="Infinite-dimensional Lie groups" />
+        </category>
+        <category ID="00.02.20.Uw">
+          <label xml:lang="en" text="00.02.20.Uw" description="Quantum groups" />
+        </category>
+      </category>
+      <category ID="00.02.30.-f">
+        <label xml:lang="en" text="00.02.30.-f" description="Function theory, analysis" />
+        <category ID="00.02.30.Cj">
+          <label xml:lang="en" text="00.02.30.Cj" description="Measure and integration" />
+        </category>
+        <category ID="00.02.30.Em">
+          <label xml:lang="en" text="00.02.30.Em" description="Potential theory" />
+        </category>
+        <category ID="00.02.30.Fn">
+          <label xml:lang="en" text="00.02.30.Fn" description="Several complex variables and analytic spaces" />
+        </category>
+        <category ID="00.02.30.Gp">
+          <label xml:lang="en" text="00.02.30.Gp" description="Special functions" />
+        </category>
+        <category ID="00.02.30.Hq">
+          <label xml:lang="en" text="00.02.30.Hq" description="Ordinary differential equations" />
+        </category>
+        <category ID="00.02.30.Ik">
+          <label xml:lang="en" text="00.02.30.Ik" description="Integrable systems" />
+        </category>
+        <category ID="00.02.30.Jr">
+          <label xml:lang="en" text="00.02.30.Jr" description="Partial differential equations" />
+        </category>
+        <category ID="00.02.30.Ks">
+          <label xml:lang="en" text="00.02.30.Ks" description="Delay and functional equations" />
+        </category>
+        <category ID="00.02.30.Lt">
+          <label xml:lang="en" text="00.02.30.Lt" description="Sequences, series, and summability" />
+        </category>
+        <category ID="00.02.30.Mv">
+          <label xml:lang="en" text="00.02.30.Mv" description="Approximations and expansions" />
+        </category>
+        <category ID="00.02.30.Nw">
+          <label xml:lang="en" text="00.02.30.Nw" description="Fourier analysis" />
+        </category>
+        <category ID="00.02.30.Oz">
+          <label xml:lang="en" text="00.02.30.Oz"
+                 description="Bifurcation theory (see also 47.20.Ky in fluid dynamics)" />
+        </category>
+        <category ID="00.02.30.Px">
+          <label xml:lang="en" text="00.02.30.Px" description="Abstract harmonic analysis" />
+        </category>
+        <category ID="00.02.30.Rz">
+          <label xml:lang="en" text="00.02.30.Rz" description="Integral equations" />
+        </category>
+        <category ID="00.02.30.Sa">
+          <label xml:lang="en" text="00.02.30.Sa" description="Functional analysis" />
+        </category>
+        <category ID="00.02.30.Tb">
+          <label xml:lang="en" text="00.02.30.Tb" description="Operator theory" />
+        </category>
+        <category ID="00.02.30.Uu">
+          <label xml:lang="en" text="00.02.30.Uu" description="Integral transforms" />
+        </category>
+        <category ID="00.02.30.Vv">
+          <label xml:lang="en" text="00.02.30.Vv" description="Operational calculus" />
+        </category>
+        <category ID="00.02.30.Xx">
+          <label xml:lang="en" text="00.02.30.Xx" description="Calculus of variations" />
+        </category>
+        <category ID="00.02.30.Yy">
+          <label xml:lang="en" text="00.02.30.Yy" description="Control theory" />
+        </category>
+        <category ID="00.02.30.Zz">
+          <label xml:lang="en" text="00.02.30.Zz" description="Inverse problems" />
+        </category>
+      </category>
+      <category ID="00.02.40.-k">
+        <label xml:lang="en" text="00.02.40.-k"
+               description="Geometry, differential geometry, and topology (see also section 04 Relativity and gravitation)" />
+        <category ID="00.02.40.Dr">
+          <label xml:lang="en" text="00.02.40.Dr" description="Euclidean and projective geometries" />
+        </category>
+        <category ID="00.02.40.Ft">
+          <label xml:lang="en" text="00.02.40.Ft" description="Convex sets and geometric inequalities" />
+        </category>
+        <category ID="00.02.40.Gh">
+          <label xml:lang="en" text="00.02.40.Gh" description="Noncommutative geometry" />
+        </category>
+        <category ID="00.02.40.Hw">
+          <label xml:lang="en" text="00.02.40.Hw" description="Classical differential geometry" />
+        </category>
+        <category ID="00.02.40.Ky">
+          <label xml:lang="en" text="00.02.40.Ky" description="Riemannian geometries" />
+        </category>
+        <category ID="00.02.40.Ma">
+          <label xml:lang="en" text="00.02.40.Ma" description="Global differential geometry" />
+        </category>
+        <category ID="00.02.40.Pc">
+          <label xml:lang="en" text="00.02.40.Pc" description="General topology" />
+        </category>
+        <category ID="00.02.40.Re">
+          <label xml:lang="en" text="00.02.40.Re" description="Algebraic topology" />
+        </category>
+        <category ID="00.02.40.Sf">
+          <label xml:lang="en" text="00.02.40.Sf" description="Manifolds and cell complexes" />
+        </category>
+        <category ID="00.02.40.Tt">
+          <label xml:lang="en" text="00.02.40.Tt" description="Complex manifolds" />
+        </category>
+        <category ID="00.02.40.Vh">
+          <label xml:lang="en" text="00.02.40.Vh" description="Global analysis and analysis on manifolds" />
+        </category>
+        <category ID="00.02.40.Xx">
+          <label xml:lang="en" text="00.02.40.Xx"
+                 description="Singularity theory (see also 05.45.-a Nonlinear dynamics and chaos)" />
+        </category>
+        <category ID="00.02.40.Yy">
+          <label xml:lang="en" text="00.02.40.Yy"
+                 description="Geometric mechanics (see also 45.20.Jj in formalisms in classical mechanics)" />
+        </category>
+      </category>
+      <category ID="00.02.50.-r">
+        <label xml:lang="en" text="00.02.50.-r"
+               description="Probability theory, stochastic processes, and statistics (see also section 05 Statistical physics, thermodynamics, and nonlinear dynamical systems)" />
+        <category ID="00.02.50.Cw">
+          <label xml:lang="en" text="00.02.50.Cw" description="Probability theory" />
+        </category>
+        <category ID="00.02.50.Ey">
+          <label xml:lang="en" text="00.02.50.Ey" description="Stochastic processes" />
+        </category>
+        <category ID="00.02.50.Fz">
+          <label xml:lang="en" text="00.02.50.Fz" description="Stochastic analysis" />
+        </category>
+        <category ID="00.02.50.Ga">
+          <label xml:lang="en" text="00.02.50.Ga" description="Markov processes" />
+        </category>
+        <category ID="00.02.50.Le">
+          <label xml:lang="en" text="00.02.50.Le" description="Decision theory and game theory" />
+        </category>
+        <category ID="00.02.50.Ng">
+          <label xml:lang="en" text="00.02.50.Ng" description="Distribution theory and Monte Carlo studies" />
+        </category>
+        <category ID="00.02.50.Sk">
+          <label xml:lang="en" text="00.02.50.Sk" description="Multivariate analysis" />
+        </category>
+        <category ID="00.02.50.Tt">
+          <label xml:lang="en" text="00.02.50.Tt" description="Inference methods" />
+        </category>
+      </category>
+      <category ID="00.02.60.-x">
+        <label xml:lang="en" text="00.02.60.-x" description="Numerical approximation and analysis" />
+        <category ID="00.02.60.Cb">
+          <label xml:lang="en" text="00.02.60.Cb" description="Numerical simulation; solution of equations" />
+        </category>
+        <category ID="00.02.60.Dc">
+          <label xml:lang="en" text="00.02.60.Dc" description="Numerical linear algebra" />
+        </category>
+        <category ID="00.02.60.Ed">
+          <label xml:lang="en" text="00.02.60.Ed" description="Interpolation; curve fitting" />
+        </category>
+        <category ID="00.02.60.Gf">
+          <label xml:lang="en" text="00.02.60.Gf" description="Algorithms for functional approximation" />
+        </category>
+        <category ID="00.02.60.Jh">
+          <label xml:lang="en" text="00.02.60.Jh" description="Numerical differentiation and integration" />
+        </category>
+        <category ID="00.02.60.Lj">
+          <label xml:lang="en" text="00.02.60.Lj"
+                 description="Ordinary and partial differential equations; boundary value problems" />
+        </category>
+        <category ID="00.02.60.Nm">
+          <label xml:lang="en" text="00.02.60.Nm" description="Integral and integrodifferential equations" />
+        </category>
+        <category ID="00.02.60.Pn">
+          <label xml:lang="en" text="00.02.60.Pn" description="Numerical optimization" />
+        </category>
+      </category>
+      <category ID="00.02.70.-c">
+        <label xml:lang="en" text="00.02.70.-c"
+               description="Computational techniques; simulations (for quantum computation, see 03.67.Lx; for computational techniques extensively used in subdivisions of physics, see the appropriate section; for example, see 47.11.-j Computational methods in fluid dynamics)" />
+        <category ID="00.02.70.Bf">
+          <label xml:lang="en" text="00.02.70.Bf" description="Finite-difference methods" />
+        </category>
+        <category ID="00.02.70.Dh">
+          <label xml:lang="en" text="00.02.70.Dh" description="Finite-element and Galerkin methods" />
+        </category>
+        <category ID="00.02.70.Hm">
+          <label xml:lang="en" text="00.02.70.Hm" description="Spectral methods" />
+        </category>
+        <category ID="00.02.70.Jn">
+          <label xml:lang="en" text="00.02.70.Jn" description="Collocation methods" />
+        </category>
+        <category ID="00.02.70.Ns">
+          <label xml:lang="en" text="00.02.70.Ns" description="Molecular dynamics and particle methods" />
+        </category>
+        <category ID="00.02.70.Pt">
+          <label xml:lang="en" text="00.02.70.Pt" description="Boundary-integral methods" />
+        </category>
+        <category ID="00.02.70.Rr">
+          <label xml:lang="en" text="00.02.70.Rr" description="General statistical methods" />
+        </category>
+        <category ID="00.02.70.Ss">
+          <label xml:lang="en" text="00.02.70.Ss" description="Quantum Monte Carlo methods" />
+        </category>
+        <category ID="00.02.70.Tt">
+          <label xml:lang="en" text="00.02.70.Tt"
+                 description="Justifications or modifications of Monte Carlo methods" />
+        </category>
+        <category ID="00.02.70.Uu">
+          <label xml:lang="en" text="00.02.70.Uu"
+                 description="Applications of Monte Carlo methods (see also 02.50.Ng in probability theory, stochastic processes, and statistics, and 05.10.Ln in statistical physics)" />
+        </category>
+        <category ID="00.02.70.Wz">
+          <label xml:lang="en" text="00.02.70.Wz" description="Symbolic computation (computer algebra)" />
+        </category>
+      </category>
+      <category ID="00.02.90.+p">
+        <label xml:lang="en" text="00.02.90.+p"
+               description="Other topics in mathematical methods in physics (restricted to new topics in section 02)" />
+      </category>
+    </category>
+    <category ID="00.03.">
+      <label xml:lang="en" text="00.03." description="mechanics, field theories, and special relativity" />
+      <category ID="00.03.30.+p">
+        <label xml:lang="en" text="00.03.30.+p" description="Special relativity" />
+      </category>
+      <category ID="00.03.50.-z">
+        <label xml:lang="en" text="00.03.50.-z" description="Classical field theories" />
+        <category ID="00.03.50.De">
+          <label xml:lang="en" text="00.03.50.De"
+                 description="Classical electromagnetism, Maxwell equations (for applied classical electromagnetism, see 41.20.-q)" />
+        </category>
+        <category ID="00.03.50.Kk">
+          <label xml:lang="en" text="00.03.50.Kk" description="Other special classical field theories" />
+        </category>
+      </category>
+      <category ID="00.03.65.-w">
+        <label xml:lang="en" text="00.03.65.-w"
+               description="Quantum mechanics [see also 03.67.-a Quantum information; 05.30.-d Quantum statistical mechanics; 31.30.J- Relativistic and quantum electrodynamics (QED) effects in atoms, molecules, and ions in atomic physics]" />
+        <category ID="00.03.65.Aa">
+          <label xml:lang="en" text="00.03.65.Aa" description="Quantum systems with finite Hilbert space" />
+        </category>
+        <category ID="00.03.65.Ca">
+          <label xml:lang="en" text="00.03.65.Ca" description="Formalism" />
+        </category>
+        <category ID="00.03.65.Db">
+          <label xml:lang="en" text="00.03.65.Db" description="Functional analytical methods" />
+        </category>
+        <category ID="00.03.65.Fd">
+          <label xml:lang="en" text="00.03.65.Fd" description="Algebraic methods (see also 02.20.-a Group theory)" />
+        </category>
+        <category ID="00.03.65.Ge">
+          <label xml:lang="en" text="00.03.65.Ge" description="Solutions of wave equations: bound states" />
+        </category>
+        <category ID="00.03.65.Nk">
+          <label xml:lang="en" text="00.03.65.Nk" description="Scattering theory" />
+        </category>
+        <category ID="00.03.65.Pm">
+          <label xml:lang="en" text="00.03.65.Pm" description="Relativistic wave equations" />
+        </category>
+        <category ID="00.03.65.Sq">
+          <label xml:lang="en" text="00.03.65.Sq" description="Semiclassical theories and applications" />
+        </category>
+        <category ID="00.03.65.Ta">
+          <label xml:lang="en" text="00.03.65.Ta"
+                 description="Foundations of quantum mechanics; measurement theory (for optical tests of quantum theory, see 42.50.Xa)" />
+        </category>
+        <category ID="00.03.65.Ud">
+          <label xml:lang="en" text="00.03.65.Ud"
+                 description="Entanglement and quantum nonlocality (e.g. EPR paradox, Bell's inequalities, GHZ states, etc.) (for entanglement production and manipulation, see 03.67.Bg; for entanglement measures, witnesses etc., see 03.67.Mn; for entanglement in Bose-Einstein condensates, see 03.75.Gg)" />
+        </category>
+        <category ID="00.03.65.Vf">
+          <label xml:lang="en" text="00.03.65.Vf" description="Phases: geometric; dynamic or topological" />
+        </category>
+        <category ID="00.03.65.Wj">
+          <label xml:lang="en" text="00.03.65.Wj" description="State reconstruction, quantum tomography" />
+        </category>
+        <category ID="00.03.65.Xp">
+          <label xml:lang="en" text="00.03.65.Xp" description="Tunneling, traversal time, quantum Zeno dynamics" />
+        </category>
+        <category ID="00.03.65.Yz">
+          <label xml:lang="en" text="00.03.65.Yz"
+                 description="Decoherence; open systems; quantum statistical methods (see also 03.67.Pp in quantum information; for decoherence in Bose-Einstein condensates, see 03.75.Gg)" />
+        </category>
+      </category>
+      <category ID="00.03.67.-a">
+        <label xml:lang="en" text="00.03.67.-a"
+               description="Quantum information (see also 42.50.Dv Quantum state engineering and measurements; 42.50.Ex Optical implementations of quantum information processing and transfer in quantum optics)" />
+        <category ID="00.03.67.Ac">
+          <label xml:lang="en" text="00.03.67.Ac" description="Quantum algorithms, protocols, and simulations" />
+        </category>
+        <category ID="00.03.67.Bg">
+          <label xml:lang="en" text="00.03.67.Bg"
+                 description="Entanglement production and manipulation (for entanglement in Bose-Einstein condensates, see 03.75.Gg)" />
+        </category>
+        <category ID="00.03.67.Dd">
+          <label xml:lang="en" text="00.03.67.Dd" description="Quantum cryptography and communication security" />
+        </category>
+        <category ID="00.03.67.Hk">
+          <label xml:lang="en" text="00.03.67.Hk" description="Quantum communication" />
+        </category>
+        <category ID="00.03.67.Lx">
+          <label xml:lang="en" text="00.03.67.Lx" description="Quantum computation architectures and implementations" />
+        </category>
+        <category ID="00.03.67.Mn">
+          <label xml:lang="en" text="00.03.67.Mn"
+                 description="Entanglement measures, witnesses, and other characterizations (see also 03.65.Ud Entanglement and quantum nonlocality; 42.50.Dv Quantum state engineering and measurements in quantum optics)" />
+        </category>
+        <category ID="00.03.67.Pp">
+          <label xml:lang="en" text="00.03.67.Pp"
+                 description="Quantum error correction and other methods for protection against decoherence (see also 03.65.Yz Decoherence; open systems; quantum statistical methods; for decoherence in Bose-Einstein condensates, see 03.75.Gg)" />
+        </category>
+      </category>
+      <category ID="00.03.70.+k">
+        <label xml:lang="en" text="00.03.70.+k"
+               description="Theory of quantized fields (see also 11.10.-z Field theory)" />
+      </category>
+      <category ID="00.03.75.-b">
+        <label xml:lang="en" text="00.03.75.-b"
+               description="Matter waves (for atom interferometry, see 37.25.+k; see also 67.85.-d ultracold gases, trapped gases in quantum fluids and solids)" />
+        <category ID="00.03.75.Be">
+          <label xml:lang="en" text="00.03.75.Be" description="Atom and neutron optics" />
+        </category>
+        <category ID="00.03.75.Dg">
+          <label xml:lang="en" text="00.03.75.Dg" description="Atom and neutron interferometry" />
+        </category>
+        <category ID="00.03.75.Gg">
+          <label xml:lang="en" text="00.03.75.Gg"
+                 description="Entanglement and decoherence in Bose-Einstein condensates" />
+        </category>
+        <category ID="00.03.75.Hh">
+          <label xml:lang="en" text="00.03.75.Hh"
+                 description="Static properties of condensates; thermodynamical, statistical, and structural properties" />
+        </category>
+        <category ID="00.03.75.Kk">
+          <label xml:lang="en" text="00.03.75.Kk"
+                 description="Dynamic properties of condensates; collective and hydrodynamic excitations, superfluid flow" />
+        </category>
+        <category ID="00.03.75.Lm">
+          <label xml:lang="en" text="00.03.75.Lm"
+                 description="Tunneling, Josephson effect, Bose-Einstein condensates in periodic potentials, solitons, vortices, and topological excitations (see also 74.50.+r Tunneling phenomena; Josephson effects in superconductivity)" />
+        </category>
+        <category ID="00.03.75.Mn">
+          <label xml:lang="en" text="00.03.75.Mn" description="Multicomponent condensates; spinor condensates" />
+        </category>
+        <category ID="00.03.75.Nt">
+          <label xml:lang="en" text="00.03.75.Nt" description="Other Bose-Einstein condensation phenomena" />
+        </category>
+        <category ID="00.03.75.Pp">
+          <label xml:lang="en" text="00.03.75.Pp" description="Atom lasers" />
+        </category>
+        <category ID="00.03.75.Ss">
+          <label xml:lang="en" text="00.03.75.Ss" description="Degenerate Fermi gases" />
+        </category>
+      </category>
+    </category>
+    <category ID="00.04.">
+      <label xml:lang="en" text="00.04." description="" />
+      <category ID="00.04.20.-q">
+        <label xml:lang="en" text="00.04.20.-q"
+               description="Classical general relativity (see also 02.40.-k Geometry, differential geometry, and topology)" />
+        <category ID="00.04.20.Cv">
+          <label xml:lang="en" text="00.04.20.Cv" description="Fundamental problems and general formalism" />
+        </category>
+        <category ID="00.04.20.Dw">
+          <label xml:lang="en" text="00.04.20.Dw" description="Singularities and cosmic censorship" />
+        </category>
+        <category ID="00.04.20.Ex">
+          <label xml:lang="en" text="00.04.20.Ex"
+                 description="Initial value problem, existence and uniqueness of solutions" />
+        </category>
+        <category ID="00.04.20.Fy">
+          <label xml:lang="en" text="00.04.20.Fy"
+                 description="Canonical formalism, Lagrangians, and variational principles" />
+        </category>
+        <category ID="00.04.20.Gz">
+          <label xml:lang="en" text="00.04.20.Gz"
+                 description="Spacetime topology, causal structure, spinor structure" />
+        </category>
+        <category ID="00.04.20.Ha">
+          <label xml:lang="en" text="00.04.20.Ha" description="Asymptotic structure" />
+        </category>
+        <category ID="00.04.20.Jb">
+          <label xml:lang="en" text="00.04.20.Jb" description="Exact solutions" />
+        </category>
+      </category>
+      <category ID="00.04.25.-g">
+        <label xml:lang="en" text="00.04.25.-g" description="Approximation methods; equations of motion" />
+        <category ID="00.04.25.D-">
+          <label xml:lang="en" text="00.04.25.D-" description="Numerical relativity" />
+        </category>
+        <category ID="00.04.25.dc">
+          <label xml:lang="en" text="00.04.25.dc"
+                 description="Numerical studies of critical behavior, singularities, and cosmic censorship" />
+        </category>
+        <category ID="00.04.25.dg">
+          <label xml:lang="en" text="00.04.25.dg"
+                 description="Numerical studies of black holes and black-hole binaries" />
+        </category>
+        <category ID="00.04.25.dk">
+          <label xml:lang="en" text="00.04.25.dk"
+                 description="Numerical studies of other relativistic binaries (see also 97.80.-d Binary and multiple stars in astronomy)" />
+        </category>
+        <category ID="00.04.25.Nx">
+          <label xml:lang="en" text="00.04.25.Nx"
+                 description="Post-Newtonian approximation; perturbation theory; related approximations" />
+        </category>
+      </category>
+      <category ID="00.04.30.-w">
+        <label xml:lang="en" text="00.04.30.-w"
+               description="Gravitational waves (see also 04.80.Nn Gravitational wave detectors and experiments)" />
+        <category ID="00.04.30.Db">
+          <label xml:lang="en" text="00.04.30.Db" description="Wave generation and sources" />
+        </category>
+        <category ID="00.04.30.Nk">
+          <label xml:lang="en" text="00.04.30.Nk" description="Wave propagation and interactions" />
+        </category>
+        <category ID="00.04.30.Tv">
+          <label xml:lang="en" text="00.04.30.Tv"
+                 description="Gravitational-wave astrophysics (see also 95.85.Sz Gravitational radiation, magnetic fields, and other observations in astronomy)" />
+        </category>
+      </category>
+      <category ID="00.04.40.-b">
+        <label xml:lang="en" text="00.04.40.-b"
+               description="Self-gravitating systems; continuous media and classical fields in curved spacetime" />
+        <category ID="00.04.40.Dg">
+          <label xml:lang="en" text="00.04.40.Dg"
+                 description="Relativistic stars: structure, stability, and oscillations (see also 97.60.-s Late stages of stellar evolution)" />
+        </category>
+        <category ID="00.04.40.Nr">
+          <label xml:lang="en" text="00.04.40.Nr"
+                 description="Einstein-Maxwell spacetimes, spacetimes with fluids, radiation or classical fields" />
+        </category>
+      </category>
+      <category ID="00.04.50.-h">
+        <label xml:lang="en" text="00.04.50.-h"
+               description="Higher-dimensional gravity and other theories of gravity (see also 11.25.Mj Compactification and four-dimensional models, 11.25.Uv D branes)" />
+        <category ID="00.04.50.Cd">
+          <label xml:lang="en" text="00.04.50.Cd" description="Kaluza-Klein theories" />
+        </category>
+        <category ID="00.04.50.Gh">
+          <label xml:lang="en" text="00.04.50.Gh"
+                 description="Higher-dimensional black holes, black strings, and related objects" />
+        </category>
+        <category ID="00.04.50.Kd">
+          <label xml:lang="en" text="00.04.50.Kd" description="Modified theories of gravity" />
+        </category>
+      </category>
+      <category ID="00.04.60.-m">
+        <label xml:lang="en" text="00.04.60.-m"
+               description="Quantum gravity (see also 11.25.-w Strings and branes; 11.15.Wx Topologically massive gauge theories, and 11.15.Yc Chern-Simons gauge theory) " />
+        <category ID="00.04.60.Bc">
+          <label xml:lang="en" text="00.04.60.Bc" description="Phenomenology of quantum gravity" />
+        </category>
+        <category ID="00.04.60.Cf">
+          <label xml:lang="en" text="00.04.60.Cf" description="Gravitational aspects of string theory" />
+        </category>
+        <category ID="00.04.60.Ds">
+          <label xml:lang="en" text="00.04.60.Ds" description="Canonical quantization" />
+        </category>
+        <category ID="00.04.60.Gw">
+          <label xml:lang="en" text="00.04.60.Gw" description="Covariant and sum-over-histories quantization" />
+        </category>
+        <category ID="00.04.60.Kz">
+          <label xml:lang="en" text="00.04.60.Kz" description="Lower dimensional models; minisuperspace models" />
+        </category>
+        <category ID="00.04.60.Nc">
+          <label xml:lang="en" text="00.04.60.Nc" description="Lattice and discrete methods" />
+        </category>
+        <category ID="00.04.60.Pp">
+          <label xml:lang="en" text="00.04.60.Pp" description="Loop quantum gravity, quantum geometry, spin foams" />
+        </category>
+        <category ID="00.04.60.Rt">
+          <label xml:lang="en" text="00.04.60.Rt"
+                 description="Topologically massive gravity (see also 11.15.Wx Topologically massive gauge theories, and 11.15.Yc Chern-Simons gauge theory)" />
+        </category>
+      </category>
+      <category ID="00.04.62.+v">
+        <label xml:lang="en" text="00.04.62.+v" description="Quantum fields in curved spacetime" />
+      </category>
+      <category ID="00.04.65.+e">
+        <label xml:lang="en" text="00.04.65.+e"
+               description="Supergravity (see also 12.60.Jv Supersymmetric models; 11.15.Wx Topologically massive gauge theories, and 11.15.Yc Chern-Simons gauge theory) " />
+      </category>
+      <category ID="00.04.70.-s">
+        <label xml:lang="en" text="00.04.70.-s" description="Physics of black holes (see also 97.60.Lf—in astronomy)" />
+        <category ID="00.04.70.Bw">
+          <label xml:lang="en" text="00.04.70.Bw" description="Classical black holes" />
+        </category>
+        <category ID="00.04.70.Dy">
+          <label xml:lang="en" text="00.04.70.Dy"
+                 description="Quantum aspects of black holes, evaporation, thermodynamics" />
+        </category>
+      </category>
+      <category ID="00.04.80.-y">
+        <label xml:lang="en" text="00.04.80.-y" description="Experimental studies of gravity" />
+        <category ID="00.04.80.Cc">
+          <label xml:lang="en" text="00.04.80.Cc" description="Experimental tests of gravitational theories" />
+        </category>
+        <category ID="00.04.80.Nn">
+          <label xml:lang="en" text="00.04.80.Nn"
+                 description="Gravitational wave detectors and experiments (see also 95.55.Ym Gravitational radiation detectors; mass spectrometers; and other instrumentation and techniques)" />
+        </category>
+      </category>
+      <category ID="00.04.90.+e">
+        <label xml:lang="en" text="00.04.90.+e"
+               description="Other topics in general relativity and gravitation (restricted to new topics in section 04)" />
+      </category>
+    </category>
+    <category ID="00.05.">
+      <label xml:lang="en" text="00.05."
+             description="topics in general relativity and gravitation (restricted to new topics in section 04)" />
+      <category ID="00.05.10.-a">
+        <label xml:lang="en" text="00.05.10.-a"
+               description="Computational methods in statistical physics and nonlinear dynamics (see also 02.70.-c in mathematical methods in physics)" />
+        <category ID="00.05.10.Cc">
+          <label xml:lang="en" text="00.05.10.Cc" description="Renormalization group methods" />
+        </category>
+        <category ID="00.05.10.Gg">
+          <label xml:lang="en" text="00.05.10.Gg"
+                 description="Stochastic analysis methods (Fokker-Planck, Langevin, etc.)" />
+        </category>
+        <category ID="00.05.10.Ln">
+          <label xml:lang="en" text="00.05.10.Ln"
+                 description="Monte Carlo methods (see also 02.70.Tt, Uu in mathematical methods in physics; for Monte Carlo methods extensively used in subdivisions of physics, see the appropriate section; for example, see 52.65.Pp in plasma simulation)" />
+        </category>
+      </category>
+      <category ID="00.05.20.-y">
+        <label xml:lang="en" text="00.05.20.-y" description="Classical statistical mechanics" />
+        <category ID="00.05.20.Dd">
+          <label xml:lang="en" text="00.05.20.Dd"
+                 description="Kinetic theory (see also 51.10.+y Kinetic and transport theory of gases)" />
+        </category>
+        <category ID="00.05.20.Gg">
+          <label xml:lang="en" text="00.05.20.Gg" description="Classical ensemble theory" />
+        </category>
+        <category ID="00.05.20.Jj">
+          <label xml:lang="en" text="00.05.20.Jj"
+                 description="Statistical mechanics of classical fluids (see also 47.10.-g General theory in fluid dynamics)" />
+        </category>
+      </category>
+      <category ID="00.05.30.-d">
+        <label xml:lang="en" text="00.05.30.-d"
+               description="Quantum statistical mechanics (for quantum fluids aspects, see 67.10.Fj)" />
+        <category ID="00.05.30.Ch">
+          <label xml:lang="en" text="00.05.30.Ch" description="Quantum ensemble theory" />
+        </category>
+        <category ID="00.05.30.Fk">
+          <label xml:lang="en" text="00.05.30.Fk"
+                 description="Fermion systems and electron gas (see also 71.10.-w Theories and models of many-electron systems; see also 67.10.Db Fermion degeneracy in quantum fluids)" />
+        </category>
+        <category ID="00.05.30.Jp">
+          <label xml:lang="en" text="00.05.30.Jp"
+                 description="Boson systems (for static and dynamic properties of Bose-Einstein condensates, see 03.75.Hh and 03.75.Kk; see also 67.10.Ba Boson degeneracy in quantum fluids)" />
+        </category>
+        <category ID="00.05.30.Pr">
+          <label xml:lang="en" text="00.05.30.Pr" description="Fractional statistics systems (anyons, etc.)" />
+        </category>
+        <category ID="00.05.30.Rt">
+          <label xml:lang="en" text="00.05.30.Rt"
+                 description="Quantum phase transitions (see also 64.70.Tg Quantum phase transitions in specific phase transitions; and 73.43.Nq Quantum phase transitions in Quantum Hall effects) " />
+        </category>
+      </category>
+      <category ID="00.05.40.-a">
+        <label xml:lang="en" text="00.05.40.-a"
+               description="Fluctuation phenomena, random processes, noise, and Brownian motion (for fluctuations in superconductivity, see 74.40.-n; for statistical theory and fluctuations in nuclear reactions, see 24.60.-k; for fluctuations in plasma, see 52.25.Gj; for nonlinear dynamics and chaos, see 05.45.-a)" />
+        <category ID="00.05.40.Ca">
+          <label xml:lang="en" text="00.05.40.Ca" description="Noise" />
+        </category>
+        <category ID="00.05.40.Fb">
+          <label xml:lang="en" text="00.05.40.Fb" description="Random walks and Levy flights" />
+        </category>
+        <category ID="00.05.40.Jc">
+          <label xml:lang="en" text="00.05.40.Jc" description="Brownian motion" />
+        </category>
+      </category>
+      <category ID="00.05.45.-a">
+        <label xml:lang="en" text="00.05.45.-a"
+               description="Nonlinear dynamics and chaos (see also section 45 Classical mechanics of discrete systems; for chaos in fluid dynamics, see 47.52.+j; for chaos in superconductivity, see 74.40.De)" />
+        <category ID="00.05.45.Ac">
+          <label xml:lang="en" text="00.05.45.Ac" description="Low-dimensional chaos" />
+        </category>
+        <category ID="00.05.45.Df">
+          <label xml:lang="en" text="00.05.45.Df"
+                 description="Fractals (see also 47.53.+n Fractals in fluid dynamics; 61.43.Hv Fractals; macroscopic aggregates in structure of solids)" />
+        </category>
+        <category ID="00.05.45.Gg">
+          <label xml:lang="en" text="00.05.45.Gg" description="Control of chaos, applications of chaos" />
+        </category>
+        <category ID="00.05.45.Jn">
+          <label xml:lang="en" text="00.05.45.Jn" description="High-dimensional chaos" />
+        </category>
+        <category ID="00.05.45.Mt">
+          <label xml:lang="en" text="00.05.45.Mt" description="Quantum chaos; semiclassical methods" />
+        </category>
+        <category ID="00.05.45.Pq">
+          <label xml:lang="en" text="00.05.45.Pq" description="Numerical simulations of chaotic systems" />
+        </category>
+        <category ID="00.05.45.Ra">
+          <label xml:lang="en" text="00.05.45.Ra" description="Coupled map lattices" />
+        </category>
+        <category ID="00.05.45.Tp">
+          <label xml:lang="en" text="00.05.45.Tp" description="Time series analysis" />
+        </category>
+        <category ID="00.05.45.Vx">
+          <label xml:lang="en" text="00.05.45.Vx" description="Communication using chaos" />
+        </category>
+        <category ID="00.05.45.Xt">
+          <label xml:lang="en" text="00.05.45.Xt" description="Synchronization; coupled oscillators" />
+        </category>
+        <category ID="00.05.45.Yv">
+          <label xml:lang="en" text="00.05.45.Yv"
+                 description="Solitons (see 52.35.Sb for solitons in plasma; for solitons in acoustics, see 43.25.Rq—in Acoustics Appendix; see 42.50.Md, 42.65.Tg, 42.81.Dp for solitons in optics; see also 03.75.Lm in matter waves; for solitons in space plasma physics, see 94.05.Fg; for solitary waves in fluid dynamics, see 47.35.Fg)" />
+        </category>
+      </category>
+      <category ID="00.05.50.+q">
+        <label xml:lang="en" text="00.05.50.+q"
+               description="Lattice theory and statistics (Ising, Potts, etc.) (see also 64.60.Cn Order-disorder transformations, and 75.10.Hk Classical spin models)" />
+      </category>
+      <category ID="00.05.60.-k">
+        <label xml:lang="en" text="00.05.60.-k" description="Transport processes" />
+        <category ID="00.05.60.Cd">
+          <label xml:lang="en" text="00.05.60.Cd" description="Classical transport" />
+        </category>
+        <category ID="00.05.60.Gg">
+          <label xml:lang="en" text="00.05.60.Gg" description="Quantum transport" />
+        </category>
+      </category>
+      <category ID="00.05.65.+b">
+        <label xml:lang="en" text="00.05.65.+b"
+               description="Self-organized systems (see also 45.70.-n in classical mechanics of discrete systems)" />
+      </category>
+      <category ID="00.05.70.-a">
+        <label xml:lang="en" text="00.05.70.-a"
+               description="Thermodynamics (see also section 64 Equations of state, phase equilibria, and phase transitions, and section 65 Thermal properties of condensed matter; for chemical thermodynamics, see 82.60.-s; for thermodynamics of plasmas, see 52.25.Kn; for thermodynamic properties of quantum fluids, see 67.25.bd, and 67.30.ef; for thermodynamics of nanoparticles, see 82.60.Qr, and 65.80.-g; for thermodynamic processes in astrophysics, see 95.30.Tg; for thermodynamics in volcanology, see 91.40.Pc)" />
+        <category ID="00.05.70.Ce">
+          <label xml:lang="en" text="00.05.70.Ce"
+                 description="Thermodynamic functions and equations of state (see also 51.30.+i Thermodynamic properties, equations of state in physics of gases; for equations of state of specific substances, see 64.30.-t; for equations of state of nuclear matter, and of neutron-star matter, see 21.65.Mn and 26.60.Kp, respectively; see also 95.30.Tg in astronomy; for thermodynamic properties of superconductors, see 74.25.Bt)" />
+        </category>
+        <category ID="00.05.70.Fh">
+          <label xml:lang="en" text="00.05.70.Fh"
+                 description="Phase transitions: general studies (see also 05.30.Rt Quantum phase transitions in quantum statistical mechanics; 64.70.Tg Quantum phase transitions in specific phase transitions; 73.43.Nq Quantum phase transitions in quantum Hall effects; for superconductivity phase diagrams, see 74.25.Dw; for magnetic phase boundaries, see 75.30.Kz; for ferroelectric phase transitions, see 77.80.B-)" />
+        </category>
+        <category ID="00.05.70.Jk">
+          <label xml:lang="en" text="00.05.70.Jk"
+                 description="Critical point phenomena (for quantum critical phenomena in superconductivity, see 74.40.Kb)" />
+        </category>
+        <category ID="00.05.70.Ln">
+          <label xml:lang="en" text="00.05.70.Ln"
+                 description="Nonequilibrium and irreversible thermodynamics (see also 82.40.Bj Oscillations, chaos, and bifurcations in physical chemistry and chemical physics)" />
+        </category>
+        <category ID="00.05.70.Np">
+          <label xml:lang="en" text="00.05.70.Np"
+                 description="Interface and surface thermodynamics (see also 68.35.Md Surface thermodynamics, surface energies in surfaces and interfaces)" />
+        </category>
+      </category>
+      <category ID="00.05.90.+m">
+        <label xml:lang="en" text="00.05.90.+m"
+               description="Other topics in statistical physics, thermodynamics, and nonlinear dynamical systems (restricted to new topics in section 05)" />
+      </category>
+    </category>
+    <category ID="00.06.">
+      <label xml:lang="en" text="00.06." description="measurements, and laboratory procedures" />
+      <category ID="00.06.20.-f">
+        <label xml:lang="en" text="00.06.20.-f" description="Metrology" />
+        <category ID="00.06.20.Dk">
+          <label xml:lang="en" text="00.06.20.Dk" description="Measurement and error theory" />
+        </category>
+        <category ID="00.06.20.F-">
+          <label xml:lang="en" text="00.06.20.F-" description="Units and standards" />
+        </category>
+        <category ID="00.06.20.fa">
+          <label xml:lang="en" text="00.06.20.fa" description="Units" />
+        </category>
+        <category ID="00.06.20.fb">
+          <label xml:lang="en" text="00.06.20.fb" description="Standards and calibration" />
+        </category>
+        <category ID="00.06.20.Jr">
+          <label xml:lang="en" text="00.06.20.Jr" description="Determination of fundamental constants" />
+        </category>
+      </category>
+      <category ID="00.06.30.-k">
+        <label xml:lang="en" text="00.06.30.-k"
+               description="Measurements common to several branches of physics and astronomy" />
+        <category ID="00.06.30.Bp">
+          <label xml:lang="en" text="00.06.30.Bp"
+                 description="Spatial dimensions (e.g., position, lengths, volume, angles, and displacements)" />
+        </category>
+        <category ID="00.06.30.Dr">
+          <label xml:lang="en" text="00.06.30.Dr" description="Mass and density" />
+        </category>
+        <category ID="00.06.30.Ft">
+          <label xml:lang="en" text="00.06.30.Ft" description="Time and frequency" />
+        </category>
+        <category ID="00.06.30.Gv">
+          <label xml:lang="en" text="00.06.30.Gv" description="Velocity, acceleration, and rotation" />
+        </category>
+        <category ID="00.06.30.Ka">
+          <label xml:lang="en" text="00.06.30.Ka"
+                 description="Basic electromagnetic quantities (see also 84.37.+q Measurements in electric variables)" />
+        </category>
+      </category>
+      <category ID="00.06.60.-c">
+        <label xml:lang="en" text="00.06.60.-c" description="Laboratory procedures" />
+        <category ID="00.06.60.Ei">
+          <label xml:lang="en" text="00.06.60.Ei"
+                 description="Sample preparation (including design of sample holders)" />
+        </category>
+        <category ID="00.06.60.Jn">
+          <label xml:lang="en" text="00.06.60.Jn" description="High-speed techniques (microsecond to femtosecond)" />
+        </category>
+        <category ID="00.06.60.Mr">
+          <label xml:lang="en" text="00.06.60.Mr" description="Testing and inspecting procedures" />
+        </category>
+        <category ID="00.06.60.Sx">
+          <label xml:lang="en" text="00.06.60.Sx"
+                 description="Positioning and alignment; manipulating, remote handling" />
+        </category>
+        <category ID="00.06.60.Vz">
+          <label xml:lang="en" text="00.06.60.Vz"
+                 description="Workshop procedures (welding, machining, lubrication, bearings, etc.)" />
+        </category>
+        <category ID="00.06.60.Wa">
+          <label xml:lang="en" text="00.06.60.Wa"
+                 description="Laboratory safety procedures (for national and international laboratory facilities, see 01.52.+r)" />
+        </category>
+      </category>
+      <category ID="00.06.90.+v">
+        <label xml:lang="en" text="00.06.90.+v"
+               description="Other topics in metrology, measurements, and laboratory procedures (restricted to new topics in section 06)" />
+      </category>
+    </category>
+    <category ID="00.07.">
+      <label xml:lang="en" text="00.07."
+             description="topics in metrology, measurements, and laboratory procedures (restricted to new topics in section 06)" />
+      <category ID="00.07.05.-t">
+        <label xml:lang="en" text="00.07.05.-t"
+               description="Computers in experimental physics (for computers in education, see 01.50.H-, and 01.50.Lc; for quantum computation architectures, see 03.67.Lx; for optical computers, see 42.79.Ta; for computational and simulation techniques, see 02.70.-c in mathematical methods)" />
+        <category ID="00.07.05.Bx">
+          <label xml:lang="en" text="00.07.05.Bx"
+                 description="Computer systems: hardware, operating systems, computer languages, and utilities" />
+        </category>
+        <category ID="00.07.05.Dz">
+          <label xml:lang="en" text="00.07.05.Dz" description="Control systems" />
+        </category>
+        <category ID="00.07.05.Fb">
+          <label xml:lang="en" text="00.07.05.Fb" description="Design of experiments" />
+        </category>
+        <category ID="00.07.05.Hd">
+          <label xml:lang="en" text="00.07.05.Hd" description="Data acquisition: hardware and software" />
+        </category>
+        <category ID="00.07.05.Kf">
+          <label xml:lang="en" text="00.07.05.Kf"
+                 description="Data analysis: algorithms and implementation; data management (for data analysis in nuclear physics, see 29.85.-c)" />
+        </category>
+        <category ID="00.07.05.Mh">
+          <label xml:lang="en" text="00.07.05.Mh" description="Neural networks, fuzzy logic, artificial intelligence" />
+        </category>
+        <category ID="00.07.05.Pj">
+          <label xml:lang="en" text="00.07.05.Pj"
+                 description="Image processing (see also 42.30.Va in optics; 87.57.-s Medical imaging in biological and medical physics; 95.75.Tv Digitization techniques in astronomy)" />
+        </category>
+        <category ID="00.07.05.Rm">
+          <label xml:lang="en" text="00.07.05.Rm"
+                 description="Data presentation and visualization: algorithms and implementation" />
+        </category>
+        <category ID="00.07.05.Tp">
+          <label xml:lang="en" text="00.07.05.Tp" description="Computer modeling and simulation" />
+        </category>
+        <category ID="00.07.05.Wr">
+          <label xml:lang="en" text="00.07.05.Wr"
+                 description="Computer interfaces (for nuclear physics applications, see 29.50.+v)" />
+        </category>
+      </category>
+      <category ID="00.07.07.-a">
+        <label xml:lang="en" text="00.07.07.-a" description="General equipment" />
+        <category ID="00.07.07.Df">
+          <label xml:lang="en" text="00.07.07.Df"
+                 description="Sensors (chemical, optical, electrical, movement, gas, etc.); remote sensing" />
+        </category>
+        <category ID="00.07.07.Hj">
+          <label xml:lang="en" text="00.07.07.Hj"
+                 description="Display and recording equipment, oscilloscopes, TV cameras, etc." />
+        </category>
+        <category ID="00.07.07.Mp">
+          <label xml:lang="en" text="00.07.07.Mp" description="Transducers" />
+        </category>
+        <category ID="00.07.07.Tw">
+          <label xml:lang="en" text="00.07.07.Tw" description="Servo and control equipment; robots" />
+        </category>
+        <category ID="00.07.07.Vx">
+          <label xml:lang="en" text="00.07.07.Vx" description="Hygrometers; hygrometry" />
+        </category>
+      </category>
+      <category ID="00.07.10.-h">
+        <label xml:lang="en" text="00.07.10.-h" description="Mechanical instruments and equipment" />
+        <category ID="00.07.10.Cm">
+          <label xml:lang="en" text="00.07.10.Cm"
+                 description="Micromechanical devices and systems [for micro- and nano-electromechanical systems (MEMS/NEMS), see 85.85.+j in electronic and magnetic devices; see also 81.07.Oj Nanoelectromechanical systems (NEMS) in nanoscale materials and structures; see also 87.80.Ek Mechanical and micromechanical techniques; 87.85.Ox Biomedical instrumentation and transducers including micro-electro-mechanical systems in biological and medical physics]" />
+        </category>
+        <category ID="00.07.10.Fq">
+          <label xml:lang="en" text="00.07.10.Fq" description="Vibration isolation" />
+        </category>
+        <category ID="00.07.10.Lw">
+          <label xml:lang="en" text="00.07.10.Lw" description="Balance systems, tensile machines, etc." />
+        </category>
+        <category ID="00.07.10.Pz">
+          <label xml:lang="en" text="00.07.10.Pz" description="Instruments for strain, force, and torque" />
+        </category>
+      </category>
+      <category ID="00.07.20.-n">
+        <label xml:lang="en" text="00.07.20.-n" description="Thermal instruments and apparatus" />
+        <category ID="00.07.20.Dt">
+          <label xml:lang="en" text="00.07.20.Dt" description="Thermometers" />
+        </category>
+        <category ID="00.07.20.Fw">
+          <label xml:lang="en" text="00.07.20.Fw"
+                 description="Calorimeters (for calorimeters as radiation detectors, see 29.40.Vj)" />
+        </category>
+        <category ID="00.07.20.Hy">
+          <label xml:lang="en" text="00.07.20.Hy" description="Furnaces; heaters" />
+        </category>
+        <category ID="00.07.20.Ka">
+          <label xml:lang="en" text="00.07.20.Ka" description="High-temperature instrumentation; pyrometers" />
+        </category>
+        <category ID="00.07.20.Mc">
+          <label xml:lang="en" text="00.07.20.Mc"
+                 description="Cryogenics; refrigerators, low-temperature detectors, and other low-temperature equipment" />
+        </category>
+        <category ID="00.07.20.Pe">
+          <label xml:lang="en" text="00.07.20.Pe" description="Heat engines; heat pumps; heat pipes" />
+        </category>
+      </category>
+      <category ID="00.07.30.-t">
+        <label xml:lang="en" text="00.07.30.-t" description="Vacuum apparatus" />
+        <category ID="00.07.30.Bx">
+          <label xml:lang="en" text="00.07.30.Bx" description="Degasification, residual gas" />
+        </category>
+        <category ID="00.07.30.Cy">
+          <label xml:lang="en" text="00.07.30.Cy" description="Vacuum pumps" />
+        </category>
+        <category ID="00.07.30.Dz">
+          <label xml:lang="en" text="00.07.30.Dz" description="Vacuum gauges" />
+        </category>
+        <category ID="00.07.30.Hd">
+          <label xml:lang="en" text="00.07.30.Hd" description="Vacuum testing methods; leak detectors" />
+        </category>
+        <category ID="00.07.30.Kf">
+          <label xml:lang="en" text="00.07.30.Kf" description="Vacuum chambers, auxiliary apparatus, and materials" />
+        </category>
+      </category>
+      <category ID="00.07.35.+k">
+        <label xml:lang="en" text="00.07.35.+k"
+               description="High-pressure apparatus; shock tubes; diamond anvil cells" />
+      </category>
+      <category ID="00.07.50.-e">
+        <label xml:lang="en" text="00.07.50.-e" description="Electrical and electronic instruments and components" />
+        <category ID="00.07.50.Ek">
+          <label xml:lang="en" text="00.07.50.Ek"
+                 description="Circuits and circuit components (see also 84.30.-r Electronic circuits and 84.32.-y Passive circuit components)" />
+        </category>
+        <category ID="00.07.50.Hp">
+          <label xml:lang="en" text="00.07.50.Hp" description="Electrical noise and shielding equipment" />
+        </category>
+        <category ID="00.07.50.Ls">
+          <label xml:lang="en" text="00.07.50.Ls" description="Electrometers" />
+        </category>
+        <category ID="00.07.50.Qx">
+          <label xml:lang="en" text="00.07.50.Qx"
+                 description="Signal processing electronics (see also 84.40.Ua in radiowave and microwave technology; 87.85.Ng Biological signal processing in biomedical engineering)" />
+        </category>
+      </category>
+      <category ID="00.07.55.-w">
+        <label xml:lang="en" text="00.07.55.-w" description="Magnetic instruments and components" />
+        <category ID="00.07.55.Db">
+          <label xml:lang="en" text="00.07.55.Db"
+                 description="Generation of magnetic fields; magnets (for superconducting magnets, see 84.71.Ba; for beam focusing magnets, see 41.85.Lc in beam optics)" />
+        </category>
+        <category ID="00.07.55.Ge">
+          <label xml:lang="en" text="00.07.55.Ge" description="Magnetometers for magnetic field measurements" />
+        </category>
+        <category ID="00.07.55.Jg">
+          <label xml:lang="en" text="00.07.55.Jg"
+                 description="Magnetometers for susceptibility, magnetic moment, and magnetization measurements" />
+        </category>
+        <category ID="00.07.55.Nk">
+          <label xml:lang="en" text="00.07.55.Nk" description="Magnetic shielding in instruments" />
+        </category>
+      </category>
+      <category ID="00.07.57.-c">
+        <label xml:lang="en" text="00.07.57.-c"
+               description="Infrared, submillimeter wave, microwave and radiowave instruments and equipment (for infrared and radio telescopes, see 95.55.Cs, 95.55.Fw, and 95.55.Jz in astronomy; for biophysical spectroscopic applications, see 87.64.-t)" />
+        <category ID="00.07.57.Hm">
+          <label xml:lang="en" text="00.07.57.Hm"
+                 description="Infrared, submillimeter wave, microwave, and radiowave sources (see also 42.72.Ai Infrared sources in optics)" />
+        </category>
+        <category ID="00.07.57.Kp">
+          <label xml:lang="en" text="00.07.57.Kp"
+                 description="Bolometers; infrared, submillimeter wave, microwave, and radiowave receivers and detectors (see also 85.60.Gz Photodetectors in electronic and magnetic devices, and 95.55.Rg Photoconductors and bolometers in astronomy)" />
+        </category>
+        <category ID="00.07.57.Pt">
+          <label xml:lang="en" text="00.07.57.Pt"
+                 description="Submillimeter wave, microwave and radiowave spectrometers; magnetic resonance spectrometers, auxiliary equipment, and techniques" />
+        </category>
+        <category ID="00.07.57.Ty">
+          <label xml:lang="en" text="00.07.57.Ty"
+                 description="Infrared spectrometers, auxiliary equipment, and techniques" />
+        </category>
+      </category>
+      <category ID="00.07.60.-j">
+        <label xml:lang="en" text="00.07.60.-j"
+               description="Optical instruments and equipment (see also 87.64.M- Optical microscopy in biological and medical physics; for optical sources, see 42.72.-g; see also 42.79.-e Optical elements, devices and systems; for optoelectronic devices, see 85.60.-q; for optical telescopes, see 95.55.Cs; for photometric, polarimetric, and spectroscopic equipment in astronomy, see 95.55.Qf)" />
+        <category ID="00.07.60.Dq">
+          <label xml:lang="en" text="00.07.60.Dq" description="Photometers, radiometers, and colorimeters" />
+        </category>
+        <category ID="00.07.60.Fs">
+          <label xml:lang="en" text="00.07.60.Fs" description="Polarimeters and ellipsometers" />
+        </category>
+        <category ID="00.07.60.Hv">
+          <label xml:lang="en" text="00.07.60.Hv" description="Refractometers and reflectometers" />
+        </category>
+        <category ID="00.07.60.Ly">
+          <label xml:lang="en" text="00.07.60.Ly" description="Interferometers" />
+        </category>
+        <category ID="00.07.60.Pb">
+          <label xml:lang="en" text="00.07.60.Pb"
+                 description="Conventional optical microscopes (for near-field scanning optical microscopes, see 07.79.Fc; for x-ray microscopes, see 07.85.Tt)" />
+        </category>
+        <category ID="00.07.60.Rd">
+          <label xml:lang="en" text="00.07.60.Rd" description="Visible and ultraviolet spectrometers" />
+        </category>
+        <category ID="00.07.60.Vg">
+          <label xml:lang="en" text="00.07.60.Vg"
+                 description="Fiber-optic instruments (see also 42.81.-i Fiber optics)" />
+        </category>
+      </category>
+      <category ID="00.07.64.+z">
+        <label xml:lang="en" text="00.07.64.+z"
+               description="Acoustic instruments and equipment (see also 43.58.+z—in acoustics)" />
+      </category>
+      <category ID="00.07.68.+m">
+        <label xml:lang="en" text="00.07.68.+m" description="Photography, photographic instruments; xerography" />
+      </category>
+      <category ID="00.07.75.+h">
+        <label xml:lang="en" text="00.07.75.+h"
+               description="Mass spectrometers (see also 82.80.Ms, 82.80.Nj, and 82.80.Rt in physical chemistry and chemical physics)" />
+      </category>
+      <category ID="00.07.77.-n">
+        <label xml:lang="en" text="00.07.77.-n"
+               description="Atomic, molecular, and charged-particle sources and detectors" />
+        <category ID="00.07.77.Gx">
+          <label xml:lang="en" text="00.07.77.Gx"
+                 description="Atomic and molecular beam sources and detectors (see also 37.20.+j Atomic and molecular beam sources and techniques, in atomic and molecular physics)" />
+        </category>
+        <category ID="00.07.77.Ka">
+          <label xml:lang="en" text="00.07.77.Ka"
+                 description="Charged-particle beam sources and detectors (see also 29.40.-n Radiation detectors in nuclear physics)" />
+        </category>
+      </category>
+      <category ID="00.07.78.+s">
+        <label xml:lang="en" text="00.07.78.+s"
+               description="Electron, positron, and ion microscopes; electron diffractometers" />
+      </category>
+      <category ID="00.07.79.-v">
+        <label xml:lang="en" text="00.07.79.-v"
+               description="Scanning probe microscopes and components (see also 68.37.-d Microscopy of surfaces, interfaces, and thin films)" />
+        <category ID="00.07.79.Cz">
+          <label xml:lang="en" text="00.07.79.Cz" description="Scanning tunneling microscopes" />
+        </category>
+        <category ID="00.07.79.Fc">
+          <label xml:lang="en" text="00.07.79.Fc" description="Near-field scanning optical microscopes" />
+        </category>
+        <category ID="00.07.79.Lh">
+          <label xml:lang="en" text="00.07.79.Lh" description="Atomic force microscopes" />
+        </category>
+        <category ID="00.07.79.Pk">
+          <label xml:lang="en" text="00.07.79.Pk" description="Magnetic force microscopes" />
+        </category>
+        <category ID="00.07.79.Sp">
+          <label xml:lang="en" text="00.07.79.Sp" description="Friction force microscopes" />
+        </category>
+      </category>
+      <category ID="00.07.81.+a">
+        <label xml:lang="en" text="00.07.81.+a"
+               description="Electron and ion spectrometers (see also 29.30.Dn Electron spectroscopy; 29.30.Ep Charged-particle spectroscopy in nuclear physics)" />
+      </category>
+      <category ID="00.07.85.-m">
+        <label xml:lang="en" text="00.07.85.-m"
+               description="X- and γ-ray instruments (for x- and γ-ray telescopes, see 95.55.Ka in astronomy; for x-ray beams and x-ray optics, see 41.50.+h)" />
+        <category ID="00.07.85.Fv">
+          <label xml:lang="en" text="00.07.85.Fv"
+                 description="X- and γ-ray sources, mirrors, gratings, and detectors" />
+        </category>
+        <category ID="00.07.85.Jy">
+          <label xml:lang="en" text="00.07.85.Jy" description="Diffractometers" />
+        </category>
+        <category ID="00.07.85.Nc">
+          <label xml:lang="en" text="00.07.85.Nc" description="X-ray and γ-ray spectrometers" />
+        </category>
+        <category ID="00.07.85.Qe">
+          <label xml:lang="en" text="00.07.85.Qe" description="Synchrotron radiation instrumentation" />
+        </category>
+        <category ID="00.07.85.Tt">
+          <label xml:lang="en" text="00.07.85.Tt" description="X-ray microscopes" />
+        </category>
+      </category>
+      <category ID="00.07.87.+v">
+        <label xml:lang="en" text="00.07.87.+v"
+               description="Spaceborne and space research instruments, apparatus, and components (satellites, space vehicles, etc.) (for instrumentation for space plasma physics, ionosphere, and magnetosphere, see 94.80.+g; see also 95.55.-n and 95.40.+s in astronomy; for materials testing in space, see 81.70.Ha)" />
+      </category>
+      <category ID="00.07.88.+y">
+        <label xml:lang="en" text="00.07.88.+y" description="Instruments for environmental pollution measurements" />
+      </category>
+      <category ID="00.07.89.+b">
+        <label xml:lang="en" text="00.07.89.+b"
+               description="Environmental effects on instruments (e.g., radiation and pollution effects) (for environmental effects on optical elements, devices, and systems, see 42.88.+h)" />
+      </category>
+      <category ID="00.07.90.+c">
+        <label xml:lang="en" text="00.07.90.+c"
+               description="Other topics in instruments, apparatus, and components common to several branches of physics and astronomy (restricted to new topics in section 07)" />
+      </category>
+    </category>
+  </categories>
+</mycoreclass>
