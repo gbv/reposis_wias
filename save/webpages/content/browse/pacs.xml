@@ -13,6 +13,7 @@
                              countresults="true"
                                addclassid="true"
                               emptyleaves="true"
+                           adddescription="true"
                                     style="bootstrap"
                                parameters="sort=mods.dateIssued+desc"
                              addParameter="XSL.template=template_mir"
