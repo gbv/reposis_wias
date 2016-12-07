@@ -3,9 +3,9 @@
 
 <MyCoReWebPage>
 
-  <section i18n="browse.ddc" xml:lang="all">
+  <section i18n="browse.pacs" xml:lang="all">
 
-    <h3><i18n key="browse.ddc" /></h3>
+    <h3><i18n key="browse.pacs" /></h3>
     <classificationbrowser classification="PACS"
                                objecttype="mods"
                               restriction="+category.top:&quot;state:published&quot;"
