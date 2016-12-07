@@ -27,3 +27,15 @@ html body header #header_box #project_logo_box a:focus {
   color: #004A9A;
   text-decoration: underline;
 }
+
+
+/* workaround, have to be fixed in classification browser */
+.cbDescription {
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.cbList li {
+  position: relative;
+}
