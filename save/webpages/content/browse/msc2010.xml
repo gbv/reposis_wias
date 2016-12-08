@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+
+  <section i18n="browse.msc2010" xml:lang="all">
+
+    <h3><i18n key="browse.msc2010" /></h3>
+    <classificationbrowser classification="MSC2010"
+                               objecttype="mods"
+                              restriction="+category.top:&quot;state:published&quot;"
+                                    field="category.top"
+                             countresults="true"
+                               addclassid="true"
+                              emptyleaves="true"
+                           adddescription="true"
+                                    style="bootstrap"
+                               parameters="sort=mods.dateIssued+desc"
+                             addParameter="XSL.template=template_mir"
+    />
+
+  </section>
+
+</MyCoReWebPage>
