@@ -57,6 +57,10 @@
       <label xml:lang="de">PACS</label>
       <label xml:lang="en">PACS</label>
     </item>
+    <item href="/content/browse/msc2010.xml" type="intern">
+      <label xml:lang="de">MSC 2010</label>
+      <label xml:lang="en">MSC 2010</label>
+    </item>
     <item href="/content/browse/genres.xml" type="intern">
       <label xml:lang="de">Dokumenttypen</label>
       <label xml:lang="en">Genres</label>
