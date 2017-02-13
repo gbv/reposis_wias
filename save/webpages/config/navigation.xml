@@ -53,6 +53,10 @@
   <!-- search menu  -->
     <label xml:lang="de">Blättern</label>
     <label xml:lang="en">Browse</label>
+    <item href="/content/browse/topic_domain.xml" type="intern">
+      <label xml:lang="de">Themengebiete</label>
+      <label xml:lang="en">Themengebiete</label>
+    </item>
     <item href="/content/browse/pacs.xml" type="intern">
       <label xml:lang="de">PACS</label>
       <label xml:lang="en">PACS</label>
