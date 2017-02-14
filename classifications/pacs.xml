@@ -2,6 +2,7 @@
 <mycoreclass xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="PACS" xmlns:xlink="http://www.w3.org/1999/xlink"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <label xml:lang="en" text="Physics and Astronomy Classification Scheme" />
+  <label xml:lang="x-uri" text="https://publications.wias-berlin.de/pacs"/>
   <categories>
     <category ID="00.01.">
       <label xml:lang="en" text="00.01." description="education, history, and philosophy" />

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="wias_topic_domain">
-  <label xml:lang="en" text="genre" description="List of WIAS specific topic domains" />
-  <label xml:lang="de" text="Genre" description="Liste der Themengebiete des WIAS" />
+  <label xml:lang="en" text="Topic Domain" description="List of WIAS specific topic domains" />
+  <label xml:lang="de" text="Themengebiet" description="Liste der Themengebiete des WIAS" />
+  <label xml:lang="x-uri" text="https://publications.wias-berlin.de/wias_topic_domain"/>
   <categories>
     <category ID="topic_010">
       <label xml:lang="de" text="Algorithmen für die Erzeugung 3D randkonformer Delaunaygitter" />

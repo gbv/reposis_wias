@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="MCRClassification.xsd"
+             ID="mir_institutes">
+   <label xml:lang="en" text="WGL" description="WGL members"/>
+   <label xml:lang="de"
+          text="Wissenschaftsgemeinschaft Gottfried Wilhelm Leibniz"
+          description="Liste aller Mitglieder der WGL"/>
+   <label xml:lang="x-uri" text="https://publications.wias-berlin.de/wgl"/>
+   <categories>
+      <category ID="AIP">
+         <label xml:lang="de"
+                text="Astrophysikalisches Institut Potsdam"
+                description="Bundesland: Brandenburg, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="ARL">
+         <label xml:lang="de"
+                text="Akademie für Raumforschung und Landesplanung - Leibniz-Forum für Raumwissenschaften, Hannover"
+                description="Bundesland: Niedersachsen, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="ATB">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Agrartechnik, Potsdam-Bornim"
+                description="Bundesland: Brandenburg, Sektion: E, Mitglied von 1992"/>
+      </category>
+      <category ID="BESSY">
+         <label xml:lang="de"
+                text="Berliner Elektronenspeicherring-Gesellschaft für Synchrotronstrahlung"
+                description="Bundesland: Berlin, Sektion: D, Mitglied von 2001 bis 2007"/>
+      </category>
+      <category ID="BIPS">
+         <label xml:lang="de"
+                text="BIPS-Institut für Epidemiologie und Präventionsforschung GmbH"
+                description="Bundesland: Bremen, Sektion: C, Mitglied von 2009"/>
+      </category>
+      <category ID="BNI">
+         <label xml:lang="de"
+                text="Bernhard-Nocht-Institut für Tropenmedizin, Hamburg"
+                description="Bundesland: Hamburg, Sektion: C, Mitglied von 1949"/>
+      </category>
+      <category ID="DBI">
+         <label xml:lang="de"
+                text="Deutsches Bibliotheksinstitut"
+                description="Mitglied von 1990 bis 1998"/>
+      </category>
+      <category ID="DBM">
+         <label xml:lang="de"
+                text="Deutsches Bergbau-Museum, Bochum"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: A, Mitglied von 1997"/>
+      </category>
+      <category ID="DDZ">
+         <label xml:lang="de"
+                text="Deutsches Diabetes-Zentrum - Leibniz-Zentrum für Diabetes-Forschung an der Heinrich-Heine-Universität Düsseldorf"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: C, Mitglied von 1977"/>
+      </category>
+      <category ID="DFA">
+         <label xml:lang="de"
+                text="Deutsche Forschungsanstalt für Lebensmittelchemie, Garching"
+                description="Bundesland: Bayern, Sektion: C, Mitglied von 1977"/>
+      </category>
+      <category ID="DIE">
+         <label xml:lang="de"
+                text="Deutsches Institut für Erwachsenenbildung - Leibniz-Zentrum für Lebenslanges Lernen, Bonn"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: A, Mitglied von 1977"/>
+      </category>
+      <category ID="DIfE">
+         <label xml:lang="de"
+                text="Deutsches Institut für Ernährungsforschung, Potsdam-Rehbrücke"
+                description="Bundesland: Brandenburg, Sektion: C, Mitglied von 1992"/>
+      </category>
+      <category ID="DIFF">
+         <label xml:lang="de"
+                text="Deutsches Institut für Fernstudienforschung"
+                description="Mitglied von 1990 bis 1999"/>
+      </category>
+      <category ID="DIPF">
+         <label xml:lang="de"
+                text="Deutsches Institut für Internationale Pädagogische Forschung, Frankfurt am Main"
+                description="Bundesland: Hessen, Sektion: A, Mitglied von 1965"/>
+      </category>
+      <category ID="DIW">
+         <label xml:lang="de"
+                text="Deutsches Institut für Wirtschaftsforschung, Berlin"
+                description="Bundesland: Berlin, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="DM">
+         <label xml:lang="de"
+                text="Deutsches Museum, München"
+                description="Bundesland: Bayern, Sektion: A, Mitglied von 1949"/>
+      </category>
+      <category ID="DPZ">
+         <label xml:lang="de"
+                text="Deutsches Primatenzentrum - Leibniz-Institut für Primatenforschung, Göttingen"
+                description="Bundesland: Niedersachsen, Sektion: C, Mitglied von 1977"/>
+      </category>
+      <category ID="DRFZ">
+         <label xml:lang="de"
+                text="Deutsches Rheuma-Forschungszentrum Berlin"
+                description="Bundesland: Berlin, Sektion: C, Mitglied von 2009"/>
+      </category>
+      <category ID="DSM">
+         <label xml:lang="de"
+                text="Deutsches Schiffahrtsmuseum, Bremerhaven"
+                description="Bundesland: Bremen, Sektion: A, Mitglied von 1980"/>
+      </category>
+      <category ID="DSMZ">
+         <label xml:lang="de"
+                text="Deutsche Sammlung von Mikroorganismen und Zellkulturen, Braunschweig"
+                description="Bundesland: Niedersachsen, Sektion: C, Mitglied von 1996"/>
+      </category>
+      <category ID="FBH">
+         <label xml:lang="de"
+                text="Ferdinand-Braun-Institut für Höchstfrequenztechnik, Berlin"
+                description="Bundesland: Berlin, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="FBN">
+         <label xml:lang="de"
+                text="Forschungsinstitut für die Biologie landwirtschaftlicher Nutztiere, Dummerstorf"
+                description="Bundesland: Mecklenburg-Vorpommern, Sektion: C, Mitglied von 1993"/>
+      </category>
+      <category ID="FCH">
+         <label xml:lang="de"
+                text="Fachinformationszentrum Chemie, Berlin"
+                description="Bundesland: Berlin, Sektion: D, Mitglied von 1982"/>
+      </category>
+      <category ID="FIZ KA">
+         <label xml:lang="de"
+                text="Fachinformationszentrum Karlsruhe"
+                description="Bundesland: Baden-Württemberg, Sektion: D, Mitglied von 1977"/>
+      </category>
+      <category ID="FKE">
+         <label xml:lang="de"
+                text="Forschungsinstitut für Kinderernährung"
+                description="Mitglied von 1990 bis 1997"/>
+      </category>
+      <category ID="FLI">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Altersforschung - Fritz-Lipmann-Institut, Jena"
+                description="Bundesland: Thüringen, Sektion: C, Mitglied von 1992"/>
+      </category>
+      <category ID="FMP">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Molekulare Pharmakologie, Berlin"
+                description="Bundesland: Berlin, Sektion: C, Mitglied von 1992"/>
+      </category>
+      <category ID="FÖV">
+         <label xml:lang="de"
+                text="Deutsches Forschungsinstitut für öffentliche Verwaltung Speyer"
+                description="Bundesland: Rheinland-Pfalz, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="FZB">
+         <label xml:lang="de"
+                text="Forschungszentrum Borstel - Leibniz-Zentrum für Medizin und Biowissenschaften, Borstel"
+                description="Bundesland: Schleswig-Holstein, Sektion: C, Mitglied von 1977"/>
+      </category>
+      <category ID="FZD">
+         <label xml:lang="de"
+                text="Forschungszentrum Dresden - Rossendorf"
+                description="Bundesland: Sachsen, Sektion: D, Mitglied von 1992 bis 2010"/>
+      </category>
+      <category ID="GEI">
+         <label xml:lang="de"
+                text="Georg-Eckert-Institut für internationale Schulbuchforschung"
+                description="Bundesland: Niedersachsen, Sektion: A, Mitglied von 2011"/>
+      </category>
+      <category ID="GESIS">
+         <label xml:lang="de"
+                text="GESIS - Leibniz-Institut für Sozialwissenschaften, Bonn-Köln-Mannheim"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: B, Mitglied von 1987"/>
+      </category>
+      <category ID="GIGA">
+         <label xml:lang="de"
+                text="GIGA German Institute of Global and Area Studies. Leibniz-Institut für Globale und Regionale Studien, Hamburg"
+                description="Bundesland: Hamburg, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="GNM">
+         <label xml:lang="de"
+                text="Germanisches Nationalmuseum, Nürnberg"
+                description="Bundesland: Bayern, Sektion: A, Mitglied von 1977"/>
+      </category>
+      <category ID="GS">
+         <label xml:lang="de"
+                text="Geschäftsstelle"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: Z"/>
+      </category>
+      <category ID="HHI">
+         <label xml:lang="de"
+                text="Heinricht-Hertz-Institut für Nachrichtentechnik"
+                description="Mitglied von 1990 bis 2001"/>
+      </category>
+      <category ID="HI">
+         <label xml:lang="de"
+                text="Herder-Institut, Marburg"
+                description="Bundesland: Hessen, Sektion: A, Mitglied von 1977"/>
+      </category>
+      <category ID="HKI">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Naturstoff-Forschung und Infektionsbiologie - Hans-Knöll-Institut, Jena"
+                description="Bundesland: Thüringen, Sektion: C, Mitglied von 2003"/>
+      </category>
+      <category ID="HPI">
+         <label xml:lang="de"
+                text="Heinrich-Pette-Institut für Experimentelle Virologie und Immunologie an der Universität Hamburg"
+                description="Bundesland: Hamburg, Sektion: C, Mitglied von 1955"/>
+      </category>
+      <category ID="HSFK">
+         <label xml:lang="de"
+                text="Hessische Stiftung Friedens- und Konfliktforschung"
+                description="Bundesland: Hessen, Sektion: B, Mitglied von 2009"/>
+      </category>
+      <category ID="HWWA">
+         <label xml:lang="de"
+                text="Hamburgisches Welt-Wirtschafts-Archiv"
+                description="Mitglied von 1990 bis 2005, Kommentar: Zusammengelegt mit der ZBW"/>
+      </category>
+      <category ID="IAMO">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Agrarentwicklung in Mittel- und Osteuropa, Halle"
+                description="Bundesland: Sachsen-Anhalt, Sektion: B, Mitglied von 1994"/>
+      </category>
+      <category ID="IAP">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Atmosphärenphysik an der Universität Rostock, Kühlungsborn"
+                description="Bundesland: Mecklenburg-Vorpommern, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="IDS">
+         <label xml:lang="de"
+                text="Institut für Deutsche Sprache, Mannheim"
+                description="Bundesland: Baden-Württemberg, Sektion: A, Mitglied von 1977"/>
+      </category>
+      <category ID="IEG">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Europäishe Geschichte"
+                description="Bundesland: Rheinland-Pfalz, Sektion: A, Mitglied von 2012"/>
+      </category>
+      <category ID="IfADo">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Arbeitsforschung an der TU Dortmund"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: C, Mitglied von 1977"/>
+      </category>
+      <category ID="IfE">
+         <label xml:lang="de"
+                text="Institut für Erdölforschung"
+                description="Mitglied von 1990 bis 1997"/>
+      </category>
+      <category ID="IfL">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Länderkunde, Leipzig"
+                description="Bundesland: Sachsen, Sektion: B, Mitglied von 1992"/>
+      </category>
+      <category ID="IfM">
+         <label xml:lang="de"
+                text="Institut für Meereswissenschaften"
+                description="Mitglied von 1968 bis 2003"/>
+      </category>
+      <category ID="IFM-GEOMAR">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Meereswissenschaften, Kiel"
+                description="Bundesland: Schleswig-Holstein, Sektion: E, Mitglied von 2004 bis 2011, Kommentar: Früher IfM"/>
+      </category>
+      <category ID="ifo">
+         <label xml:lang="de"
+                text="ifo Institut für Wirtschaftsforschung, München"
+                description="Bundesland: Bayern, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="IfT">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Troposphärenforschung, Leipzig"
+                description="Bundesland: Sachsen, Sektion: E, Mitglied von 1992"/>
+      </category>
+      <category ID="IfW">
+         <label xml:lang="de"
+                text="Institut für Weltwirtschaft an der Universität Kiel"
+                description="Bundesland: Schleswig-Holstein, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="IFW">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Festkörper- und Werkstoffforschung, Dresden"
+                description="Bundesland: Sachsen, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="IfZ">
+         <label xml:lang="de"
+                text="Institut für Zeitgeschichte, München-Berlin"
+                description="Bundesland: Bayern, Sektion: A, Mitglied von 1977"/>
+      </category>
+      <category ID="IGB">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Gewässerökologie und Binnenfischerei, Berlin"
+                description="Bundesland: Berlin, Sektion: E, Mitglied von 1992"/>
+      </category>
+      <category ID="IGZ">
+         <label xml:lang="de"
+                text="Institut für Gemüse- und Zierpflanzenbau, Großbeeren &amp; Erfurt"
+                description="Bundesland: Brandenburg, Sektion: E, Mitglied von 1992"/>
+      </category>
+      <category ID="IHP">
+         <label xml:lang="de"
+                text="Innovations for High Performance Microelectronics/Institut für innovative Mikroelektronik, Frankfurt (Oder)"
+                description="Bundesland: Brandenburg, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="IKZ">
+         <label xml:lang="de"
+                text="Institut für Kristallzüchtung, Berlin"
+                description="Bundesland: Berlin, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="ILS">
+         <label xml:lang="de"
+                text="Institut für Landes- und Stadtentwicklungsforschung gGmbH"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: B, Mitglied von 2009"/>
+      </category>
+      <category ID="INM">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Neue Materialien, Saarbrücken"
+                description="Bundesland: Saarland, Sektion: D, Mitglied von 1999"/>
+      </category>
+      <category ID="INP">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Plasmaforschung und Technologie, Greifswald"
+                description="Bundesland: Mecklenburg-Vorpommern, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="IOM">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Oberflächenmodifizierung, Leipzig"
+                description="Bundesland: Sachsen, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="IÖR">
+         <label xml:lang="de"
+                text="Leibniz-Institut für ökologische Raumentwicklung, Dresden"
+                description="Bundesland: Sachsen, Sektion: B, Mitglied von 1992"/>
+      </category>
+      <category ID="IOW">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Ostseeforschung Warnemünde an der Universität Rostock"
+                description="Bundesland: Mecklenburg-Vorpommern, Sektion: E, Mitglied von 1992"/>
+      </category>
+      <category ID="IPB">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Pflanzenbiochemie, Halle"
+                description="Bundesland: Sachsen-Anhalt, Sektion: C, Mitglied von 1992"/>
+      </category>
+      <category ID="IPF">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Polymerforschung, Dresden"
+                description="Bundesland: Sachsen, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="IPK">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Pflanzengenetik und Kulturpflanzenforschung, Gatersleben"
+                description="Bundesland: Sachsen-Anhalt, Sektion: C, Mitglied von 1992"/>
+      </category>
+      <category ID="IPN">
+         <label xml:lang="de"
+                text="Leibniz-Institut für die Pädagogik der Naturwissenschaften an der Universität Kiel"
+                description="Bundesland: Schleswig-Holstein, Sektion: A, Mitglied von 1973"/>
+      </category>
+      <category ID="IRS">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Regionalentwicklung und Strukturplanung, Erkner"
+                description="Bundesland: Brandenburg, Sektion: B, Mitglied von 1992"/>
+      </category>
+      <category ID="ISAS">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V."
+                description="Bundesland: Nordrhein-Westfalen, Sektion: D, Mitglied von 1980"/>
+      </category>
+      <category ID="IUF">
+         <label xml:lang="de"
+                text="Institut für umweltmedizinische Forschung an der Heinrich-Heine-Universität Düsseldorf gGmbH"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: C, Mitglied von 2011"/>
+      </category>
+      <category ID="IWF">
+         <label xml:lang="de"
+                text="Institut für Wissen und Medien gGmbH"
+                description="Mitglied von 1990 bis 2006"/>
+      </category>
+      <category ID="IWH">
+         <label xml:lang="de"
+                text="Institut für Wirtschaftsforschung, Halle"
+                description="Bundesland: Sachsen-Anhalt, Sektion: B, Mitglied von 1992"/>
+      </category>
+      <category ID="IWM">
+         <label xml:lang="de"
+                text="Institut für Wissensmedien, Tübingen"
+                description="Bundesland: Baden-Württemberg, Sektion: A, Mitglied von 2001"/>
+      </category>
+      <category ID="IZW">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Zoo- und Wildtierforschung, Berlin"
+                description="Bundesland: Berlin, Sektion: C, Mitglied von 1992"/>
+      </category>
+      <category ID="KIS">
+         <label xml:lang="de"
+                text="Kiepenheuer-Institut für Sonnenphysik, Freiburg"
+                description="Bundesland: Baden-Württemberg, Sektion: D, Mitglied von 1977"/>
+      </category>
+      <category ID="LIAG">
+         <label xml:lang="de"
+                text="Leibniz Institut für Angewandte Geophysik"
+                description="Bundesland: Niedersachsen, Sektion: E, Mitglied von 1949"/>
+      </category>
+      <category ID="LIFA">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Arterioskleroseforschung an der Universität Münster"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: C, Mitglied von 2005 bis 2011"/>
+      </category>
+      <category ID="LIKAT">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Katalyse e. V. an der Universität Rostock"
+                description="Bundesland: Mecklenburg-Vorpommern, Sektion: D, Mitglied von 2003"/>
+      </category>
+      <category ID="LIN">
+         <label xml:lang="de"
+                text="Leibniz-Institut für Neurobiologie, Magdeburg"
+                description="Bundesland: Sachsen-Anhalt, Sektion: C, Mitglied von 1992"/>
+      </category>
+      <category ID="LZI">
+         <label xml:lang="de"
+                text="Schloss Dahstuhl - Leibniz-Zentrum für Informatik GmbH"
+                description="Bundesland: Saarland, Sektion: D, Mitglied von 2006"/>
+      </category>
+      <category ID="MBI">
+         <label xml:lang="de"
+                text="Max-Born-Institut für Nichtlineare Optik und Kurzzeitspektroskopie, Berlin"
+                description="Bundesland: Berlin, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="MfN">
+         <label xml:lang="de"
+                text="Museum für Naturkunde - Leibniz-Institut für Evolutions- und Biodiversitätsforschung an der Humboldt-Universität zu Berlin"
+                description="Bundesland: Berlin, Sektion: C, Mitglied von 2009"/>
+      </category>
+      <category ID="MFO">
+         <label xml:lang="de"
+                text="Mathematisches Forschungsinstitut Oberwolfach"
+                description="Bundesland: Baden-Württemberg, Sektion: D, Mitglied von 2005"/>
+      </category>
+      <category ID="MIU">
+         <label xml:lang="de"
+                text="Medizinisches Institut für Umwelthygiene"
+                description="Mitglied von 1990 bis 1999"/>
+      </category>
+      <category ID="PDI">
+         <label xml:lang="de"
+                text="Paul-Drude-Institut für Festkörperelektronik, Berlin"
+                description="Bundesland: Berlin, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="PIK">
+         <label xml:lang="de"
+                text="Potsdam-Institut für Klimafolgenforschung"
+                description="Bundesland: Brandenburg, Sektion: E, Mitglied von 1992"/>
+      </category>
+      <category ID="RGZM">
+         <label xml:lang="de"
+                text="Römisch-Germanisches Zentralmuseum, Mainz"
+                description="Bundesland: Rheinland-Pfalz, Sektion: A, Mitglied von 1977"/>
+      </category>
+      <category ID="RWI">
+         <label xml:lang="de"
+                text="Rheinisch-Westfälisches Institut für Wirtschaftsforschung, Essen"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="SMNG">
+         <label xml:lang="de"
+                text="Staatliches Museum für Naturkunde Görlitz"
+                description="Bundesland: Sachsen, Sektion: C, Mitglied von 1995 bis 2009, Kommentar: 2009 mit dem SGN vereint"/>
+      </category>
+      <category ID="SGN">
+         <label xml:lang="de"
+                text="Senckenberg Gesellschaft für Naturforschung, Frankfurt am Main"
+                description="Bundesland: Hessen, Sektion: C, Mitglied von 1954"/>
+      </category>
+      <category ID="SNSD">
+         <label xml:lang="de"
+                text="Staatliche Naturhistorische Sammlungen Dresden"
+                description="Bundesland: Sachsen, Sektion: C, Mitglied von 1992 bis 2009, Kommentar: 2009 mit dem SGN vereint"/>
+      </category>
+      <category ID="TIB">
+         <label xml:lang="de"
+                text="Technische Informationsbibliothek, Hannover"
+                description="Bundesland: Niedersachsen, Sektion: D, Mitglied von 1977"/>
+      </category>
+      <category ID="WIAS">
+         <label xml:lang="de"
+                text="Weierstraß-Institut für Angewandte Analysis und Stochastik, Berlin"
+                description="Bundesland: Berlin, Sektion: D, Mitglied von 1992"/>
+      </category>
+      <category ID="WZB">
+         <label xml:lang="de"
+                text="Wissenschaftszentrum Berlin für Sozialforschung"
+                description="Bundesland: Berlin, Sektion: B, Mitglied von 1977"/>
+      </category>
+      <category ID="ZALF">
+         <label xml:lang="de"
+                text="Leibniz-Zentrum für Agrarlandschaftsforschung, Müncheberg"
+                description="Bundesland: Brandenburg, Sektion: E, Mitglied von 1992"/>
+      </category>
+      <category ID="ZB MED">
+         <label xml:lang="de"
+                text="Deutsche Zentralbibliothek für Medizin, Köln"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: C, Mitglied von 1977"/>
+      </category>
+      <category ID="ZBL">
+         <label xml:lang="de"
+                text="Deutsche Zentralbibliothek der Landbauwissenschaft"
+                description="Mitglied von 1992 bis 1999"/>
+      </category>
+      <category ID="ZBW">
+         <label xml:lang="de"
+                text="Deutsche Zentralbibliothek für Wirtschaftswissenschaften - Leibniz Informationszentrum Wirtschaft, Kiel"
+                description="Bundesland: Schleswig-Holstein, Sektion: B, Mitglied von 1980"/>
+      </category>
+      <category ID="ZEW">
+         <label xml:lang="de"
+                text="Zentrum für Europäische Wirtschaftsforschung, Mannheim"
+                description="Bundesland: Baden-Württemberg, Sektion: B, Mitglied von 2005"/>
+      </category>
+      <category ID="ZFMK">
+         <label xml:lang="de"
+                text="Zoologisches Forschungsmuseum Alexander Koenig - Leibniz-Institut für Biodiversität der Tiere, Bonn"
+                description="Bundesland: Nordrhein-Westfalen, Sektion: C, Mitglied von 1950"/>
+      </category>
+      <category ID="ZMT">
+         <label xml:lang="de"
+                text="Zentrum für Marine Tropenökologie Bremen"
+                description="Bundesland: Bremen, Sektion: E, Mitglied von 2009"/>
+      </category>
+      <category ID="ZPID">
+         <label xml:lang="de"
+                text="Zentrum für Psychologische Information und Dokumentation, Trier"
+                description="Bundesland: Rheinland-Pfalz, Sektion: A, Mitglied von 1988"/>
+      </category>
+   </categories>
+</mycoreclass>
