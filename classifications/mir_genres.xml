@@ -19,7 +19,7 @@
       <category ID="preprint">
         <label xml:lang="en" text="Preprint" />
         <label xml:lang="de" text="Preprint" />
-        <label xml:lang="x-hosts" text="standalone series" />
+        <label xml:lang="x-hosts" text="series" />
         <label xml:lang="x-mapping" text="marcgt:article diniPublType:preprint" />
       </category>
       <category ID="entry">
@@ -93,12 +93,12 @@
     <category ID="report">
       <label xml:lang="de" text="Report" />
       <label xml:lang="en" text="Report" />
-      <label xml:lang="x-hosts" text="series standalone" />
+      <label xml:lang="x-hosts" text="series" />
       <label xml:lang="x-mapping" text="marcgt:reporting diniPublType:report" />
       <category ID="technical_report">
         <label xml:lang="en" text="Technical Report" />
         <label xml:lang="de" text="Technische Dokumentation" />
-        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-hosts" text="series" />
         <label xml:lang="x-mapping" text="marcgt:technical_report diniPublType:report" />
       </category>
       <category ID="press_release">
