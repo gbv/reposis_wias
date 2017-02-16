@@ -53,10 +53,6 @@
   <!-- search menu  -->
     <label xml:lang="de">Blättern</label>
     <label xml:lang="en">Browse</label>
-    <item href="/content/browse/topic_domain.xml" type="intern">
-      <label xml:lang="de">Themengebiete</label>
-      <label xml:lang="en">Themengebiete</label>
-    </item>
     <item href="/content/browse/pacs.xml" type="intern">
       <label xml:lang="de">PACS</label>
       <label xml:lang="en">PACS</label>
@@ -65,9 +61,17 @@
       <label xml:lang="de">MSC 2010</label>
       <label xml:lang="en">MSC 2010</label>
     </item>
+    <item href="/content/browse/topic_domain.xml" type="intern">
+      <label xml:lang="de">Themengebiete</label>
+      <label xml:lang="en">Themengebiete</label>
+    </item>
     <item href="/content/browse/genres.xml" type="intern">
       <label xml:lang="de">Dokumenttypen</label>
       <label xml:lang="en">Genres</label>
+    </item>
+    <item href="/content/browse/wgl.xml" type="intern">
+      <label xml:lang="de">WGL</label>
+      <label xml:lang="en">WGL</label>
     </item>
     <item href="/content/browse/sdnb.xml" type="intern">
       <label xml:lang="de">Sachgruppen</label>

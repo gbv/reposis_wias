@@ -229,11 +229,11 @@
   </xed:template>
 
   <xed:template id="report">
-    <xed:include uri="webapp:editor/editor-genres.xed" ref="report.common" />
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="publication.common" />
   </xed:template>
 
   <xed:template id="technical_report">
-    <xed:include uri="webapp:editor/editor-genres.xed" ref="report.common" />
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="publication.common" />
   </xed:template>
 
   <xed:template id="research_results">
@@ -245,7 +245,7 @@
   </xed:template>
 
   <xed:template id="press_release">
-    <xed:include uri="webapp:editor/editor-genres.xed" ref="report.common" />
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="publication.common" />
   </xed:template>
 
   <xed:template id="declaration">

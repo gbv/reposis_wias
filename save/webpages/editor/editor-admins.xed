@@ -44,6 +44,9 @@
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="institutes" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subject.complex" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="abstract.repeated" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.class.pacs" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.class.msc2010" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.class.topic_domain" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="comment.complex" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="related.item.search.of.all.items" />
 

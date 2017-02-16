@@ -36,7 +36,6 @@
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="editor.repeated" />
         <xed:include uri="webapp:editor/editor-hosts.xed" ref="collection.common.publisher" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="identifier.isbn.book.relItemsearch" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="shelfmark.book.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.pages" />
       </xed:bind>
     </div>
@@ -112,7 +111,6 @@
         <xed:bind xpath="@xlink:href" initially="{$MIR.projectid.default}_mods_00000000"> <input id="relItem-journal" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.journal.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="identifier.issn.journal.relItemsearch" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="shelfmark.journal.relItemsearch" />
       </xed:bind>
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued.relItem" />
       <xed:bind xpath="mods:relatedItem[@type='host']">
@@ -130,7 +128,6 @@
         <xed:bind xpath="@xlink:href" initially="{$MIR.projectid.default}_mods_00000000"> <input id="relItem-newspaper" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.newspaper.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="identifier.issn.newspaper.relItemsearch" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="shelfmark.newspaper.relItemsearch" />
       </xed:bind>
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.issued.datetimepicker" />
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="identifier.isbn.newspaper.relItemsearch" />

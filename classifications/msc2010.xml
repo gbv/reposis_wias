@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><mycoreclass xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="MSC2010" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <label xml:lang="en" text="Mathematics Subject Classification 2010 Edition"/>
+<label xml:lang="x-uri" text="https://publications.wias-berlin.de/msc2010"/>
 <!--http://msc2010.org/resources/MSC/2010/msc2010/MSC2010-->
 <categories>
 <!--http://msc2010.org/resources/MSC/2010/msc2010#00-XX-->
