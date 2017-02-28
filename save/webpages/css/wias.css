@@ -1,3 +1,6 @@
+/* ----------------------------------------------------------------------------
+   Font specification
+---------------------------------------------------------------------------- */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -19,6 +22,10 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+
+/* ----------------------------------------------------------------------------
+   Header
+---------------------------------------------------------------------------- */
 header {
   background: #ffffff url('../images/logos/WIAS_Logo.png') center center no-repeat;
   background-size: 100px;
@@ -28,28 +35,24 @@ html body header #header_box {
     margin: 10px auto 10px auto;
 }
 
+
+/* ----------------------------------------------------------------------------
+   Jumbotron
+---------------------------------------------------------------------------- */
 html .mir-start_page .jumbotron {
   color: #002F66;
   background: #ffffff url('../images/vb_wias_8766.jpg') no-repeat center center;
   height: 350px;
 }
 
+
+/* ----------------------------------------------------------------------------
+   Main Navigation
+---------------------------------------------------------------------------- */
 .mir-main-nav {
   box-shadow: none;
   border-bottom: 4px solid #084897;
 }
-
-.flatmir-footer {
-  background-image: url('../images/footer-bg.png');
-  background-repeat: repeat;
-  padding: 30px 0 20px;
-}
-
-html body #powered_by {
-  background-color: transparent;
-  border: none;
-}
-
 
 .mir-main-nav nav .navbar-nav > li > a {
   color: #084897;
@@ -74,13 +77,13 @@ html body #powered_by {
   background-color: #2b85f4;
 }
 
-ul.dropdown-menu {
+.mir-main-nav nav .navbar-nav .dropdown-menu  {
   margin: 0;
   padding: 0;
   min-width: 300px;
 }
 
-ul.dropdown-menu li {
+.mir-main-nav nav .navbar-nav .dropdown-menu li {
   margin: 0;
   padding: 0;
   display: block;
@@ -90,6 +93,23 @@ ul.dropdown-menu li {
 .mir-main-nav nav .navbar-nav .dropdown-menu > li > a {
   color: #084897;
 }
+
+
+/* ----------------------------------------------------------------------------
+   Footer
+---------------------------------------------------------------------------- */
+.flatmir-footer {
+  background-image: url('../images/footer-bg.png');
+  background-repeat: repeat;
+  padding: 30px 0 20px;
+}
+
+html body #powered_by {
+  background-color: transparent;
+  border: none;
+}
+
+
 /* workaround, have to be fixed in classification browser */
 .cbDescription {
   position: absolute;
