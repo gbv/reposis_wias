@@ -16,12 +16,7 @@
         </nav>
       </div>
       <div id="project_logo_box" class="row">
-        <div class="col-md-4">
-          <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" class="">
-            <img src="{$WebApplicationBaseURL}images/logos/WIAS_Logo.png" alt="WIAS-logo" style="height:4em; width:4em;" />
-          </a>
-        </div>
-        <div class="col-md-8">
+        <div class="col-md-12">
           <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"><span>Weierstraß-Institut</span><br />Publikationsserver</a>
         </div>
       </div>
@@ -70,8 +65,9 @@
     <xsl:if test="//div/@class='jumbotwo'">
       <div class="jumbotron">
         <div class="container">
-          <h1>Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
-          <h2>Dieser Auftritt befindet sich derzeit im Aufbau.</h2>
+          <!-- h1>Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
+          <h2>Dieser Auftritt befindet sich derzeit im Aufbau.</h2 -->
+          &#160;
         </div>
       </div>
     </xsl:if>

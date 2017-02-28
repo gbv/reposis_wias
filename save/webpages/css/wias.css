@@ -19,37 +19,77 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-html body .jumbotron {
-    color: #002F66;
-    background: unset;
-    background-color: #EEE;
+header {
+  background: #ffffff url('../images/logos/WIAS_Logo.png') center center no-repeat;
+  background-size: 100px;
 }
 
-html body {
-  color: #2C3E50;
+html body header #header_box {
+    margin: 10px auto 10px auto;
 }
 
-html body #powered_by {
-  background-color: #002F66;
-  border: none;
+html .mir-start_page .jumbotron {
+  color: #002F66;
+  background: #ffffff url('../images/vb_wias_8766.jpg') no-repeat center center;
+  height: 350px;
+}
+
+.mir-main-nav {
+  box-shadow: none;
+  border-bottom: 4px solid #084897;
 }
 
 .flatmir-footer {
-  color: #d1d1d1;
+  background-image: url('../images/footer-bg.png');
+  background-repeat: repeat;
+  padding: 30px 0 20px;
+}
+
+html body #powered_by {
+  background-color: transparent;
   border: none;
 }
 
-#project_logo_box a {
-  color: #000;
+
+.mir-main-nav nav .navbar-nav > li > a {
+  color: #084897;
+  border-bottom: 0 solid transparent;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
 }
 
-html body header #header_box #project_logo_box a:hover,
-html body header #header_box #project_logo_box a:focus {
-  color: #004A9A;
-  text-decoration: underline;
+.mir-main-nav nav .navbar-nav .dropdown-menu {
+  border-radius: 0 !important;
+  box-shadow: none;
+  background-color: white;
+  margin-top: 0 !important;
 }
 
+.mir-main-nav {
+  background-color: transparent;
+}
 
+.mir-main-nav nav .navbar-nav > li.active > a:hover {
+  background-color: #2b85f4;
+}
+
+ul.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+}
+
+ul.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.mir-main-nav nav .navbar-nav .dropdown-menu > li > a {
+  color: #084897;
+}
 /* workaround, have to be fixed in classification browser */
 .cbDescription {
   position: absolute;

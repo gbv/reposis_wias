@@ -3,6 +3,12 @@
   <section xml:lang="de" title="Willkommen beim Publikationsserver des WIAS">
     <div class="jumbotwo">
       <div class="row">
+        <div class="col-md-12" lang="de">
+          <h1>Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
+          <h2>Dieser Auftritt befindet sich derzeit im Aufbau.</h2>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-6" lang="de">
           <h3>
             Inhalt
@@ -33,6 +39,6 @@
     </div>
     </section>
     <meta>
-        <log lastEditor="administrator" date="2016-08-04" time="10:35"/>
+        <log lastEditor="administrator" date="2017-02-28" time="10:35"/>
     </meta>
 </MyCoReWebPage>
