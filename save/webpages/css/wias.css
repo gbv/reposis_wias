@@ -38,7 +38,7 @@ header {
 }
 
 html body header #header_box {
-    margin: 10px auto 10px auto;
+  margin: 10px auto 10px auto;
 }
 
 
@@ -55,21 +55,48 @@ html .mir-start_page .jumbotron {
 /* ----------------------------------------------------------------------------
    Main Navigation
 ---------------------------------------------------------------------------- */
+.navbar {
+  min-height: 80px;
+}
 .mir-main-nav {
   box-shadow: none;
   border-bottom: 4px solid #084897;
 }
 
+.mir-main-nav .searchfield_box {
+  margin: 0;
+}
+
 .mir-main-nav .navbar-toggle .icon-bar {
-    background-color: #084897;
+  background-color: #084897;
+}
+
+.mir-main-nav nav .navbar-nav > li > a:hover .caret,
+.mir-main-nav nav .navbar-nav > li.open > a .caret,
+.mir-main-nav nav .navbar-nav > li.open > a:hover .caret {
+  border-top-color: #e1470f !important;
+}
+
+.mir-main-nav nav .navbar-nav > li > a:hover,
+.mir-main-nav nav .navbar-nav > li > a:focus,
+.mir-main-nav nav .navbar-nav > li.active > a:hover {
+  color: #e1470f;
+  background-color: transparent;
 }
 
 .mir-main-nav nav .navbar-nav > li.active > a,
-.mir-main-nav nav .navbar-nav > li.active > a:hover,
 .mir-main-nav nav .navbar-nav > li.active > a:focus {
-    background-color: #d8d8d8;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #084897;
 }
 
+.mir-main-nav nav .navbar-nav > li.open > a,
+.mir-main-nav nav .navbar-nav > li.open > a:hover,
+.mir-main-nav nav .navbar-nav > li.open > a:focus {
+    background-color: #e6e6e6;
+    color: #e1470f;
+}
 .mir-main-nav nav .navbar-nav > li > a {
   color: #084897;
   border-bottom: 0 solid transparent;
@@ -87,10 +114,6 @@ html .mir-start_page .jumbotron {
 
 .mir-main-nav {
   background-color: transparent;
-}
-
-.mir-main-nav nav .navbar-nav > li.active > a:hover {
-  background-color: #2b85f4;
 }
 
 .mir-main-nav nav .navbar-nav .dropdown-menu  {
