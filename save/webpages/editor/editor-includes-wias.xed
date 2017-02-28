@@ -3,59 +3,65 @@
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
   <xed:template id="wias.class.pacs">
-    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/pacs'][@displayLabel='pacs']/@valueURIxEditor" min="1" max="10" method="build">
-      <div class="form-group">
-        <label class="col-md-3 control-label">
-          <xed:output i18n="wias.class.pacs" />
-        </label>
-        <div class="col-md-6">
-          <div class="controls">
-            <select class="form-control form-control-inline">
-              <option value=""><xed:output i18n="mir.select.optional" /></option>
-              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:PACS" />
-            </select>
+    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/pacs'][@displayLabel='pacs']" min="1" max="10" method="build">
+      <xed:bind xpath="@valueURIxEditor">
+        <div class="form-group">
+          <label class="col-md-3 control-label">
+            <xed:output i18n="wias.class.pacs" />
+          </label>
+          <div class="col-md-6">
+            <div class="controls">
+              <select class="form-control form-control-inline">
+                <option value=""><xed:output i18n="mir.select.optional" /></option>
+                <xed:include uri="xslStyle:items2options:classification:editor:-1:children:PACS" />
+              </select>
+            </div>
           </div>
+          <mir:help-pmud help-text="{i18n:wias.help.class.pacs}" pmud="true" />
         </div>
-        <mir:help-pmud help-text="{i18n:wias.help.class.pacs}" pmud="true" />
-      </div>
+      </xed:bind>
     </xed:repeat>
   </xed:template>
 
   <xed:template id="wias.class.msc2010">
-    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/msc2010'][@displayLabel='msc2010']/@valueURIxEditor" min="1" max="10" method="build">
-      <div class="form-group">
-        <label class="col-md-3 control-label">
-          <xed:output i18n="wias.class.msc2010" />
-        </label>
-        <div class="col-md-6">
-          <div class="controls">
-            <select class="form-control form-control-inline">
-              <option value=""><xed:output i18n="mir.select.optional" /></option>
-              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:MSC2010" />
-            </select>
+    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/msc2010'][@displayLabel='msc2010']" min="1" max="10" method="build">
+      <xed:bind xpath="@valueURIxEditor">
+        <div class="form-group">
+          <label class="col-md-3 control-label">
+            <xed:output i18n="wias.class.msc2010" />
+          </label>
+          <div class="col-md-6">
+            <div class="controls">
+              <select class="form-control form-control-inline">
+                <option value=""><xed:output i18n="mir.select.optional" /></option>
+                <xed:include uri="xslStyle:items2options:classification:editor:-1:children:MSC2010" />
+              </select>
+            </div>
           </div>
+          <mir:help-pmud help-text="{i18n:wias.help.class.msc2010}" pmud="true" />
         </div>
-        <mir:help-pmud help-text="{i18n:wias.help.class.msc2010}" pmud="true" />
-      </div>
+      </xed:bind>
     </xed:repeat>
   </xed:template>
 
   <xed:template id="wias.class.topic_domain">
-    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/wias_topic_domain'][@displayLabel='topic_domain']/@valueURIxEditor" min="1" max="10" method="build">
-      <div class="form-group">
-        <label class="col-md-3 control-label">
-          <xed:output i18n="wias.class.topic_domain" />
-        </label>
-        <div class="col-md-6">
-          <div class="controls">
-            <select class="form-control form-control-inline">
-              <option value=""><xed:output i18n="mir.select.optional" /></option>
-              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:wias_topic_domain" />
-            </select>
+    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/wias_topic_domain'][@displayLabel='topic_domain']" min="1" max="10" method="build">
+      <xed:bind xpath="@valueURIxEditor">
+        <div class="form-group">
+          <label class="col-md-3 control-label">
+            <xed:output i18n="wias.class.topic_domain" />
+          </label>
+          <div class="col-md-6">
+            <div class="controls">
+              <select class="form-control form-control-inline">
+                <option value=""><xed:output i18n="mir.select.optional" /></option>
+                <xed:include uri="xslStyle:items2options:classification:editor:-1:children:wias_topic_domain" />
+              </select>
+            </div>
           </div>
+          <mir:help-pmud help-text="{i18n:wias.help.class.wias_topic_domain}" pmud="true" />
         </div>
-        <mir:help-pmud help-text="{i18n:wias.help.class.wias_topic_domain}" pmud="true" />
-      </div>
+      </xed:bind>
     </xed:repeat>
   </xed:template>
 
