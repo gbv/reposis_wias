@@ -53,10 +53,11 @@ html .mir-start_page .jumbotron {
   box-shadow: none;
   border-bottom: 4px solid #084897;
 }
-.mir-main-nav nav .navbar-nav > .open > a,
-.mir-main-nav nav .navbar-nav > .open > a:hover,
-.mir-main-nav nav .navbar-nav > .open > a:focus {
-    background-color: #a0a0a0;
+
+.mir-main-nav nav .navbar-nav > .active > a,
+.mir-main-nav nav .navbar-nav > .active > a:hover,
+.mir-main-nav nav .navbar-nav > .active > a:focus {
+    background-color: #d8d8d8;
 }
 
 .mir-main-nav nav .navbar-nav > li > a {
