@@ -47,12 +47,15 @@
     <category ID="topic_140">
       <label xml:lang="de" text="Hysterese-Operatoren und ratenunabhängige Systeme" />
     </category>
+    <category ID="topic_145">
+      <label xml:lang="de" text="Interagierende stochastische Vielteilchensysteme" />
+    </category>
     <category ID="topic_150">
       <label xml:lang="de" text="Kalibrierung und Risikobewertung von Zins- und Aktienmodellen" />
     </category>
-    <category ID="topic_160">
+    <!-- category ID="topic_160">
       <label xml:lang="de" text="Klassische und quantenmechanische Vielteilchensysteme" />
-    </category>
+    </category -->
     <category ID="topic_170">
       <label xml:lang="de" text="Koagulation" />
     </category>
@@ -116,6 +119,9 @@
     <category ID="topic_370">
       <label xml:lang="de" text="Optimierungsprobleme in der Energiewirtschaft" />
     </category>
+    <category ID="topic_375">
+      <label xml:lang="de" text="Partikelbasierte Modellierung in den Naturwissenschaften" />
+    </category>
     <category ID="topic_380">
       <label xml:lang="de" text="Phasenübergänge und Hysterese im Zusammenhang mit Speicherproblemen" />
     </category>
@@ -149,12 +155,15 @@
     <category ID="topic_480">
       <label xml:lang="de" text="Statistische inverse Probleme" />
     </category>
+    <category ID="topic_485">
+      <label xml:lang="de" text="Stochastische Biologische Evolution" />
+    </category>
     <category ID="topic_490">
       <label xml:lang="de" text="Stochastische Optimierung" />
     </category>
-    <category ID="topic_500">
+    <!-- category ID="topic_500">
       <label xml:lang="de" text="Strömungen in dünnen Gasen" />
-    </category>
+    </category -->
     <category ID="topic_510">
       <label xml:lang="de" text="Systeme partieller Differentialgleichungen: Modellierung, numerische Analysis und Simulation" />
     </category>
@@ -170,14 +179,14 @@
     <category ID="topic_550">
       <label xml:lang="de" text="Volatilitätsschätzung und Risikobewertung" />
     </category>
-    <category ID="topic_560">
+    <!-- category ID="topic_560">
       <label xml:lang="de" text="Wahrscheinlichkeitstheoretische und statistische Modelle in der Populationsgenetik und anderen Lebenswissenschaften" />
-    </category>
+    </category -->
     <category ID="topic_570">
       <label xml:lang="de" text="Wechselwirkende stochastische Systeme" />
     </category>
-    <category ID="topic_580">
+    <!-- category ID="topic_580">
       <label xml:lang="de" text="Zufällige Teilchensysteme in Biologie und Chemie" />
-    </category>
+    </category -->
   </categories>
 </mycoreclass>

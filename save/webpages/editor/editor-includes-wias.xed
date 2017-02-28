@@ -3,12 +3,11 @@
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
   <xed:template id="wias.class.pacs">
-    <div class="form-group">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="wias.class.pacs" />
-      </label>
-      <xed:bind xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/pacs']/@displayLabel" set="pacs" />
-      <xed:bind xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/pacs']/@valueURIxEditor" initially="">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/pacs'][@displayLabel='pacs']/@valueURIxEditor" min="1" max="10" method="build">
+      <div class="form-group">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="wias.class.pacs" />
+        </label>
         <div class="col-md-6">
           <div class="controls">
             <select class="form-control form-control-inline">
@@ -17,19 +16,17 @@
             </select>
           </div>
         </div>
-        <mir:help-pmud help-text="{i18n:wias.help.class.pacs}" pmud="false" />
-      </xed:bind>
-    </div>
+        <mir:help-pmud help-text="{i18n:wias.help.class.pacs}" pmud="true" />
+      </div>
+    </xed:repeat>
   </xed:template>
 
-
   <xed:template id="wias.class.msc2010">
-    <div class="form-group">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="wias.class.msc2010" />
-      </label>
-      <xed:bind xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/msc2010']/@displayLabel" set="msc2010" />
-      <xed:bind xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/msc2010']/@valueURIxEditor" initially="">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/msc2010'][@displayLabel='msc2010']/@valueURIxEditor" min="1" max="10" method="build">
+      <div class="form-group">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="wias.class.msc2010" />
+        </label>
         <div class="col-md-6">
           <div class="controls">
             <select class="form-control form-control-inline">
@@ -38,18 +35,17 @@
             </select>
           </div>
         </div>
-        <mir:help-pmud help-text="{i18n:wias.help.class.msc2010}" pmud="false" />
-      </xed:bind>
-    </div>
+        <mir:help-pmud help-text="{i18n:wias.help.class.msc2010}" pmud="true" />
+      </div>
+    </xed:repeat>
   </xed:template>
 
   <xed:template id="wias.class.topic_domain">
-    <div class="form-group">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="wias.class.topic_domain" />
-      </label>
-      <xed:bind xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/wias_topic_domain']/@displayLabel" set="topic_domain" />
-      <xed:bind xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/wias_topic_domain']/@valueURIxEditor" initially="">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/wias_topic_domain'][@displayLabel='topic_domain']/@valueURIxEditor" min="1" max="10" method="build">
+      <div class="form-group">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="wias.class.topic_domain" />
+        </label>
         <div class="col-md-6">
           <div class="controls">
             <select class="form-control form-control-inline">
@@ -58,8 +54,9 @@
             </select>
           </div>
         </div>
-        <mir:help-pmud help-text="{i18n:wias.help.class.wias_topic_domain}" pmud="false" />
-      </xed:bind>
-    </div>
+        <mir:help-pmud help-text="{i18n:wias.help.class.wias_topic_domain}" pmud="true" />
+      </div>
+    </xed:repeat>
   </xed:template>
+
 </xed:template>
