@@ -54,9 +54,9 @@ html .mir-start_page .jumbotron {
   border-bottom: 4px solid #084897;
 }
 
-.mir-main-nav nav .navbar-nav > .active > a,
-.mir-main-nav nav .navbar-nav > .active > a:hover,
-.mir-main-nav nav .navbar-nav > .active > a:focus {
+.mir-main-nav nav .navbar-nav > li.active > a,
+.mir-main-nav nav .navbar-nav > li.active > a:hover,
+.mir-main-nav nav .navbar-nav > li.active > a:focus {
     background-color: #d8d8d8;
 }
 
