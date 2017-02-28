@@ -79,7 +79,7 @@
         <div class="col-xs-12 col-sm-6 col-md-4">
           <h4>Über uns</h4>
           <p>
-            Hier wird im 3. Quartal 2016 ein Publikationsserver für das WIAS aufgebaut
+            Hier wird im 1. Quartal 2017 ein Publikationsserver für das WIAS aufgebaut
             <span class="read_more">
               <a href="https://www.wias-berlin.de/">Mehr erfahren ...</a>
             </span>
