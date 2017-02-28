@@ -27,8 +27,14 @@
    Header
 ---------------------------------------------------------------------------- */
 header {
-  background: #ffffff url('../images/logos/WIAS_Logo.png') center center no-repeat;
+  background: #ffffff url('../images/logos/WIAS_Logo.png') top center no-repeat;
   background-size: 100px;
+}
+
+@media (max-width: 767px) {
+  header {
+    background-size: 50px;
+  }
 }
 
 html body header #header_box {
@@ -52,6 +58,10 @@ html .mir-start_page .jumbotron {
 .mir-main-nav {
   box-shadow: none;
   border-bottom: 4px solid #084897;
+}
+
+.mir-main-nav .navbar-toggle .icon-bar {
+    background-color: #084897;
 }
 
 .mir-main-nav nav .navbar-nav > li.active > a,
@@ -100,6 +110,9 @@ html .mir-start_page .jumbotron {
   color: #084897;
 }
 
+.mir-main-nav nav .navbar-nav .dropdown-menu::before {
+  border: 0px;
+}
 
 /* ----------------------------------------------------------------------------
    Footer
