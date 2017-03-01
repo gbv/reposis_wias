@@ -65,4 +65,23 @@
     </xed:repeat>
   </xed:template>
 
+  <xed:template id="wias.box">
+    <fieldset id="wias_box">
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="wias.information" />
+      </legend>
+      <div class="mir-fieldset-content">
+        <xed:include uri="webapp:editor/editor-includes-wias.xed" ref="wias.class.pacs" />
+        <xed:include uri="webapp:editor/editor-includes-wias.xed" ref="wias.class.msc2010" />
+        <xed:include uri="webapp:editor/editor-includes-wias.xed" ref="wias.class.topic_domain" />
+      </div>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="subject.simple">
+    <xed:bind xpath="mods:subject">
+      <mir:textfield repeat="true" xpath="mods:topicSimple" min="1" max="10" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
+    </xed:bind>
+  </xed:template>
+
 </xed:template>
