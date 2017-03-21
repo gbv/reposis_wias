@@ -76,12 +76,12 @@
   <xsl:template name="mir.footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-8">
           <ul class="internal_links">
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
           </ul>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-4">
           <p>
             Weierstraß-Institut für angewandte<br />
             Analysis und Stochastik<br /><br />

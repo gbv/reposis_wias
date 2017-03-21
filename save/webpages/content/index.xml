@@ -4,34 +4,24 @@
     <div class="jumbotwo">
       <div class="row">
         <div class="col-md-12" lang="de">
-          <h1>Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
+          <h1>Der Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6" lang="de">
-          <h3>
-            Inhalt
-          </h3>
+        <div class="col-md-12" lang="de">
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            ... ist das institutionelle Repositorium des Weierstraß-Instituts mit einer wachsenden Sammlung
+            von Publikationen aus unserem Institut.
           </p>
-        </div>
-        <div class="col-md-1" lang="de">
-          &#160;
-        </div>
-        <div class="col-md-4" lang="de">
-          <h3>
-            Förderung
-          </h3>
           <p>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            Mit dem Publikationsserver unterstützt das WIAS die Wissenschaftlerinnen und Wissenschaftler bei
+            der Veröffentlichung ihrer Publikationen im Rahmen der Open Access Initiative.
+          </p>
+          <p>
+            Sämtliche Publikationen, wie  beispielsweise  Preprints, Reports, Lehrmaterialien, Forschungsdaten,
+            Software  etc. sei es als Erst- oder als Zweitveröffentlichung können auf dem Server abgelegt werden.
+            Ebenso ist die bloße Eingabe von bibliographischen Daten ohne Volltext möglich, um beispielsweise
+            Publikationslisten generieren zu können.
           </p>
         </div>
       </div>

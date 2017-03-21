@@ -97,13 +97,9 @@
       <label xml:lang="de">Publizieren (PPN Import)</label>
       <label xml:lang="en">Publish (PPN Import)</label>
     </item>
-    <item href="/content/publish/guidelines.xml" type="intern">
-      <label xml:lang="de">Leitlinien</label>
-      <label xml:lang="en">Guidelines</label>
-    </item>
-    <item href="/content/publish/contract.xml" type="intern">
-      <label xml:lang="de">Vertragsbedingungen</label>
-      <label xml:lang="en">Terms &amp; Conditions</label>
+    <item href="/content/publish/faq.xml" type="intern">
+      <label xml:lang="de">FAQ</label>
+      <label xml:lang="en">FAQ</label>
     </item>
   </menu>
   <menu id="user">
