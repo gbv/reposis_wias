@@ -144,6 +144,27 @@ html .mir-start_page .jumbotron {
   background-image: url('../images/footer-bg.png');
   background-repeat: repeat;
   padding: 30px 0 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size:14px;
+}
+
+.flatmir-footer a {
+  color: #fff;
+}
+
+footer .container .internal_links li {
+    display: inline;
+}
+
+footer .container .internal_links li::before {
+    content: ' ∙ ';
+    padding: 0 3px;
+}
+
+footer .container .internal_links li:first-child::before {
+    content: '';
+    padding: 0 0;
 }
 
 html body #powered_by {

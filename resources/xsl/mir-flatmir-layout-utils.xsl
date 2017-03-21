@@ -76,36 +76,21 @@
   <xsl:template name="mir.footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <h4>Über uns</h4>
+        <div class="col-xs-6">
+          <ul class="internal_links">
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
+          </ul>
+        </div>
+        <div class="col-xs-6">
           <p>
-            Hier wird im 1. Quartal 2017 ein Publikationsserver für das WIAS aufgebaut
-            <span class="read_more">
-              <a href="https://www.wias-berlin.de/">Mehr erfahren ...</a>
-            </span>
+            Weierstraß-Institut für angewandte<br />
+            Analysis und Stochastik<br /><br />
+
+            Mohrenstr. 39 · 10117 Berlin<br />
+            <span class="madress">contact [at] wias-berlin.de</span><br />
+            Tel. 030 20372-0<br />
+            Fax. 030 20372-203
           </p>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <h4>Navigation</h4>
-          <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <h4>Netzwerke</h4>
-          <ul class="social_links">
-            <li><a href="#"><button type="button" class="social_icons social_icon_fb"></button>Facebook</a></li>
-            <li><a href="#"><button type="button" class="social_icons social_icon_tw"></button>Twitter</a></li>
-            <li><a href="#"><button type="button" class="social_icons social_icon_gg"></button>Google+</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <h4>Layout based on</h4>
-          <ul class="internal_links">
-            <li><a href="{$WebApplicationBaseURL}mir-layout/template/flatmir.xml">flatmir</a></li>
-            <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
-            <li><a href="http://bootswatch.com/">Bootswatch</a></li>
-          </ul>
         </div>
       </div>
     </div>
