@@ -6,18 +6,20 @@
     <h2>Impressum und Copyright</h2>
     <h3>Impressum</h3>
     <p>
-      Zu den gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung siehe das Impressum (mit Ausfürungen zum Datenschutz) des Forschungsverbundes , dessen Bestandteil das WIAS ist.
-    </p>
-    <p>
-      Der lokale Web-Administrator kann über diese E-Mail-Adresse erreicht werden. Für andere Fragen siehe die Seite der Hauptkontaktpersonen.
+      Zu den gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung
+      siehe <a href="http://www.fv-berlin.de/impressum">das Impressum des
+      Forschungsverbundes</a>, dessen Bestandteil das WIAS ist.
+      Der lokale Anwendungs-Administrator kann über <span class="madress">dms-list [at] lists.gbv.de</span> erreicht
+      werden. Für andere Fragen siehe die <a href="contact.xml">Seite der Hauptkontaktpersonen</a>.
     </p>
     <h3>Copyright</h3>
     <p>
-      Alle Web-Inhalte sind urheberrechtlich geschützt. Jede über die Betrachtung mit einem Web-Browser hinausgehende Nutzung bedarf der schriftlichen Erlaubnis durch das WIAS.
+      Alle Web-Inhalte sind urheberrechtlich geschützt. Jede über die Betrachtung mit einem Web-Browser hinausgehende Nutzung
+      bedarf der schriftlichen Erlaubnis durch das WIAS.
     </p>
   </div>
   </section>
   <meta>
-    <log date="2016-08-04" time="10:33" labelPath=" » Impressum" lastEditor="Kathleen Neumann" />
+    <log date="2017-03-21" time="10:59" labelPath=" » Impressum" lastEditor="Kathleen Neumann" />
   </meta>
 </MyCoReWebPage>
