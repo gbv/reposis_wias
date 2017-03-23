@@ -9,4 +9,26 @@ $(document).ready(function() {
       $(this).remove();
   });
 
+
+  $("#submit_publication .btn-default").on("click", function(e){
+      e.preventDefault();
+      var selectedGenre = $( "#genre option:selected" ).val();
+
+      switch(selectedGenre) {
+        case "preprint":
+          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="wias_mods_00000012" />');
+          $('#submit_publication').append('<input type="hidden" name="relatedItemType" value="series" />');
+          $('#submit_publication').submit();
+          break;
+        case "report":
+          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="wias_mods_00000021" />');
+          $('#submit_publication').append('<input type="hidden" name="relatedItemType" value="series" />');
+          $('#submit_publication').submit();
+          break;
+        default:
+          $('#submit_publication').submit();
+      }
+
+  });
+
 });
