@@ -12,7 +12,7 @@
                                     field="category.top"
                              countresults="true"
                                addclassid="true"
-                              emptyleaves="true"
+                              emptyleaves="false"
                                     style="bootstrap"
                                parameters="sort=mods.dateIssued+desc"
                              addParameter="XSL.template=template_mir"
