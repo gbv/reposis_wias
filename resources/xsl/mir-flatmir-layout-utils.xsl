@@ -6,8 +6,9 @@
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
   <xsl:template name="mir.navigation">
-
+    <a href="http://wias-berlin.de/" id="wias_logo_link"></a>
     <div id="header_box" class="clearfix container">
+
       <div id="options_nav_box" class="mir-prop-nav">
         <nav>
           <ul class="nav navbar-nav pull-right">
@@ -76,12 +77,7 @@
   <xsl:template name="mir.footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-8">
-          <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
-          </ul>
-        </div>
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-8">
           <p>
             Weierstraß-Institut für angewandte<br />
             Analysis und Stochastik<br /><br />
@@ -91,6 +87,11 @@
             Tel. 030 20372-0<br />
             Fax. 030 20372-203
           </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-right">
+          <ul class="internal_links">
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
+          </ul>
         </div>
       </div>
     </div>
