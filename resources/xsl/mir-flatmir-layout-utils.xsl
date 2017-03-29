@@ -85,7 +85,7 @@
             Mohrenstr. 39 · 10117 Berlin<br />
             <span class="madress">contact [at] wias-berlin.de</span><br />
             Tel. 030 20372-0<br />
-            Fax. 030 20372-203
+            Fax. 030 20372-303
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 text-right">
