@@ -257,6 +257,10 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="place" />
   </xed:template>
 
+  <xed:template id="software">
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="report.common" />
+  </xed:template>
+
   <xed:template id="report.common">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
