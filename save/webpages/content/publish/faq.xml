@@ -1,106 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MyCoReWebPage>
-<MyCoReWebPage>
-<section xml:lang="de" title="FAQ">
+<MyCoReWebPage><section xml:lang="de" title="FAQ"><h2>FAQ - Häufige Fragen</h2>
 
-  <h2>FAQ - Häufige Fragen</h2>
-  <h3>1. Warum gibt es den Publikationsserver?</h3>
-  <p>
-    Der Publikationsserver bietet den Wissenschaftlerinnen und Wissenschaftlern des WIAS die organisatorischen
-    und technischen Rahmenbedingungen zur elektronischen Publikation wissenschaftlicher Dokumente
-  </p>
+<h3>1. Warum gibt es den Publikationsserver?</h3>
 
-  <h3>2. Was sammeln wir?</h3>
-  <p>
-    Der Sammelauftrag des Betreibers des Publikationsservers umfasst die Speicherung, Katalogisierung und
-    Archivierung aller elektronischen Dokumente, die durch Wissenschaftlerinnen und Wissenschaftler des WIAS
-    veröffentlicht werden. Dies bezieht sich sowohl auf rein elektronische Publikationen als auch auf
-    elektronische Versionen gedruckter Dokumente. Sie können Preprints, Reports, Technical-Reports,
-    Jahresforschungsberichte, Artikel, Monographien, Forschungsdaten, Software, Lehrmaterialien, Poster,
-    Videoaufnahmen etc. einstellen.
-  </p>
+<p>Der Publikationsserver bietet den Wissenschaftlerinnen und Wissenschaftlern des WIAS die organisatorischen und technischen Rahmenbedingungen zur elektronischen Publikation wissenschaftlicher Dokumente.</p>
 
-  <h3>3. Was passiert mit meinen Urheberrechten? </h3>
-  <p>
-    Die Urheberrechte der Autorinnen und Autoren bleiben gewahrt. Die Veröffentlichung auf dem
-    Publikationsserver steht einer weiteren Veröffentlichung der Dokumente in Fachzeitschriften oder
-    Monografien sowie auf anderen Servern nicht entgegen. Gemäß den Empfehlungen des Wissenschaftsrats
-    werden alle Wissenschaftlerinnen und Wissenschaftler in Deutschland aufgefordert, sich beim Abschluss
-    von Verlagsverträgen ein entsprechendes weiteres Nutzungsrecht zu sichern und die von ihnen verfassten
-    Dokumente zusätzlich - eventuell nach einer Embargofrist - auf dem Publikationsserver zu veröffentlichen.
-  </p>
+<h3>2. Was sammeln wir?</h3>
 
-  <h3>4. Welche Rechte übertrage ich dem Betreiber?</h3>
-  <p>
-    Dem Betreiber des Publikationsservers wird das nicht-ausschließliche (einfache) Recht zur freien
-    elektronischen Publikation im Internet und zur Archivierung auf seinem Schriftenserver eingeräumt.
-    Alle weiteren Rechte für die Verwertung der Arbeit verbleiben beim Autor. Weitergehende Rechte kann
-    der Autor durch die Hinzufügung einer freien Lizenz einräumen.
-  </p>
+<p>Der Sammelauftrag des Betreibers des Publikationsservers umfasst die Speicherung, Katalogisierung und Archivierung aller elektronischen Dokumente, die durch Wissenschaftlerinnen und Wissenschaftler des WIAS veröffentlicht werden. Dies bezieht sich sowohl auf rein elektronische Publikationen als auch auf elektronische Versionen gedruckter Dokumente. Sie können Preprints, Reports, Technical-Reports, Jahresforschungsberichte, Artikel, Monographien, Forschungsdaten, Software, Lehrmaterialien, Poster, Videoaufnahmen etc. einstellen.</p>
 
-  <h3>5. Was passiert mit Rechten Dritter?</h3>
-  <p>
-    Die Einhaltung von Urheber- und Verwertungsrechten Dritter liegt in der Verantwortung der Autorinnen
-    und Autoren der elektronischen Dokumente. Der Betreiber ist berechtigt, den Zugriff auf eine Publikation
-    zu sperren, soweit konkrete Anhaltspunkte für eine Verletzung von Rechten Dritter bestehen. Der Betreiber
-    wird den Veröffentlichenden in einem solchen Fall über die Sperrung informieren.
-  </p>
+<h3>3. Was passiert mit meinen Urheberrechten?</h3>
 
-  <h3>6. Welche Bedingungen muss das Dokument erfüllen?</h3>
-  <p>
-    Das Dokument ist zur Verbreitung in der Öffentlichkeit bestimmt. Es stellt kein dynamisches Dokument dar.
-    Sind Veränderungen notwendig, wird das geänderte elektronische Dokument als neue Version gespeichert. Es
-    entspricht den vom Betreiber vorgegebenen technischen Parametern.
-  </p>
+<p>Die Urheberrechte der Autorinnen und Autoren bleiben gewahrt. Die Veröffentlichung auf dem Publikationsserver steht einer weiteren Veröffentlichung der Dokumente in Fachzeitschriften oder Monografien sowie auf anderen Servern nicht entgegen. Gemäß den Empfehlungen des Wissenschaftsrats werden alle Wissenschaftlerinnen und Wissenschaftler in Deutschland aufgefordert, sich beim Abschluss von Verlagsverträgen ein entsprechendes weiteres Nutzungsrecht zu sichern und die von ihnen verfassten Dokumente zusätzlich - eventuell nach einer Embargofrist - auf dem Publikationsserver zu veröffentlichen.</p>
 
-  <h3>7.  Was sind die technischen Besonderheiten des Publikationsservers?</h3>
-  <p>
-    Die elektronischen Dokumente werden mit individuellen und dauerhaften Adressen versehen, welche einen
-    unmittelbaren Zugriff auf die Dokumente erlauben. Die Adressen werden als URNs (Uniform Resource Name)
-    registriert. Die Administration und Pflege der URNs wird vom Betreiber garantiert. Ergänzend ist es möglich
-    DataCite Digital Object Identifiers (DOIs) zu vergeben.
-  </p>
-  <p>
-    Die formalen und inhaltsbezogenen Metadaten zu den veröffentlichten Beiträgen können über eine standardisierte
-    Schnittstelle (OAI-PMH 2.0), an etablierte wissenschaftliche Suchmaschinen (z.B. BASE und OAIster) weitergegeben
-    werden. Daneben werden Suchbots über spezielle Tags in den Webseiten und eine Sitemap speziell unterstützt, um
-    beispielsweise auch die Sichtbarkeit bei Google Scholar zu erhöhen. Dies gewährt eine globale Sichtbarkeit der
-    hier eingestellten Daten.
-  </p>
+<h3>4. Welche Rechte übertrage ich dem Betreiber?</h3>
 
-  <h3>8.  Welche Kosten entstehen mir?</h3>
-  <p>
-    Die elektronische Veröffentlichung von Publikationen ist für Wissenschaftlerinnen und Wissenschaftler am WIAS
-    kostenfrei.
-  </p>
+<p>Dem Betreiber des Publikationsservers wird das nicht-ausschließliche (einfache) Recht zur freien elektronischen Publikation im Internet und zur Archivierung auf seinem Schriftenserver eingeräumt. Alle weiteren Rechte für die Verwertung der Arbeit verbleiben beim Autor. Weitergehende Rechte kann der Autor durch die Hinzufügung einer freien Lizenz einräumen.</p>
 
-  <h3>9.  Weitergabe an die Deutsche Nationalbibliothek</h3>
-  <p>
-    Dem Betreiber ist es gestattet, über die Bibliothek die elektronische Version der Deutschen Nationalbibliothek
-    (DNB) im Rahmen der Pflichtabgabe nach dem Gesetz über die Deutsche Nationalbibliothek zur Verfügung zu stellen.
+<h3>5. Was passiert mit Rechten Dritter?</h3>
 
-  </p>
+<p>Die Einhaltung von Urheber- und Verwertungsrechten Dritter liegt in der Verantwortung der Autorinnen und Autoren der elektronischen Dokumente. Der Betreiber ist berechtigt, den Zugriff auf eine Publikation zu sperren, soweit konkrete Anhaltspunkte für eine Verletzung von Rechten Dritter bestehen. Der Betreiber wird den Veröffentlichenden in einem solchen Fall über die Sperrung informieren.</p>
 
-  <h3>10. Kann ich Dokumente auf sozialen Netzwerken teilen?</h3>
-  <p>
-    Ja, die Dokumente können auf Facebook, Twitter und Google+ geteilt werden.
-  </p>
+<h3>6. Welche Bedingungen muss das Dokument erfüllen?</h3>
 
-  <h3>11. Noch Fragen?</h3>
-  <p>
-    Ansprechpartnerin für alle den Publikationsserver betreffenden Fragen ist:<br />
-    Ilka Kleinod<br />
-    Bibliothek<br />
-    ++49 (0)30 20372-294<br />
-    <span class="madress">ilka.kleinod [at] wias-berlin.de</span><br />
-    Weierstraß-Institut<br />
-    Mohrenstr. 39<br />
-    10117 Berlin
-  </p>
+<p>Das Dokument ist zur Verbreitung in der Öffentlichkeit bestimmt. Es stellt kein dynamisches Dokument dar. Sind Veränderungen notwendig, wird das geänderte elektronische Dokument als neue Version gespeichert. Es entspricht den vom Betreiber vorgegebenen technischen Parametern.</p>
 
-</section>
+<h3>7. Was sind die technischen Besonderheiten des Publikationsservers?</h3>
 
-<meta>
-  <log date="2017-03-21" time="11:58" labelPath=" » Admin" lastEditor="Kathleen Neumann" />
-</meta>
-</MyCoReWebPage>
+<p>Die elektronischen Dokumente werden mit individuellen und dauerhaften Adressen versehen, welche einen unmittelbaren Zugriff auf die Dokumente erlauben. Die Adressen werden als URNs (Uniform Resource Name) registriert. Die Administration und Pflege der URNs wird vom Betreiber garantiert. Ergänzend ist es möglich DataCite Digital Object Identifiers (DOIs) zu vergeben.</p>
+
+<p>Die formalen und inhaltsbezogenen Metadaten zu den veröffentlichten Beiträgen können über eine standardisierte Schnittstelle (OAI-PMH 2.0), an etablierte wissenschaftliche Suchmaschinen (z.B. BASE und OAIster) weitergegeben werden. Daneben werden Suchbots über spezielle Tags in den Webseiten und eine Sitemap speziell unterstützt, um beispielsweise auch die Sichtbarkeit bei Google Scholar zu erhöhen. Dies gewährt eine globale Sichtbarkeit der hier eingestellten Daten.</p>
+
+<h3>8. Welche Kosten entstehen mir?</h3>
+
+<p>Die elektronische Veröffentlichung von Publikationen ist für Wissenschaftlerinnen und Wissenschaftler am WIAS kostenfrei.</p>
+
+<h3>9. Weitergabe an die Deutsche Nationalbibliothek</h3>
+
+<p>Dem Betreiber ist es gestattet, über die Bibliothek die elektronische Version der Deutschen Nationalbibliothek (DNB) im Rahmen der Pflichtabgabe nach dem Gesetz über die Deutsche Nationalbibliothek zur Verfügung zu stellen.</p>
+
+<h3>10. Kann ich Dokumente auf sozialen Netzwerken teilen?</h3>
+
+<p>Ja, die Dokumente können auf Facebook, Twitter und Google+ geteilt werden.</p>
+
+<h3>11. Was bedeuten die Lizenzen?</h3>
+
+<p><strong>Creative Commons 4.0 International Lizenzen - Lizenzen für freie Inhalte</strong></p>
+
+<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" /></a><br />
+Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Namensnennung 4.0 International Lizenz</a>. CC BY 4.0<br />
+<a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" /></a><br />
+Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Namensnennung-Nicht kommerziell 4.0 International Lizenz</a>. CC BY-NC 4.0<br />
+<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="border-width:0" /></a><br />
+Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Creative Commons Namensnennung - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz</a>. CC BY-NC-ND 4.0<br />
+<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style="border-width:0" /></a><br />
+Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. CC BY-NC-SA 4.0<br />
+<a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" style="border-width:0" /></a><br />
+Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license">Creative Commons Namensnennung - Keine Bearbeitungen 4.0 International Lizenz</a>. CC BY-ND 4.0<br />
+<a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" style="border-width:0" /></a><br />
+Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. CC BY-SA 4.0</p>
+
+<p> </p>
+
+<p><strong>Open Data Commons Lizenzen - Lizenzen für freie Datenbanken</strong></p>
+<a href="https://opendatacommons.org/licenses/by/summary/">Open Data Commons Attributions License</a> ODC-BY 1.0<br />
+<a href="https://opendatacommons.org/licenses/pddl/summary/">Public Domain Dedication and License (PDDL)</a> PDDL 1.0<br />
+<a href="https://opendatacommons.org/licenses/odbl/summary/">Open Database License (ODC-ODbL, ODbL)</a> ODbL 1.0
+
+<h3>12. Noch Fragen?</h3>
+
+<p>Ansprechpartnerin für alle den Publikationsserver betreffenden Fragen ist:</p>
+
+<p><br />
+Ilka Kleinod<br />
+Bibliothek<br />
+Weierstraß-Institut<br />
+Mohrenstr. 39<br />
+10117 Berlin</p>
+
+<p>++49 (0)30 20372-294<br />
+<span class="madress">ilka.kleinod [at] wias-berlin.de</span></p>
+</section><meta><log lastEditor="ikleinod" date="2017-03-31" time="11:31" /></meta></MyCoReWebPage>

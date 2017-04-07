@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Willkommen beim Publikationsserver des WIAS">
-    <div class="jumbotwo">
-      <div class="row">
-        <div class="col-md-12" lang="de">
-          <h1>Der Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12" lang="de">
-          <p>
-            ... ist das institutionelle Repositorium des Weierstraß-Instituts mit einer wachsenden Sammlung
-            von Publikationen aus unserem Institut.
-          </p>
-          <p>
-            Mit dem Publikationsserver unterstützt das WIAS die Wissenschaftlerinnen und Wissenschaftler bei
-            der Veröffentlichung ihrer Publikationen im Rahmen der Open Access Initiative.
-          </p>
-          <p>
-            Sämtliche Publikationen, wie  beispielsweise  Preprints, Reports, Lehrmaterialien, Forschungsdaten,
-            Software  etc. sei es als Erst- oder als Zweitveröffentlichung können auf dem Server abgelegt werden.
-            Ebenso ist die bloße Eingabe von bibliographischen Daten ohne Volltext möglich, um beispielsweise
-            Publikationslisten generieren zu können.
-          </p>
-        </div>
-      </div>
-    </div>
-    </section>
-    <meta>
-        <log lastEditor="administrator" date="2017-02-28" time="10:35"/>
-    </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Willkommen beim Publikationsserver des WIAS"><div class="jumbotwo">
+<div class="row">
+<div class="col-md-12" lang="de">
+<h1>Der Publikationsserver des Weierstraß-Instituts für Angewandte Analysis und Stochastik</h1>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12" lang="de">
+<p>... ist das institutionelle Repositorium des Weierstraß-Instituts mit einer wachsenden Sammlung von Publikationen aus unserem Institut.</p>
+
+<p>Mit dem Publikationsserver unterstützt das WIAS die Wissenschaftlerinnen und Wissenschaftler bei der Veröffentlichung ihrer Publikationen im Rahmen der Open Access Initiative.</p>
+
+<p>Sämtliche Publikationen, wie beispielsweise Preprints, Reports, Lehrmaterialien, Forschungsdaten, Software etc. sei es als Erst- oder als Zweitveröffentlichung können auf dem Server abgelegt werden. Ebenso ist die Eingabe von bibliographischen Daten ohne Volltext möglich, um beispielsweise Publikationslisten generieren zu können.</p>
+</div>
+</div>
+</div>
+</section><meta><log lastEditor="ikleinod" date="2017-04-05" time="09:51" /></meta></MyCoReWebPage>
