@@ -59,10 +59,13 @@ html body header #header_box {
 ---------------------------------------------------------------------------- */
 html .mir-start_page .jumbotron {
   color: #002F66;
-  background: #ffffff url('../images/vb_wias_8766.jpg') no-repeat center center;
-  height: 350px;
+  background: #ffffff;
+  padding: 0;
 }
 
+#wias_jumbo-image {
+  width: 100%;
+}
 
 /* ----------------------------------------------------------------------------
    Main Navigation
