@@ -2,7 +2,8 @@
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
-    exclude-result-prefixes="mcrver">
+    xmlns:math="http://exslt.org/math"
+    exclude-result-prefixes="mcrver math">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
   <xsl:template name="mir.navigation">
@@ -64,8 +65,9 @@
   <xsl:template name="mir.jumbotwo">
     <!-- show only on startpage -->
     <xsl:if test="//div/@class='jumbotwo'">
+      <xsl:variable name="random" select="(floor(math:random()*23) mod 23) + 1" />
       <div class="jumbotron">
-        <img src="../images/jumbotron/vb_wias_8766.jpg" alt="Bild" id="wias_jumbo-image" />
+        <img src="../images/jumbotron/vb_wias_{$random}.jpg" alt="Bild" id="wias_jumbo-image" />
       </div>
     </xsl:if>
   </xsl:template>
@@ -100,38 +102,6 @@
         <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
       </a>
     </div>
-
-    <!-- show random image in jumbotron -->
-    <script type="text/javascript">
-      var wias_jumboImages = [
-        "../images/jumbotron/vb_wias_8706.jpg",
-        "../images/jumbotron/vb_wias_8715.jpg",
-        "../images/jumbotron/vb_wias_8727.jpg",
-        "../images/jumbotron/vb_wias_8738.jpg",
-        "../images/jumbotron/vb_wias_8766.jpg",
-        "../images/jumbotron/vb_wias_8777.jpg",
-        "../images/jumbotron/vb_wias_8782.jpg",
-        "../images/jumbotron/vb_wias_8786.jpg",
-        "../images/jumbotron/vb_wias_8798.jpg",
-        "../images/jumbotron/vb_wias_8809.jpg",
-        "../images/jumbotron/vb_wias_8831.jpg",
-        "../images/jumbotron/vb_wias_8838.jpg",
-        "../images/jumbotron/vb_wias_8843.jpg",
-        "../images/jumbotron/vb_wias_8845.jpg",
-        "../images/jumbotron/vb_wias_8846.jpg",
-        "../images/jumbotron/vb_wias_8850.jpg",
-        "../images/jumbotron/vb_wias_8857.jpg",
-        "../images/jumbotron/vb_wias_8867.jpg",
-        "../images/jumbotron/vb_wias_8877.jpg",
-        "../images/jumbotron/vb_wias_8887.jpg",
-        "../images/jumbotron/vb_wias_8896.jpg",
-        "../images/jumbotron/vb_wias_8898.jpg",
-        "../images/jumbotron/vb_wias_8900.jpg"
-      ];
-      var size = wias_jumboImages.length
-      var x = Math.floor(size*Math.random())
-      document.getElementById('wias_jumbo-image').src=wias_jumboImages[x];
-    </script>
   </xsl:template>
 
 </xsl:stylesheet>
