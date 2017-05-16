@@ -25,6 +25,11 @@ $(document).ready(function() {
           $('#submit_publication').append('<input type="hidden" name="relatedItemType" value="series" />');
           $('#submit_publication').submit();
           break;
+        case "technical_report":
+          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="wias_mods_00000035" />');
+          $('#submit_publication').append('<input type="hidden" name="relatedItemType" value="series" />');
+          $('#submit_publication').submit();
+          break;
         default:
           $('#submit_publication').submit();
       }
