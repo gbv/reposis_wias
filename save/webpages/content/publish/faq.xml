@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="FAQ"><h2>FAQ - Häufige Fragen</h2>
+<MyCoReWebPage><section xml:lang="de" title="FAQ">ODC-BY 1.0PDDL 1.0ODbL 1.0
+<div>
+<h2>FAQ - Häufige Fragen</h2>
 
 <h3>1. Warum gibt es den Publikationsserver?</h3>
 
@@ -15,7 +17,7 @@
 
 <h3>4. Welche Rechte übertrage ich dem Betreiber?</h3>
 
-<p>Dem Betreiber des Publikationsservers wird das nicht-ausschließliche (einfache) Recht zur freien elektronischen Publikation im Internet und zur Archivierung auf seinem Schriftenserver eingeräumt. Alle weiteren Rechte für die Verwertung der Arbeit verbleiben beim Autor. Weitergehende Rechte kann der Autor durch die Hinzufügung einer freien Lizenz einräumen.</p>
+<p>Dem Betreiber des Publikationsservers wird das nicht-ausschließliche (einfache) Recht zur freien elektronischen Publikation im Internet und zur Archivierung auf seinem Schriftenserver eingeräumt. Alle weiteren Rechte für die Verwertung der Arbeit verbleiben bei der Autorin oder dem Autor. Weitergehende Rechte kann die Autorin oder der Autor durch das Hinzufügen einer freien Lizenz einräumen.</p>
 
 <h3>5. Was passiert mit Rechten Dritter?</h3>
 
@@ -60,12 +62,29 @@ Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licen
 <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" style="border-width:0" /></a><br />
 Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. CC BY-SA 4.0</p>
 
-<p> </p>
-
 <p><strong>Open Data Commons Lizenzen - Lizenzen für freie Datenbanken</strong></p>
-<a href="https://opendatacommons.org/licenses/by/summary/">Open Data Commons Attributions License</a> ODC-BY 1.0<br />
-<a href="https://opendatacommons.org/licenses/pddl/summary/">Public Domain Dedication and License (PDDL)</a> PDDL 1.0<br />
-<a href="https://opendatacommons.org/licenses/odbl/summary/">Open Database License (ODC-ODbL, ODbL)</a> ODbL 1.0
+
+<p><a href="https://opendatacommons.org/licenses/by/summary/">Open Data Commons Attributions License</a><br />
+<a href="https://opendatacommons.org/licenses/pddl/summary/">Public Domain Dedication and License (PDDL)</a><br />
+<a href="https://opendatacommons.org/licenses/odbl/summary/">Open Database License (ODC-ODbL, ODbL)</a></p>
+
+<p><strong>GNU General Public Lizenzen - Lizenzen für freie Software</strong></p>
+
+<p>GNU General Public License (GPL) version (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv3">#GPLv3</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPL</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPLv3</a>)</p>
+
+<p>GNU General Public License (GPL) version 2 (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv2">#GPLv2</a>)</p>
+
+<p>GNU Lesser General Public License (LGPL) version 3 (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPLv3</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPL</a>)</p>
+
+<p>GNU Lesser General Public License (LGPL) version 2.1 (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPLv2.1">#LGPLv2.1</a>)</p>
+
+<p>GNU Affero General Public License (AGPL) version 3 (<a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3">#AGPLv3</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#AGPL">#AGPL</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3.0">#AGPLv3.0</a>)</p>
+
+<p>GNU All-Permissive License (<a href="https://www.gnu.org/licenses/license-list.de.html#GNUAllPermissive">#GNUAllPermissive</a>)</p>
+
+<p><strong>MIT Lizenz - Lizenz für freie Software</strong></p>
+
+<p>MIT License <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a></p>
 
 <h3>12. Noch Fragen?</h3>
 
@@ -80,4 +99,5 @@ Mohrenstr. 39<br />
 
 <p>++49 (0)30 20372-294<br />
 <span class="madress">ilka.kleinod [at] wias-berlin.de</span></p>
-</section><meta><log lastEditor="ikleinod" date="2017-03-31" time="11:31" /></meta></MyCoReWebPage>
+</div>
+</section><meta><log lastEditor="ikleinod" date="2017-05-22" time="11:52" /></meta></MyCoReWebPage>
