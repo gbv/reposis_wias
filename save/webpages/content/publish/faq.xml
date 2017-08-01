@@ -1,103 +1,431 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="FAQ">ODC-BY 1.0PDDL 1.0ODbL 1.0
-<div>
-<h2>FAQ - Häufige Fragen</h2>
+<MyCoReWebPage>
+  <section xml:lang="de" title="FAQ">
+    <h2>FAQ - Häufige Fragen</h2>
+    <h3>1. Warum gibt es den Publikationsserver?</h3>
+    <p>Der Publikationsserver bietet den Wissenschaftlerinnen und
+      Wissenschaftlern des WIAS die organisatorischen und technischen
+      Rahmenbedingungen zur elektronischen Publikation
+      wissenschaftlicher Dokumente.</p>
+    <h3>2. Was sammeln wir?</h3>
+    <p>Der Sammelauftrag des Betreibers des Publikationsservers umfasst
+      die Speicherung, Katalogisierung und Archivierung aller
+      elektronischen Dokumente, die durch Wissenschaftlerinnen und
+      Wissenschaftler des WIAS veröffentlicht werden. Dies bezieht sich
+      sowohl auf rein elektronische Publikationen als auch auf
+      elektronische Versionen gedruckter Dokumente. Sie können
+      Preprints, Reports, Technical-Reports, Jahresforschungsberichte,
+      Artikel, Monographien, Forschungsdaten, Software, Lehrmaterialien,
+      Poster, Videoaufnahmen etc. einstellen.</p>
+    <h3>3. Was passiert mit meinen Urheberrechten?</h3>
+    <p>Die Urheberrechte der Autorinnen und Autoren bleiben gewahrt. Die
+      Veröffentlichung auf dem Publikationsserver steht einer weiteren
+      Veröffentlichung der Dokumente in Fachzeitschriften oder
+      Monografien sowie auf anderen Servern nicht entgegen. Gemäß den
+      Empfehlungen des Wissenschaftsrats werden alle
+      Wissenschaftlerinnen und Wissenschaftler in Deutschland
+      aufgefordert, sich beim Abschluss von Verlagsverträgen ein
+      entsprechendes weiteres Nutzungsrecht zu sichern und die von ihnen
+      verfassten Dokumente zusätzlich - eventuell nach einer
+      Embargofrist - auf dem Publikationsserver zu veröffentlichen.</p>
+    <h3>4. Welche Rechte übertrage ich dem Betreiber?</h3>
+    <p>Dem Betreiber des Publikationsservers wird das
+      nicht-ausschließliche (einfache) Recht zur freien elektronischen
+      Publikation im Internet und zur Archivierung auf seinem
+      Schriftenserver eingeräumt. Alle weiteren Rechte für die Verwertung
+      der Arbeit verbleiben bei der Autorin oder dem Autor. Weitergehende
+      Rechte kann die Autorin oder der Autor durch das Hinzufügen einer
+      freien Lizenz einräumen.</p>
+    <h3>5. Was passiert mit Rechten Dritter?</h3>
+    <p>Die Einhaltung von Urheber- und Verwertungsrechten Dritter liegt
+      in der Verantwortung der Autorinnen und Autoren der elektronischen
+      Dokumente. Der Betreiber ist berechtigt, den Zugriff auf eine
+      Publikation zu sperren, soweit konkrete Anhaltspunkte für eine
+      Verletzung von Rechten Dritter bestehen. Der Betreiber wird den
+      Veröffentlichenden in einem solchen Fall über die Sperrung
+      informieren.</p>
+    <h3>6. Welche Bedingungen muss das Dokument erfüllen?</h3>
+    <p>Das Dokument ist zur Verbreitung in der Öffentlichkeit bestimmt.
+      Es stellt kein dynamisches Dokument dar. Sind Veränderungen
+      notwendig, wird das geänderte elektronische Dokument als neue
+      Version gespeichert. Es entspricht den vom Betreiber vorgegebenen
+      technischen Parametern.</p>
+    <h3>7. Was sind die technischen Besonderheiten des
+      Publikationsservers?</h3>
+    <p>Die elektronischen Dokumente werden mit individuellen und
+      dauerhaften Adressen versehen, welche einen unmittelbaren Zugriff
+      auf die Dokumente erlauben. Die Adressen werden als URNs (Uniform
+      Resource Name) registriert. Die Administration und Pflege der URNs
+      wird vom Betreiber garantiert. Ergänzend ist es möglich DataCite
+      Digital Object Identifiers (DOIs) zu vergeben.</p>
+    <p>Die formalen und inhaltsbezogenen Metadaten zu den
+      veröffentlichten Beiträgen können über eine standardisierte
+      Schnittstelle (OAI-PMH 2.0), an etablierte wissenschaftliche
+      Suchmaschinen (z.B. BASE und OAIster) weitergegeben werden.
+      Daneben werden Suchbots über spezielle Tags in den Webseiten und
+      eine Sitemap speziell unterstützt, um beispielsweise auch die
+      Sichtbarkeit bei Google Scholar zu erhöhen. Dies gewährt eine
+      globale Sichtbarkeit der hier eingestellten Daten.</p>
+    <h3>8. Welche Kosten entstehen mir?</h3>
+    <p>Die elektronische Veröffentlichung von Publikationen ist für
+      Wissenschaftlerinnen und Wissenschaftler am WIAS kostenfrei.</p>
+    <h3>9. Weitergabe an die Deutsche Nationalbibliothek</h3>
+    <p>Dem Betreiber ist es gestattet, über die Bibliothek die
+      elektronische Version der Deutschen Nationalbibliothek (DNB) im
+      Rahmen der Pflichtabgabe nach dem Gesetz über die Deutsche
+      Nationalbibliothek zur Verfügung zu stellen.</p>
+    <h3>10. Kann ich Dokumente auf sozialen Netzwerken teilen?</h3>
+    <p>Ja, die Dokumente können auf Facebook, Twitter und Google+
+      geteilt werden.</p>
+    <h3>11. Was bedeuten die Lizenzen?</h3>
+    <p>
+      <strong>Creative Commons 4.0 International Lizenzen - Lizenzen für
+        freie Inhalte</strong>
+    </p>
+    <p>
+      <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      Dieses Werk ist lizenziert unter einer
+      <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
+        Commons Namensnennung 4.0 International Lizenz</a>. CC BY 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      Dieses Werk ist lizenziert unter einer
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative
+        Commons Namensnennung-Nicht kommerziell 4.0 International Lizenz</a>. CC BY-NC 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      Dieses Werk ist lizenziert unter einer
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">
+        Creative Commons Namensnennung - Nicht kommerziell - Keine
+        Bearbeitungen 4.0 International Lizenz</a>. CC BY-NC-ND 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      Dieses Werk ist lizenziert unter einer
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">
+        Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe
+        unter gleichen Bedingungen 4.0 International Lizenz</a>. CC BY-NC-SA 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      Dieses Werk ist lizenziert unter einer
+      <a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license">Creative
+        Commons Namensnennung - Keine Bearbeitungen 4.0 International
+        Lizenz</a>. CC BY-ND 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      Dieses Werk ist lizenziert unter einer
+      <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative
+        Commons Namensnennung - Weitergabe unter gleichen Bedingungen
+        4.0 International Lizenz</a>. CC BY-SA 4.0
+    </p>
+    <p>
+      <strong>Open Data Commons Lizenzen - Lizenzen für freie
+        Datenbanken</strong>
+    </p>
+    <p>
+      <a href="https://opendatacommons.org/licenses/by/summary/">Open Data Commons Attributions License</a>
+      ODC-BY 1.0
+      <br />
+      <a href="https://opendatacommons.org/licenses/pddl/summary/">Public Domain Dedication and License (PDDL)</a>
+      PDDL 1.0
+      <br />
+      <a href="https://opendatacommons.org/licenses/odbl/summary/">Open Database License (ODC-ODbL, ODbL)</a>
+      ODbL 1.0
+    </p>
+    <p>
+      <strong>GNU General Public Lizenzen - Lizenzen für freie Software</strong>
+    </p>
+    <p>
+      GNU General Public License (GPL) version
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv3">#GPLv3</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPL</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPLv3</a>)
+    </p>
+    <p>
+      GNU General Public License (GPL) version 2
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv2">#GPLv2</a>)
+    </p>
+    <p>
+      GNU Lesser General Public License (LGPL) version 3
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPLv3</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPL</a>)
+    </p>
+    <p>
+      GNU Lesser General Public License (LGPL) version 2.1
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPLv2.1">#LGPLv2.1</a>)
+    </p>
+    <p>
+      GNU Affero General Public License (AGPL) version 3
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3">#AGPLv3</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#AGPL">#AGPL</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3.0">#AGPLv3.0</a>)
+    </p>
+    <p>
+      GNU All-Permissive License
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#GNUAllPermissive">#GNUAllPermissive</a>)
+    </p>
+    <p>
+      <strong>MIT Lizenz - Lizenz für freie Software</strong>
+    </p>
+    <p>
+      MIT License
+      <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>
+    </p>
 
-<h3>1. Warum gibt es den Publikationsserver?</h3>
+    <h3>12. Noch Fragen?</h3>
+    <p>Ansprechpartnerin für alle den Publikationsserver betreffenden
+      Fragen ist:</p>
+    <p>
+      Ilka Kleinod
+      <br />
+      Bibliothek
+      <br />
+      Weierstraß-Institut
+      <br />
+      Mohrenstr. 39
+      <br />
+      10117 Berlin
+    </p>
+    <p>
+      ++49 (0)30 20372-294
+      <br />
+      <span class="madress">ilka.kleinod [at] wias-berlin.de</span>
+    </p>
+  </section>
 
-<p>Der Publikationsserver bietet den Wissenschaftlerinnen und Wissenschaftlern des WIAS die organisatorischen und technischen Rahmenbedingungen zur elektronischen Publikation wissenschaftlicher Dokumente.</p>
+  <section xml:lang="en" title="FAQ">
+    <h2>FAQ - Frequently asked questions</h2>
+    <h3>1. Why have a publication server?</h3>
+    <p>
+      The server offers WIAS’ scientists the organizational and technical possibility to
+      publish scientific documents electronically.
+    </p>
 
-<h3>2. Was sammeln wir?</h3>
+    <h3>2. What do we store?</h3>
+    <p>
+      We store, catalogue and archive all electronic documents which have been published
+      by WIAS’ scientists. You can deposit preprints, reports, technical reports, annual
+      research reports, papers, books, research data, software, teaching material, poster,
+      videos, etc.
+    </p>
 
-<p>Der Sammelauftrag des Betreibers des Publikationsservers umfasst die Speicherung, Katalogisierung und Archivierung aller elektronischen Dokumente, die durch Wissenschaftlerinnen und Wissenschaftler des WIAS veröffentlicht werden. Dies bezieht sich sowohl auf rein elektronische Publikationen als auch auf elektronische Versionen gedruckter Dokumente. Sie können Preprints, Reports, Technical-Reports, Jahresforschungsberichte, Artikel, Monographien, Forschungsdaten, Software, Lehrmaterialien, Poster, Videoaufnahmen etc. einstellen.</p>
+    <h3>3. What about my copyright?</h3>
+    <p>
+      Authors retain their copyrights. Papers previously deposited on this repository can
+      also be published in journals, books or on other repositories. In dealing with publishers,
+      all scientists are asked to retain a non-exclusive right for the work to be stored on
+      WIAS’ institutional repository (after a possible embargo period).
+    </p>
 
-<h3>3. Was passiert mit meinen Urheberrechten?</h3>
+    <h3>4. Which rights are granted to the repository?</h3>
+    <p>
+      The repository maintainer retains a non-exclusive right to publish the work open access
+      and to archive the work. All further rights stay with the author. The author may grant
+      additional rights by adding a public copyright license.
+    </p>
 
-<p>Die Urheberrechte der Autorinnen und Autoren bleiben gewahrt. Die Veröffentlichung auf dem Publikationsserver steht einer weiteren Veröffentlichung der Dokumente in Fachzeitschriften oder Monografien sowie auf anderen Servern nicht entgegen. Gemäß den Empfehlungen des Wissenschaftsrats werden alle Wissenschaftlerinnen und Wissenschaftler in Deutschland aufgefordert, sich beim Abschluss von Verlagsverträgen ein entsprechendes weiteres Nutzungsrecht zu sichern und die von ihnen verfassten Dokumente zusätzlich - eventuell nach einer Embargofrist - auf dem Publikationsserver zu veröffentlichen.</p>
+    <h3>5. What about the rights of third parties?</h3>
+    <p>
+      All publishing authors are responsible to make sure third parties’ rights are preserved.
+      The website maintainer will block access to any publication that violates third parties’
+      rights. In this case, publishing authors will be notified by the site maintainer.
+    </p>
 
-<h3>4. Welche Rechte übertrage ich dem Betreiber?</h3>
+    <h3>6. Which requirements must the documents meet? </h3>
+    <p>
+      Documents will have to be distributable to the public. Documents are not dynamic. Thus,
+      if there are changes to the document, a new version of the document has to be stored
+      additionally. Furthermore, documents have to match the maintainer’s predetermined
+      technical parameters.
+    </p>
 
-<p>Dem Betreiber des Publikationsservers wird das nicht-ausschließliche (einfache) Recht zur freien elektronischen Publikation im Internet und zur Archivierung auf seinem Schriftenserver eingeräumt. Alle weiteren Rechte für die Verwertung der Arbeit verbleiben bei der Autorin oder dem Autor. Weitergehende Rechte kann die Autorin oder der Autor durch das Hinzufügen einer freien Lizenz einräumen.</p>
+    <h3>7. What are the technical specifications?</h3>
+    <p>
+      All electronic documents will be provided with individual and persistent addresses that
+      allow direct access to the documents. Addresses are registered as URNs (Uniform Resource
+      Name). Administration and maintenance of all URNs is guaranteed by the maintainer. Moreover,
+      it is possible to assign DataCite Digital Object Identifiers (DOIs). All formal and content
+      based metadata can be accessed via an OAI-PMH 2.0 interface by scientific search engines
+      such as BASE or OAlster. Furthermore, we provide special tags in our websites to support
+      searchbots in order to increase visibility with, e.g., Google Scholar. Thus, we grant
+      global visibility of all data entered.
+    </p>
 
-<h3>5. Was passiert mit Rechten Dritter?</h3>
+    <h3>8. How much does it cost?</h3>
+    <p>
+      WIAS’ scientists publish for free.
+    </p>
 
-<p>Die Einhaltung von Urheber- und Verwertungsrechten Dritter liegt in der Verantwortung der Autorinnen und Autoren der elektronischen Dokumente. Der Betreiber ist berechtigt, den Zugriff auf eine Publikation zu sperren, soweit konkrete Anhaltspunkte für eine Verletzung von Rechten Dritter bestehen. Der Betreiber wird den Veröffentlichenden in einem solchen Fall über die Sperrung informieren.</p>
+    <h3>9. Transfer to German National Library</h3>
+    <p>
+      The maintainer of this repository is allowed to provide the German National Library with an electronic version of all documents that are obliged to be submitted according to German law.
+    </p>
 
-<h3>6. Welche Bedingungen muss das Dokument erfüllen?</h3>
+    <h3>10. May I share documents on social networks?</h3>
+    <p>
+      Yes, all documents may be shared on Facebook, Twitter und Google+.
+    </p>
 
-<p>Das Dokument ist zur Verbreitung in der Öffentlichkeit bestimmt. Es stellt kein dynamisches Dokument dar. Sind Veränderungen notwendig, wird das geänderte elektronische Dokument als neue Version gespeichert. Es entspricht den vom Betreiber vorgegebenen technischen Parametern.</p>
+    <h3>11. What about licensing?</h3>
+    <p>
+      <strong>Creative Commons 4.0 International Licenses - free distribution of an otherwise copyrighted work</strong>
+    </p>
+    <p>
+      <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      This work is licensed under a
+      <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>. CC BY 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      This work is licensed under a
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution - NonCommercial 4.0 International License</a>. CC BY-NC 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      This work is licensed under a
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">
+        Creative Commons Attribution - NonCommercial - NoDerivatives 4.0 International License</a>. CC BY-NC-ND 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      This work is licensed under a
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">
+        Creative Commons Attribution - NonCommercial - ShareAlike 4.0 International License</a>. CC BY-NC-SA 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      This work is licensed under a
+      <a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license">Creative Commons Attribution - NoDerivatives 4.0 International License</a>. CC BY-ND 4.0
+      <br />
+      <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">
+        <img alt="Creative Commons Lizenzvertrag"
+          src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+          style="border-width:0" />
+      </a>
+      <br />
+      This work is licensed under a
+      <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative Commons Attribution - ShareAlike 4.0 International License</a>. CC BY-SA 4.0
+    </p>
+    <p>
+      <strong>Open Data Commons Licenses - Licenses for databases</strong>
+    </p>
+    <p>
+      <a href="https://opendatacommons.org/licenses/by/summary/">Open Data Commons Attributions License</a> ODC-BY 1.0
+      <br />
+      <a href="https://opendatacommons.org/licenses/pddl/summary/">Public Domain Dedication and License (PDDL)</a> PDDL 1.0
+      <br />
+      <a href="https://opendatacommons.org/licenses/odbl/summary/">Open Database License (ODC-ODbL, ODbL)</a> ODbL 1.0
+    </p>
+    <p>
+      <strong>GNU General Public Licenses – Licenses for Software</strong>
+    </p>
+    <p>
+      GNU General Public License (GPL) version
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv3">#GPLv3</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPL</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPLv3</a>)
+    </p>
+    <p>
+      GNU General Public License (GPL) version 2
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv2">#GPLv2</a>)
+    </p>
+    <p>
+      GNU Lesser General Public License (LGPL) version 3
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPLv3</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPL</a>)
+    </p>
+    <p>
+      GNU Lesser General Public License (LGPL) version 2.1
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPLv2.1">#LGPLv2.1</a>)
+    </p>
+    <p>
+      GNU Affero General Public License (AGPL) version 3
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3">#AGPLv3</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#AGPL">#AGPL</a>, 
+      <a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3.0">#AGPLv3.0</a>)
+    </p>
+    <p>
+      GNU All-Permissive License
+      (<a href="https://www.gnu.org/licenses/license-list.de.html#GNUAllPermissive">#GNUAllPermissive</a>)
+    </p>
+    <p>
+      <strong>MIT License – License for Software</strong>
+    </p>
+    <p>
+      MIT License
+      <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>
+    </p>
 
-<h3>7. Was sind die technischen Besonderheiten des Publikationsservers?</h3>
 
-<p>Die elektronischen Dokumente werden mit individuellen und dauerhaften Adressen versehen, welche einen unmittelbaren Zugriff auf die Dokumente erlauben. Die Adressen werden als URNs (Uniform Resource Name) registriert. Die Administration und Pflege der URNs wird vom Betreiber garantiert. Ergänzend ist es möglich DataCite Digital Object Identifiers (DOIs) zu vergeben.</p>
+    <h3>12. Further questions?</h3>
+    <p>Please contact:</p>
+    <p>
+      Ilka Kleinod
+      <br />
+      Library
+      <br />
+      Weierstrass Institute
+      <br />
+      Mohrenstr. 39
+      <br />
+      10117 Berlin
+    </p>
+    <p>
+      ++49 (0)30 20372-294
+      <br />
+      <span class="madress">ilka.kleinod [at] wias-berlin.de</span>
+    </p>
 
-<p>Die formalen und inhaltsbezogenen Metadaten zu den veröffentlichten Beiträgen können über eine standardisierte Schnittstelle (OAI-PMH 2.0), an etablierte wissenschaftliche Suchmaschinen (z.B. BASE und OAIster) weitergegeben werden. Daneben werden Suchbots über spezielle Tags in den Webseiten und eine Sitemap speziell unterstützt, um beispielsweise auch die Sichtbarkeit bei Google Scholar zu erhöhen. Dies gewährt eine globale Sichtbarkeit der hier eingestellten Daten.</p>
-
-<h3>8. Welche Kosten entstehen mir?</h3>
-
-<p>Die elektronische Veröffentlichung von Publikationen ist für Wissenschaftlerinnen und Wissenschaftler am WIAS kostenfrei.</p>
-
-<h3>9. Weitergabe an die Deutsche Nationalbibliothek</h3>
-
-<p>Dem Betreiber ist es gestattet, über die Bibliothek die elektronische Version der Deutschen Nationalbibliothek (DNB) im Rahmen der Pflichtabgabe nach dem Gesetz über die Deutsche Nationalbibliothek zur Verfügung zu stellen.</p>
-
-<h3>10. Kann ich Dokumente auf sozialen Netzwerken teilen?</h3>
-
-<p>Ja, die Dokumente können auf Facebook, Twitter und Google+ geteilt werden.</p>
-
-<h3>11. Was bedeuten die Lizenzen?</h3>
-
-<p><strong>Creative Commons 4.0 International Lizenzen - Lizenzen für freie Inhalte</strong></p>
-
-<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" /></a><br />
-Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Namensnennung 4.0 International Lizenz</a>. CC BY 4.0<br />
-<a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" /></a><br />
-Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Namensnennung-Nicht kommerziell 4.0 International Lizenz</a>. CC BY-NC 4.0<br />
-<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="border-width:0" /></a><br />
-Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Creative Commons Namensnennung - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz</a>. CC BY-NC-ND 4.0<br />
-<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style="border-width:0" /></a><br />
-Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. CC BY-NC-SA 4.0<br />
-<a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" style="border-width:0" /></a><br />
-Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license">Creative Commons Namensnennung - Keine Bearbeitungen 4.0 International Lizenz</a>. CC BY-ND 4.0<br />
-<a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" style="border-width:0" /></a><br />
-Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. CC BY-SA 4.0</p>
-
-<p><strong>Open Data Commons Lizenzen - Lizenzen für freie Datenbanken</strong></p>
-
-<p><a href="https://opendatacommons.org/licenses/by/summary/">Open Data Commons Attributions License</a><br />
-<a href="https://opendatacommons.org/licenses/pddl/summary/">Public Domain Dedication and License (PDDL)</a><br />
-<a href="https://opendatacommons.org/licenses/odbl/summary/">Open Database License (ODC-ODbL, ODbL)</a></p>
-
-<p><strong>GNU General Public Lizenzen - Lizenzen für freie Software</strong></p>
-
-<p>GNU General Public License (GPL) version (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv3">#GPLv3</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPL</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#GNUGPL">#GNUGPLv3</a>)</p>
-
-<p>GNU General Public License (GPL) version 2 (<a href="https://www.gnu.org/licenses/license-list.de.html#GPLv2">#GPLv2</a>)</p>
-
-<p>GNU Lesser General Public License (LGPL) version 3 (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPLv3</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#LGPL">#LGPL</a>)</p>
-
-<p>GNU Lesser General Public License (LGPL) version 2.1 (<a href="https://www.gnu.org/licenses/license-list.de.html#LGPLv2.1">#LGPLv2.1</a>)</p>
-
-<p>GNU Affero General Public License (AGPL) version 3 (<a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3">#AGPLv3</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#AGPL">#AGPL</a>, <a href="https://www.gnu.org/licenses/license-list.de.html#AGPLv3.0">#AGPLv3.0</a>)</p>
-
-<p>GNU All-Permissive License (<a href="https://www.gnu.org/licenses/license-list.de.html#GNUAllPermissive">#GNUAllPermissive</a>)</p>
-
-<p><strong>MIT Lizenz - Lizenz für freie Software</strong></p>
-
-<p>MIT License <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a></p>
-
-<h3>12. Noch Fragen?</h3>
-
-<p>Ansprechpartnerin für alle den Publikationsserver betreffenden Fragen ist:</p>
-
-<p><br />
-Ilka Kleinod<br />
-Bibliothek<br />
-Weierstraß-Institut<br />
-Mohrenstr. 39<br />
-10117 Berlin</p>
-
-<p>++49 (0)30 20372-294<br />
-<span class="madress">ilka.kleinod [at] wias-berlin.de</span></p>
-</div>
-</section><meta><log lastEditor="ikleinod" date="2017-05-22" time="11:52" /></meta></MyCoReWebPage>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2017-08-01" time="11:31" />
+  </meta>
+</MyCoReWebPage>
