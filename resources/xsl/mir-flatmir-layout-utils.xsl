@@ -15,6 +15,7 @@
         <nav>
           <ul class="nav navbar-nav pull-right">
             <xsl:call-template name="mir.loginMenu" />
+            <xsl:call-template name="mir.languageMenu" />
           </ul>
         </nav>
       </div>
