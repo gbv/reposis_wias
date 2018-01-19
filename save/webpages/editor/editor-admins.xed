@@ -30,7 +30,7 @@
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="edition" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="extent" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="type.of.resource" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language.repeated" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="language.repeated" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="geographic" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="cartographics" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="sdnb.repeat" />
@@ -41,7 +41,7 @@
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="access" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="rights" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="copyrightMD" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="institutes" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="institutes" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="subject.complex" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="abstract.repeated" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.box" />
