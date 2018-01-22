@@ -40,6 +40,12 @@
         <label xml:lang="x-hosts" text="proceedings standalone" />
         <label xml:lang="x-mapping" text="marcgt:article diniPublType:other" />
       </category>
+      <category ID="event">
+        <label xml:lang="en" text="Event" />
+        <label xml:lang="de" text="Ereignis" />
+        <label xml:lang="x-hosts" text="proceedings standalone" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType:other" />
+      </category>
       <category ID="review">
         <label xml:lang="en" text="Review" />
         <label xml:lang="de" text="Rezension" />

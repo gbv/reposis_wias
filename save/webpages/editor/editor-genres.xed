@@ -217,11 +217,6 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="related.item.reviewOf" />
   </xed:template>
 
-  <!-- ToDo: event -->
-  <!-- Event, Metadaten: purpose, location, duration and responsible agents
-also Zweck, Ort, Dauer, Verantwortliche  -->
-
-
   <xed:template id="publication.common">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
@@ -239,6 +234,13 @@ also Zweck, Ort, Dauer, Verantwortliche  -->
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="institutes" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.box" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="comment" />
+  </xed:template>
+
+  <!-- ToDo: event -->
+  <!-- Event, Metadaten: purpose, location, duration and responsible agents
+                         also Zweck, Ort, Dauer, Verantwortliche  -->
+  <xed:template id="event">
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="publication.common" />
   </xed:template>
 
   <xed:template id="report">
@@ -267,7 +269,7 @@ also Zweck, Ort, Dauer, Verantwortliche  -->
   </xed:template>
 
   <xed:template id="software">
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="title" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="research.data.person.repeated" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued" />
