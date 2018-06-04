@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MyCoReWebPage>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Impressum">
-  <div>
-    <h2>Impressum und Copyright</h2>
-    <h3>Impressum</h3>
-    <p>
-      Zu den gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung
-      siehe <a href="http://www.fv-berlin.de/impressum">das Impressum des
-      Forschungsverbundes</a>, dessen Bestandteil das WIAS ist.
-      Der lokale Anwendungs-Administrator kann über <span class="madress">dms-list [at] lists.gbv.de</span> erreicht
-      werden. Für andere Fragen siehe die <a href="contact.xml">Seite der Hauptkontaktpersonen</a>.
-    </p>
-    <h3>Copyright</h3>
-    <p>
-      Alle Web-Inhalte sind urheberrechtlich geschützt. Jede über die Betrachtung mit einem Web-Browser hinausgehende Nutzung
-      bedarf der schriftlichen Erlaubnis durch das WIAS.
-    </p>
-  </div>
-  </section>
-  <meta>
-    <log date="2017-03-21" time="10:59" labelPath=" » Impressum" lastEditor="Kathleen Neumann" />
-  </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Impressum"><div>
+<h2>Impressum und Copyright</h2>
+
+<h3>Impressum</h3>
+
+<p>Zu den gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung siehe <a href="http://www.fv-berlin.de/impressum">das Impressum des Forschungsverbundes</a>, dessen Bestandteil das WIAS ist. Der lokale Anwendungs-Administrator kann über <span class="madress">dms-list [at] lists.gbv.de</span> erreicht werden. Für andere Fragen siehe die <a href="contact.xml">Seite der Hauptkontaktpersonen</a>.</p>
+
+<h3>Copyright</h3>
+
+<p>Alle Web-Inhalte sind urheberrechtlich geschützt. Jede über die Betrachtung mit einem Web-Browser hinausgehende Nutzung bedarf der schriftlichen Erlaubnis durch das WIAS.</p>
+</div>
+</section><section xml:lang="en" title="Impressum"><div>
+<h2>Imprint &amp; Copyright</h2>
+
+<h3>Imprint</h3>
+
+<p>The legally required information for web services is given in the <a href="http://www.fv-berlin.de/impressum">imprint of the Forschungsverbund</a>, of which WIAS is a part.</p>
+
+<p>The local app administrator can be reached via this <a href="mailto:dms-list@lists.gbv.de">e-mail address</a>. For other contacts see the <a href="http://www.wias-berlin.de/contact/?lang=1">primary contacts</a>.</p>
+
+<h3>Copyright</h3>
+
+<p>All web content is protected by copyright. Any use beyond the implied license to view the site with a web browser requires a prior written consent by WIAS.</p>
+
+<p> </p>
+</div>
+</section><meta><log lastEditor="ikleinod" date="2018-02-14" time="16:04" /></meta></MyCoReWebPage>

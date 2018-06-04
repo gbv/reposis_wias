@@ -150,10 +150,10 @@
                 <label xml:lang="de">Aktive Sitzungen</label>
                 <label xml:lang="en">Session Management</label>
             </item>
-            <item href="/modules/webtools/processing/processing.xml" type="intern">
-              <label xml:lang="de">Aktive Prozesse</label>
-              <label xml:lang="en">Processing</label>
-           </item>
+            <item href="/modules/webtools/processing/processing.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+                <label xml:lang="de">Aktive Prozesse</label>
+                <label xml:lang="en">Processing</label>
+            </item>
             <item href="/modules/wcms2/wcms2.xml?XSL.useMT=false" type="extern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">WCMS</label>
                 <label xml:lang="en">WCMS</label>
