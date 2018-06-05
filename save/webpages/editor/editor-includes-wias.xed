@@ -2,6 +2,25 @@
 
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
+  <xed:template id="in.out">
+    <xed:source uri="xslStyle:scopus2mods,editor/mods2xeditor:{$MIR.Scopus.API.URL}abstract/{$scopusField}/{$ScopusID}?apikey={$MIR.Scopus.API.Key}" />
+    <xed:source uri="xslStyle:pubmed2mods,editor/mods2xeditor:{$MIR.PubMed.REST.URL}{$pubMedField}:{$PubMedID}" />
+    <xed:source uri="xslStyle:crossref2mods,editor/mods2xeditor:http://api.crossref.org/works/{$CrossRefDOI}/transform/application/rdf+xml" />
+    <xed:source uri="xslStyle:PPN-mods-simple,mir-PPN-import,mycoreobject-migrate-nameIdentifier,editor/mods2xeditor:http://unapi.gbv.de/?id={$MIR.PPN.DatabaseList}:ppn:{$ppn}&amp;format=mods36" />
+    <xed:source uri="xslStyle:RDF-mods-journal,editor/mods2xeditor:http://ld.zdb-services.de/data/{$zdbid}.rdf" />
+    <xed:source uri="xslStyle:editor/mods2xeditor:{$sourceUri}" />
+    <xed:source uri="xslStyle:mycoreobject-editor,editor/mods2xeditor:mcrobject:{$id}" />
+    <xed:source uri="xslStyle:mycoreobject-copyof,editor/mods2xeditor:mcrobject:{$copyofid}" />
+    <xed:source uri="xslStyle:mods-addPreceding,mycoreobject-copyof,editor/mods2xeditor:mcrobject:{$oldVersion}" />
+    <xed:source uri="xslStyle:as{$relatedItemType},editor/mods2xeditor:mcrobject:{$relatedItemId}" />
+
+    <xed:cancel
+      url="../servlets/MCRLockServlet?action=unlock&amp;id={$id}&amp;url=/receive/{$id}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:cancel url="{$cancelUrl}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:cancel url="../index.html?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:post-processor xsl="editor/xeditor2mods.xsl" />
+  </xed:template>
+
   <xed:template id="wias.class.pacs">
     <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/pacs'][@displayLabel='pacs']" min="1" max="10" method="build">
       <xed:bind xpath="@valueURIxEditor">

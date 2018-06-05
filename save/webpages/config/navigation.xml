@@ -92,8 +92,8 @@
             <label xml:lang="en">Submit new document (admin)</label>
         </item>
         <item href="/content/publish/importPPN.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Publizieren (PPN Import)</label>
-            <label xml:lang="en">Publish (PPN Import)</label>
+            <label xml:lang="de">Publizieren (Metadatenübernahme)</label>
+            <label xml:lang="en">Publish (Metadata Import)</label>
         </item>
         <item href="/content/publish/faq.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">FAQ</label>
