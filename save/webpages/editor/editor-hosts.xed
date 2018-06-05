@@ -2,6 +2,8 @@
 
 <xed:template xmlns:xed="http://www.mycore.de/xeditor">
 
+<!-- TODO: Erschienen in noch ein Feld DOI zu ergänzen? Und ein Feld Jahr? -->
+
   <xed:template id="series">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='series']">
