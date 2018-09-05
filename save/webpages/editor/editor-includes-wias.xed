@@ -211,4 +211,46 @@
       required-i18n="mir.validation.title" />
   </xed:template>
 
+
+  <xed:template id="link.repeated">
+    <xed:repeat xpath="mods:location/mods:url" min="1" max="5">
+      <fieldset>
+        <div class="row mir-fieldset-legend">
+          <legend class="col-md-9" style="margin-bottom:0px;padding-top:10px;">
+            <xed:output i18n="mir.link.legend" />
+          </legend>
+          <mir:help-pmud pmud="true" help-text="{i18n:mir.help.link}" />
+        </div>
+        <div class="mir-fieldset-content">
+        <div class="form-group">
+          <div class="col-md-3">
+            <xed:bind xpath="@access">
+              <select class="form-control" style="text-align:right; font-weight:bold;">
+                <option value="">
+                  <xed:output i18n="mir.link" />
+                </option>
+                <option value="preview">
+                  <xed:output i18n="mir.link.preview" />
+                </option>
+                <option value="raw object">
+                  <xed:output i18n="mir.link.raw_object" />
+                </option>
+                <option value="object in context">
+                  <xed:output i18n="mir.link.object_in_context" />
+                </option>
+              </select>
+            </xed:bind>
+          </div>
+          <div class="col-md-6">
+            <input type="text" size="50" class="form-control form-control-inline {$xed-validation-marker}" />
+          </div>
+          <mir:help-pmud help-text="{i18n:mir.help.link.url}" />
+        </div>
+        <mir:textfield xpath="@displayLabel" label="mir.link.displayLabel" help-text="{i18n:mir.help.link.displayLabel}" />
+        </div>
+      </fieldset>
+    </xed:repeat>
+  </xed:template>
+
+
 </xed:template>
