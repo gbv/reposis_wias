@@ -4,7 +4,10 @@
   <section xml:lang="all" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir"
       i18n="component.mods.editor.search.simple.pagetitle">
     <xed:form class="form-horizontal" role="form">
-      <xed:post-processor xsl="query-postprocessor.xsl" />
+      <xed:cleanup-rule xpath="//condition" relevant-if="(string-length(@value) &gt; 0) or value[string-length(text()) &gt; 0 ]" />
+      <xed:cleanup-rule xpath="//boolean" relevant-if="boolean|condition" />
+      <xed:cleanup-rule xpath="//condition[@selectable='true']" relevant-if="@id = ../selectCondition/@keep" />
+      <xed:cleanup-rule xpath="//*/@selectable|//selectCondition" relevant-if="false()" />
       <xed:source uri="searchInput:{$id}" />
       <xed:source uri="webapp:editor/search/template/simple.xml" />
       <xed:bind xpath="query">

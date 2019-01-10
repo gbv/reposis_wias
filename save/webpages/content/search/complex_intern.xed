@@ -7,6 +7,8 @@
     <xed:form class="form-horizontal" role="form">
       <xed:cleanup-rule xpath="//condition" relevant-if="(string-length(@value) &gt; 0) or value[string-length(text()) &gt; 0 ]" />
       <xed:cleanup-rule xpath="//boolean" relevant-if="boolean|condition" />
+      <xed:cleanup-rule xpath="//condition[@selectable='true']" relevant-if="@id = ../selectCondition/@keep" />
+      <xed:cleanup-rule xpath="//*/@selectable|//selectCondition" relevant-if="false()" />
       <xed:source uri="searchInput:{id}" />
       <xed:source uri="webapp:editor/search/template/complex_intern.xml" />
       <xed:bind xpath="query">
