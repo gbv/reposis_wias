@@ -23,6 +23,10 @@
             <label xml:lang="de">Kontakt</label>
             <label xml:lang="en">Contact</label>
         </item>
+        <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Barrierefreiheit</label>
+            <label xml:lang="en">Accessibility</label>
+        </item>
     </menu>
     <menu id="search">
         <label xml:lang="de">Suche</label>
