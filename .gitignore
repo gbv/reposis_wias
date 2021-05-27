@@ -1,0 +1,18 @@
+# eclipse
+.project
+.settings/
+
+# application specific files on server
+deprecated.active.properties
+jwt.secret
+messages_de.resolved.properties
+messages_en.resolved.properties
+messages_fr.resolved.properties
+messages_it.resolved.properties
+mycore.active.properties
+mycore.properties
+mycore.resolved.properties
+resources/META-INF/persistence.xml
+data/
+lib/h2-1.4.196.jar
+MCRWebCLI-unprocessed-commands.txt
