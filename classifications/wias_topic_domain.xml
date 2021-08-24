@@ -1,192 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="wias_topic_domain">
-  <label xml:lang="en" text="Topic Domain" description="List of WIAS specific topic domains" />
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="wias_topic_domain">
   <label xml:lang="de" text="Themengebiet" description="Liste der Themengebiete des WIAS" />
-  <label xml:lang="x-uri" text="https://publications.wias-berlin.de/wias_topic_domain"/>
+  <label xml:lang="en" text="Topic " description="List of WIAS research topics" />
+  <label xml:lang="x-uri" text="https://publications.wias-berlin.de/wias_topic_domain" />
   <categories>
     <category ID="topic_010">
       <label xml:lang="de" text="Algorithmen für die Erzeugung 3D randkonformer Delaunaygitter" />
+      <label xml:lang="en" text="Algorithms for the generation of 3D boundary conforming Delaunay meshes" />
     </category>
     <category ID="topic_020">
       <label xml:lang="de" text="Analysis gewöhnlicher und partieller stochastischer Differentialgleichungen" />
+      <label xml:lang="en" text="Analysis of ordinary and partial stochastic differential equations" />
     </category>
     <category ID="topic_030">
       <label xml:lang="de" text="Analysis partieller Differentialgleichungen und Evolutionsgleichungen" />
+      <label xml:lang="en" text="Analysis of Partial Differential Equations and Evolutionary Equations" />
     </category>
     <category ID="topic_040">
+      <label xml:lang="en" text="Applications in diffractive optics" />
       <label xml:lang="de" text="Anwendungen der diffraktiven Optik" />
     </category>
     <category ID="topic_050">
+      <label xml:lang="en" text="Calibration and risk assesment of stock and interest rate models" />
       <label xml:lang="de" text="Bewertung von komplex strukturierten Produkten in Finanz- und Energiemärkten" />
     </category>
     <category ID="topic_060">
       <label xml:lang="de" text="Diffusionsmodelle der Statistischen Physik" />
+      <label xml:lang="en" text="Diffusion models in statistical physics" />
     </category>
     <category ID="topic_070">
       <label xml:lang="de" text="Direkte und inverse Probleme für die Maxwellgleichungen" />
+      <label xml:lang="en" text="Direct and inverse problems for the Maxwell equations" />
     </category>
     <category ID="topic_080">
+      <label xml:lang="en" text="Direct and inverse problems in thermomechanics" />
       <label xml:lang="de" text="Direkte und inverse Probleme in der Thermomechanik" />
     </category>
     <category ID="topic_090">
       <label xml:lang="de" text="Dynamik von Halbleiterlasern" />
+      <label xml:lang="en" text="Dynamics of semiconductor lasers" />
     </category>
     <category ID="topic_100">
       <label xml:lang="de" text="Entwicklung und Analyse von Finanzmodellen" />
+      <label xml:lang="en" text="Development and analysis of financial models" />
     </category>
     <category ID="topic_110">
+      <label xml:lang="en" text="Free boundary problems for partial differential equations" />
       <label xml:lang="de" text="Freie Randwertprobleme für partielle Differentialgleichungen" />
     </category>
     <category ID="topic_120">
+      <label xml:lang="en" text="Functional analysis and operator theory" />
       <label xml:lang="de" text="Funktionalanalysis und Operatortheorie" />
     </category>
     <category ID="topic_130">
+      <label xml:lang="en" text="Large deviations" />
       <label xml:lang="de" text="Große Abweichungen" />
     </category>
     <category ID="topic_140">
+      <label xml:lang="en" text="Hysteresis operators and rate-independent systems" />
       <label xml:lang="de" text="Hysterese-Operatoren und ratenunabhängige Systeme" />
     </category>
     <category ID="topic_145">
       <label xml:lang="de" text="Interagierende stochastische Vielteilchensysteme" />
+      <label xml:lang="en" text="Interacting stochastic particle systems" />
     </category>
     <category ID="topic_150">
+      <label xml:lang="en" text="Calibration and risk assesment of stock and interest rate models" />
       <label xml:lang="de" text="Kalibrierung und Risikobewertung von Zins- und Aktienmodellen" />
     </category>
-    <!-- category ID="topic_160">
-      <label xml:lang="de" text="Klassische und quantenmechanische Vielteilchensysteme" />
-    </category -->
     <category ID="topic_170">
       <label xml:lang="de" text="Koagulation" />
+      <label xml:lang="en" text="Coagulation" />
     </category>
     <category ID="topic_180">
+      <label xml:lang="en" text="Crystal growth under the influence of electromagnetic fields" />
       <label xml:lang="de" text="Kristallzüchtung unter dem Einfluss von elektromagnetischen Feldern" />
     </category>
     <category ID="topic_190">
       <label xml:lang="de" text="Magnetohydrodynamik" />
+      <label xml:lang="en" text="Magnetohydrodynamics" />
     </category>
     <category ID="topic_200">
+      <label xml:lang="en" text="Multiscale Modeling and Asymptotic Analysis" />
       <label xml:lang="de" text="Mehrskalenmodellierung und Asymptotische Analysis" />
     </category>
     <category ID="topic_210">
+      <label xml:lang="en" text="Multi scale modeling and hybrid models" />
       <label xml:lang="de" text="Mehrskalenmodellierung und Hybridmodelle" />
     </category>
     <category ID="topic_220">
       <label xml:lang="de" text="Methoden für Stopp- und Kontrollprobleme" />
+      <label xml:lang="en" text="Methods for optimal stopping and control" />
     </category>
     <category ID="topic_230">
+      <label xml:lang="en" text="Mobile Communication Networks" />
       <label xml:lang="de" text="Mobile Kommunikationsnetzwerke" />
     </category>
     <category ID="topic_240">
       <label xml:lang="de" text="Modellierung dünner Filme und Nanostrukturen auf Substraten" />
+      <label xml:lang="en" text="Modeling of thin films and nano structures on substrates" />
     </category>
     <category ID="topic_250">
+      <label xml:lang="en" text="Modeling and simulation of semiconductor structures" />
       <label xml:lang="de" text="Modellierung und Simulation von Halbleiterstrukturen" />
     </category>
     <category ID="topic_260">
       <label xml:lang="de" text="Modellierung und Simulation von Photoresists für die Herstellung von Halbleiterbauelementen" />
+      <label xml:lang="en" text="Modeling and simulation of photoresists" />
     </category>
     <category ID="topic_270">
+      <label xml:lang="en" text="Modeling of phase separation and damage in modern materials" />
       <label xml:lang="de" text="Modellierung von Phasenseparation und Schädigung in modernen Materialien" />
     </category>
     <category ID="topic_280">
       <label xml:lang="de" text="Modellierung, Analysis und Numerik von lokalen und nichtlokalen Phasenfeldmodellen" />
+      <label xml:lang="en" text="Modeling, analysis and numerics of phase field models" />
+    </category>
+    <category ID="topic_255">
+      <label xml:lang="en" text="Modeling, Simulation and Optimization for Biomedical Applications" />
+      <label xml:lang="de" text="Modellierung, Simulation und Optimierung für Anwendungen in der Biomedizin" />
     </category>
     <category ID="topic_290">
       <label xml:lang="de" text="Neurowissenschaftliche Anwendungen und medizinische Bildverarbeitung" />
+      <label xml:lang="en" text="Medical imaging and neuroscientific applications" />
     </category>
     <category ID="topic_300">
       <label xml:lang="de" text="Nichtlineare kinetische Gleichungen" />
+      <label xml:lang="en" text="Nonlinear kinetic equations" />
     </category>
     <category ID="topic_310">
+      <label xml:lang="en" text="Nonlinear material models, multifunctional materials and hysteresis in connection with elasto-plastic processes" />
       <label xml:lang="de" text="Nichtlineare Materialmodelle, multifunktionale Materialien und Hysterese im Zusammenhang mit elasto-plastischen Prozessen" />
     </category>
     <category ID="topic_320">
+      <label xml:lang="en" text="Unwanted precipitates during heat treatment of GaAs single crystals" />
       <label xml:lang="de" text="Nukleation und Evolution unerwünschter Ausscheidungen bei der Wärmebehandlung von Einkristallen" />
     </category>
     <category ID="topic_330">
       <label xml:lang="de" text="Numerische Methoden für partielle Differentialgleichungen mit stochastischen Koeffizienten" />
+      <label xml:lang="en" text="Numerical Methods for PDEs with Stochastic Data" />
     </category>
     <category ID="topic_340">
       <label xml:lang="de" text="Numerische Verfahren für gekoppelte Systeme der Strömungsmechanik" />
+      <label xml:lang="en" text="Numerical methods for coupled systems in computational fluid dynamics" />
     </category>
     <category ID="topic_350">
+      <label xml:lang="en" text="Numerical methods for the simulation of population balance systems" />
       <label xml:lang="de" text="Numerische Verfahren zur Simulation von Populationsbilanzsystemen" />
     </category>
     <category ID="topic_360">
+      <label xml:lang="en" text="Optimal control of partial differential equations and nonlinear optimization" />
       <label xml:lang="de" text="Optimale Steuerung partieller Differentialgleichungen und nichtlineare Optimierung" />
     </category>
     <category ID="topic_370">
       <label xml:lang="de" text="Optimierungsprobleme in der Energiewirtschaft" />
+      <label xml:lang="en" text="Optimization Problems in Energy Management" />
     </category>
     <category ID="topic_375">
       <label xml:lang="de" text="Partikelbasierte Modellierung in den Naturwissenschaften" />
+      <label xml:lang="en" text="Particle-based modeling in the Sciences" />
     </category>
     <category ID="topic_380">
       <label xml:lang="de" text="Phasenübergänge und Hysterese im Zusammenhang mit Speicherproblemen" />
+      <label xml:lang="en" text="Phase transition and hysteresis in the context of storage problems" />
     </category>
     <category ID="topic_390">
       <label xml:lang="de" text="Photovoltaik" />
+      <label xml:lang="en" text="Photovoltaics" />
     </category>
     <category ID="topic_400">
+      <label xml:lang="en" text="Plates, Beams, Shells and Arches" />
       <label xml:lang="de" text="Platten, Balken, Schalen und Bögen" />
     </category>
     <category ID="topic_410">
       <label xml:lang="de" text="Produktion von Solarsilizium" />
+      <label xml:lang="en" text="Production of solar silicon" />
     </category>
     <category ID="topic_420">
       <label xml:lang="de" text="Pulse in optisch nichtlinearen Medien" />
+      <label xml:lang="en" text="Optical pulses in nonlinear media" />
     </category>
     <category ID="topic_430">
+      <label xml:lang="en" text="Quantum models for semiconductors" />
       <label xml:lang="de" text="Quantenmechanische Modelle für Halbleiter" />
     </category>
     <category ID="topic_440">
+      <label xml:lang="en" text="Simulation, optimization and optimal control of production processes" />
       <label xml:lang="de" text="Simulation, Optimierung und optimale Steuerung von Prozessen in Produktion und Biomedizin" />
     </category>
     <category ID="topic_450">
       <label xml:lang="de" text="Spektraltheorie zufälliger Operatoren" />
+      <label xml:lang="en" text="Spectral theory of random operators" />
     </category>
     <category ID="topic_460">
+      <label xml:lang="en" text="Static and dynamic simulation in process engineering" />
       <label xml:lang="de" text="Statische und dynamische Simulation verfahrenstechnischer Prozesse" />
     </category>
     <category ID="topic_470">
       <label xml:lang="de" text="Statistische Inferenz" />
+      <label xml:lang="en" text="Statistical Inference" />
     </category>
     <category ID="topic_480">
+      <label xml:lang="en" text="Statistical inverse problems" />
       <label xml:lang="de" text="Statistische inverse Probleme" />
     </category>
     <category ID="topic_485">
       <label xml:lang="de" text="Stochastische Biologische Evolution" />
+      <label xml:lang="en" text="Stochastic Biological Evolution" />
     </category>
     <category ID="topic_490">
       <label xml:lang="de" text="Stochastische Optimierung" />
+      <label xml:lang="en" text="Stochastic Optimization" />
     </category>
-    <!-- category ID="topic_500">
-      <label xml:lang="de" text="Strömungen in dünnen Gasen" />
-    </category -->
     <category ID="topic_510">
       <label xml:lang="de" text="Systeme partieller Differentialgleichungen: Modellierung, numerische Analysis und Simulation" />
+      <label xml:lang="en" text="Systems of partial differential equations: modeling, numerical analysis and simulation" />
     </category>
     <category ID="topic_520">
       <label xml:lang="de" text="Theorie dynamischer Systeme" />
+      <label xml:lang="en" text="Theory of dynamical systems" />
     </category>
     <category ID="topic_530">
-      <label xml:lang="de" text="Thermodynamic models for electrochemical systems" />
+      <label xml:lang="en" text="Thermodynamic models for electrochemical systems" />
+      <label xml:lang="de" text="Thermodynamische Modelle elektrochemischer Systeme" />
     </category>
     <category ID="topic_540">
+      <label xml:lang="en" text="Variational methods" />
       <label xml:lang="de" text="Variationsrechnung" />
     </category>
     <category ID="topic_550">
+      <label xml:lang="en" text="Valuation of complex structured instruments in financial and energy markets" />
       <label xml:lang="de" text="Volatilitätsschätzung und Risikobewertung" />
     </category>
-    <!-- category ID="topic_560">
-      <label xml:lang="de" text="Wahrscheinlichkeitstheoretische und statistische Modelle in der Populationsgenetik und anderen Lebenswissenschaften" />
-    </category -->
     <category ID="topic_570">
+      <label xml:lang="en" text="Interacting random systems" />
       <label xml:lang="de" text="Wechselwirkende stochastische Systeme" />
     </category>
-    <!-- category ID="topic_580">
-      <label xml:lang="de" text="Zufällige Teilchensysteme in Biologie und Chemie" />
-    </category -->
   </categories>
 </mycoreclass>
