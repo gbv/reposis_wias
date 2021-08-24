@@ -27,7 +27,7 @@
             <label xml:lang="de">Barrierefreiheit</label>
             <label xml:lang="en">Accessibility</label>
         </item>
-        <item href="/content/folder/myfile.xml" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/below/policy.xml" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenschutz</label>
             <label xml:lang="en">Privacy policy</label>
         </item>
