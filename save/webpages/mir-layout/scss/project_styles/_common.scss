@@ -1,3 +1,13 @@
+/*  common settings
+ *  - for very basic settings
+ *  - and for styles with no extra file available
+ *  - at best, this file is nearly empty :)
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
 /* ----------------------------------------------------------------------------
    Font specification
 ---------------------------------------------------------------------------- */
@@ -26,10 +36,6 @@
 /* ----------------------------------------------------------------------------
    Header
 ---------------------------------------------------------------------------- */
-header {
-  background: #ffffff url('../images/logos/WIAS_Logo.png') top center no-repeat;
-  background-size: 100px;
-}
 
 html body header #header_box {
   margin: 10px auto 10px auto;
@@ -42,6 +48,9 @@ html body header #header_box {
   height: 110px;
   right: 46%;
   z-index: 2000;
+  top: 10px;
+  background: #ffffff url('../../../../images/logos/WIAS_Logo.png') top center no-repeat;
+  background-size: 100px;
 }
 
 @media (max-width: 767px) {
@@ -87,32 +96,12 @@ html .mir-start_page .jumbotron {
   background-color: #084897;
 }
 
-.mir-main-nav nav .navbar-nav > li > a:hover .caret,
-.mir-main-nav nav .navbar-nav > li.open > a .caret,
-.mir-main-nav nav .navbar-nav > li.open > a:hover .caret {
-  border-top-color: #e1470f !important;
-}
-
-.mir-main-nav nav .navbar-nav > li > a:hover,
-.mir-main-nav nav .navbar-nav > li > a:focus,
-.mir-main-nav nav .navbar-nav > li.active > a:hover {
-  color: #e1470f;
-  background-color: transparent;
-}
-
 .mir-main-nav nav .navbar-nav > li.active > a,
 .mir-main-nav nav .navbar-nav > li.active > a:focus {
   background-color: transparent;
-  text-decoration: underline;
   color: #084897;
 }
 
-.mir-main-nav nav .navbar-nav > li.open > a,
-.mir-main-nav nav .navbar-nav > li.open > a:hover,
-.mir-main-nav nav .navbar-nav > li.open > a:focus {
-    background-color: #e6e6e6;
-    color: #e1470f;
-}
 .mir-main-nav nav .navbar-nav > li > a {
   color: #084897;
   border-bottom: 0 solid transparent;
@@ -121,43 +110,33 @@ html .mir-start_page .jumbotron {
   font-weight: 700;
 }
 
-.mir-main-nav nav .navbar-nav .dropdown-menu {
-  border-radius: 0 !important;
-  box-shadow: none;
-  background-color: white;
-  margin-top: 0 !important;
-}
-
 .mir-main-nav {
   background-color: transparent;
 }
-
-.mir-main-nav nav .navbar-nav .dropdown-menu  {
-  margin: 0;
+.mir-main-nav .navbar {
   padding: 0;
-  min-width: 300px;
+  margin-left: -.5rem;
 }
 
-.mir-main-nav nav .navbar-nav .dropdown-menu li {
-  margin: 0;
-  padding: 0;
-  display: block;
-  border-bottom: 1px solid #ccc;
+.mir-main-nav .dropdown-menu {
+  margin: 1.4rem 0 0;
 }
-
-.mir-main-nav nav .navbar-nav .dropdown-menu > li > a {
-  color: #084897;
-}
-
-.mir-main-nav nav .navbar-nav .dropdown-menu::before {
-  border: 0px;
+.dropdown-menu > li {
+  border-bottom: 1px solid $wGray;
+  font-family: $font-family-serif;
+  &:last-child {
+    border: none;
+  }
+  & > a {
+    font-family: $font-family-serif;
+  }
 }
 
 /* ----------------------------------------------------------------------------
    Footer
 ---------------------------------------------------------------------------- */
 .flatmir-footer {
-  background-image: url('../images/footer-bg.png');
+  background-image: url('../../../../images/footer-bg.png');
   background-repeat: repeat;
   padding: 15px 0;
   text-transform: uppercase;
@@ -171,6 +150,9 @@ html .mir-start_page .jumbotron {
 
 html body footer .internal_links {
   line-height: 180%;
+  .nav-link {
+    padding: 0;
+  }
 }
 
 html body #powered_by {
@@ -234,4 +216,25 @@ html body #powered_by {
 
 #headline > h1 {
   font-size: 30px;
+}
+
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
 }
