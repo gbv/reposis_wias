@@ -10,7 +10,7 @@
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
 
   <xsl:template name="mir.navigation">
-
+    <a href="http://wias-berlin.de/" id="wias_logo_link"></a>
     <div id="header_box" class="clearfix container">
       <div id="options_nav_box" class="mir-prop-nav">
         <nav>
@@ -23,17 +23,16 @@
       <div id="project_logo_box">
         <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
            class="">
-          <span id="logo_mir">Publicationsserver</span>
-          <span id="logo_modul">des</span>
-          <span id="logo_slogan">WIAS</span>
+          <span>Weierstraß-Institut</span><br />
+          Publikationsserver
         </a>
       </div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="mir-main-nav bg-primary">
+    <div class="mir-main-nav">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg">
 
           <button
             class="navbar-toggler"
@@ -120,7 +119,7 @@
         </div>
         <div class="col-12 col-sm-4 text-right">
           <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" mode="footerMenu" />
           </ul>
         </div>
       </div>
