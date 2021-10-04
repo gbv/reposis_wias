@@ -68,12 +68,12 @@ html body header #header_box {
 }
 
 @media (max-width: 767px) {
-  header {
-    background-size: 50px;
-  }
   #wias_logo_link {
+    background-size: 50px;
     width: 50px;
     height: 50px;
+    right: auto;
+    left: 15px;
   }
 }
 
@@ -93,14 +93,15 @@ html .mir-start_page .jumbotron {
 /* ----------------------------------------------------------------------------
    Main Navigation
 ---------------------------------------------------------------------------- */
-.navbar {
-  min-height: 80px;
-}
 
 .mir-main-nav {
   box-shadow: none;
   border-bottom: 4px solid #084897;
   background-color: white;
+  .navbar {
+    padding: 1rem 0;
+    margin-left: -.5rem;
+  }
 }
 
 .mir-main-nav .searchfield_box {
@@ -117,17 +118,13 @@ html .mir-start_page .jumbotron {
   color: #084897;
 }
 
-.mir-main-nav nav .navbar-nav > li > a {
+.mir-main-nav .nav-item,
+.mir-main-nav .basket-list-item {
   color: #084897;
   border-bottom: 0 solid transparent;
   font-size: 20px;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-}
-
-.mir-main-nav .navbar {
-  padding: 0;
-  margin-left: -.5rem;
 }
 
 .mir-main-nav .dropdown-menu {
@@ -146,6 +143,9 @@ html .mir-start_page .jumbotron {
 
 .mir-prop-nav .navbar-nav > li > a {
   color: $link-color;
+}
+.navbar-toggler {
+  margin-left: .5rem;
 }
 
 /* ----------------------------------------------------------------------------
@@ -258,19 +258,72 @@ html body #powered_by {
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
+  #wias_logo_link {
+    right: 36%;
+  }
 }
 
 // Medium devices (tablets) and below: <= 992px
 @include media-breakpoint-down(md) {
   // add/overwrite styles for responsive level md and lower
+  #wias_logo_link {
+    right: 46%;
+  }
+  .mir-main-nav .dropdown-menu {
+    margin: 0;
+  }
+  .mir-main-nav .searchfield_box,
+  .mir-main-nav nav .navbar-nav {
+    margin-left: 15px;
+  }
+  .mir-main-nav .searchfield_box .form-control {
+    width: auto;
+    margin-right: 0.5rem;
+  }
 }
 
 // Small devices (landscape phones) and below: <= 768px
 @include media-breakpoint-down(sm) {
   // add/overwrite styles for responsive level sm and lower
+  .mir-start_page .jumbotron h1 {
+    font-size: 150%;
+  }
+  #wias_jumbo-image {
+    min-height: 160px;
+  }
+  .jumbotron {
+    .claim {
+      color: white;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      max-width: 700px;
+      padding: 10px;
+      padding-right: 120px;
+    }
+  }
+  #project_logo_box {
+    margin-left: 60px;
+  }
 }
 
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
+  .jumbotron {
+    .claim {
+      left: 15px;
+      img {
+        display: none;
+      }
+    }
+  }
+  h1, .h1 {
+    font-size: 2rem;
+  }
+  .mir-main-nav {
+    .navbar {
+      padding: 1.5rem 0;
+    }
+  }
 }

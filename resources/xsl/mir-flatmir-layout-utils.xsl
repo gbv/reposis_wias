@@ -31,7 +31,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="mir-main-nav">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light">
 
           <button
             class="navbar-toggler"
