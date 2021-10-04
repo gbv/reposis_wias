@@ -21,9 +21,11 @@
 $wBlue:     #084897;
 $wGreen:    rgb(110, 186, 107);
 $wBlueLight:#337ab7;
+$wOrange:   #d0662b;
 $wRedLight: #e1470f;
 $wRed:      rgb(156, 23, 6);
 $wGrayLight:#f5f5f5;
+$wGrayDarkLight: #e5e5e5;
 $wGray:     #ccc;
 
 $font-family-serif: "Roboto Slab", "Times New Roman", Times, serif;
@@ -38,7 +40,7 @@ $brand-warning: transparent;
 // --------------------------------------------------
 
 $primary: $wBlue;
-$secondary: $wRedLight;
+$secondary: $wOrange;
 $success: $wGreen;
 $info: $wBlueLight;
 $warning: $wRedLight;
