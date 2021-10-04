@@ -23,7 +23,6 @@
       <div id="project_logo_box">
         <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
            class="">
-          <span>Weierstraß-Institut</span><br />
           Publikationsserver
         </a>
       </div>
@@ -99,6 +98,32 @@
       <xsl:variable name="random" select="(floor(math:random()*23) mod 23) + 1" />
       <div class="jumbotron">
         <img src="../images/jumbotron/vb_wias_{$random}.jpg" alt="Bild" id="wias_jumbo-image" />
+        <div class="claim">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h1>Publikationsserver </h1>
+                  <h2>des Weierstraß-Institutes</h2>
+                  <!--
+                  <h1>Weierstraß-Institut</h1>
+                  <h2>für Angewandte Analysis und Stochastik</h2>
+                  <p style="padding:10px 0 0 0;">
+                    <span class="d-none d-md-inline">- Mathematische Lösungen für komplexe Probleme -</span>
+                    <span class="d-md-none d-lg-none d-xl-none">
+                      Mathematische Lösungen für komplexe Probleme -<br />
+                      aus einem Institut der Leibniz-Gemeinschaft
+                    </span>
+                  </p>
+                  -->
+                </td>
+                <td>
+                  <img src="../images/jumbotron/Leibniz_Logo_DE_negativ-114x80.svg" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </xsl:if>
   </xsl:template>

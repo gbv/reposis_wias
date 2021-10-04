@@ -36,7 +36,9 @@
 /* ----------------------------------------------------------------------------
    Header
 ---------------------------------------------------------------------------- */
-
+header {
+  background-color: $wGrayDarkLight;
+}
 html body header #header_box {
   margin: 10px auto 10px auto;
 }
@@ -49,8 +51,20 @@ html body header #header_box {
   right: 46%;
   z-index: 2000;
   top: 10px;
-  background: #ffffff url('../../../../images/logos/WIAS_Logo.png') top center no-repeat;
+  background: transparent url('../../../../images/logos/WIAS_Logo.png') top center no-repeat;
   background-size: 100px;
+}
+
+#project_logo_box {
+  background: url('../../../../images/jumbotron/claim-bg-orange.png') right top no-repeat;
+  background-size: cover;
+  padding: 0 2.5rem 0 1rem;
+  a {
+    color: white;
+  }
+}
+.mir-start_page #project_logo_box {
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -86,6 +100,7 @@ html .mir-start_page .jumbotron {
 .mir-main-nav {
   box-shadow: none;
   border-bottom: 4px solid #084897;
+  background-color: white;
 }
 
 .mir-main-nav .searchfield_box {
@@ -110,9 +125,6 @@ html .mir-start_page .jumbotron {
   font-weight: 700;
 }
 
-.mir-main-nav {
-  background-color: transparent;
-}
 .mir-main-nav .navbar {
   padding: 0;
   margin-left: -.5rem;
@@ -130,6 +142,10 @@ html .mir-start_page .jumbotron {
   & > a {
     font-family: $font-family-serif;
   }
+}
+
+.mir-prop-nav .navbar-nav > li > a {
+  color: $link-color;
 }
 
 /* ----------------------------------------------------------------------------
@@ -159,6 +175,26 @@ html body #powered_by {
   background-color: transparent;
   border: none;
   padding: 0;
+}
+.mir-start_page .jumbotron {
+  text-align: left;
+}
+.jumbotron {
+  position:relative;
+  .claim {
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    max-width: 700px;
+    padding: 10px;
+    padding-right: 120px;
+    background: url('../../../../images/jumbotron/claim-bg-orange.png') right top no-repeat;
+    h1,
+    h2 {
+      color: white;
+    }
+  }
 }
 
 
