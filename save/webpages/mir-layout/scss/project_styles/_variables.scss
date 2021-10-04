@@ -28,6 +28,9 @@ $wGrayLight:#f5f5f5;
 $wGrayDarkLight: #e5e5e5;
 $wGray:     #ccc;
 
+$gray:          #b4bcc2;
+$gray-light:    #ededed;
+
 $font-family-serif: "Roboto Slab", "Times New Roman", Times, serif;
 
 
@@ -68,3 +71,16 @@ $dropdown-link-hover-color: $wBlue;
 $dropdown-link-hover-bg: $wGrayLight;
 $dropdown-border-color: $wGray;
 $dropdown-font-size: $font-size-base * 1.25;
+
+$pagination-color: white;
+$pagination-bg: $primary;
+$pagination-border-color: $primary;
+$pagination-hover-color: white;
+$pagination-hover-bg: darken($pagination-bg, 10%);
+$pagination-hover-border-color: darken($pagination-bg, 10%);
+$pagination-active-color: white;
+$pagination-active-bg: darken($pagination-bg, 10%);
+$pagination-active-border-color: darken($pagination-bg, 10%);
+$pagination-disabled-color: $gray;
+$pagination-disabled-bg: $gray-light;
+$pagination-disabled-border-color: $gray-light;
