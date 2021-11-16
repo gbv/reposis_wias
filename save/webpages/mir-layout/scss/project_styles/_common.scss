@@ -119,7 +119,7 @@ html .mir-start_page .jumbotron {
 }
 
 .mir-main-nav .nav-item,
-.mir-main-nav .basket-list-item {
+.mir-main-nav #basket-list-item {
   color: #084897;
   border-bottom: 0 solid transparent;
   font-size: 20px;
@@ -128,16 +128,22 @@ html .mir-start_page .jumbotron {
 }
 
 .mir-main-nav .dropdown-menu {
-  margin: 1.4rem 0 0;
+  margin: 1.2rem 0 0;
 }
 .dropdown-menu > li {
-  border-bottom: 1px solid $wGray;
-  font-family: $font-family-serif;
-  &:last-child {
-    border: none;
-  }
-  & > a {
+  &:not(.dropdown-divider) {
+    border-bottom: 1px solid $wGray;
     font-family: $font-family-serif;
+    &:last-child {
+      border: none;
+    }
+    & > a {
+      font-family: $font-family-serif;
+    }
+  }
+  &.dropdown-divider {
+    margin: -1px 0 0 0;
+    border-bottom: 1px solid $primary;
   }
 }
 
