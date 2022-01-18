@@ -13,18 +13,18 @@
       <xed:source uri="webapp:editor/search/template/complex.xml" />
       <xed:bind xpath="query">
         <xed:bind xpath="@mask" default="content/search/complex.xed" />
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">
               <xed:output i18n="component.mods.editor.search.complex.label" />
             </h3>
           </div>
-          <div class="panel-body">
+          <div class="card-body">
             <div class="col-md-10">
               <xed:bind xpath="conditions/boolean/boolean">
                 <xed:repeat xpath="condition[contains(',mods.title,mods.author,mods.name,allMeta,', concat(',',@field,','))]" method="clone">
                   <!-- Title -->
-                  <div class="form-group">
+                  <div class="form-group row">
                     <div class="col-md-3">
                       <xed:bind xpath="@field">
                         <select class="form-control">
@@ -58,14 +58,14 @@
                         </select>
                       </xed:bind>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 row">
                       <div class="col-md-8">
                         <xed:bind xpath="@value">
                           <input type="text" class="form-control" />
                         </xed:bind>
                       </div>
                       <div class="btn-group col-md-4">
-                        <span class="pull-right">
+                        <span class="float-right">
                           <xed:controls>insert remove</xed:controls>
                         </span>
                       </div>
@@ -99,16 +99,16 @@
                 <mir:template name="selectInput"
                   xpath="condition[@field='category.top'][6]/@value" id="inputGenre1"
                   i18n="editor.search.mir.genre" tooltip="editor.search.genre.tooltip"
-                  uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_genres" />
+                  uri="xslStyle:items2options?allSelectable=true:classification:editorComplete:-1:children:mir_genres" />
               <!-- Licenses -->
                 <mir:template name="selectInput"
                   xpath="condition[@field='category.top'][7]/@value" id="inputLicense1"
                   i18n="editor.search.mir.license" tooltip="editor.search.license.tooltip"
                   uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_licenses" />
               <!-- Datum -->
-                <div class="form-group">
+                <div class="form-group row">
                   <xed:bind xpath="condition[@field='mods.dateIssued']">
-                    <label for="inputDate1" class="col-md-3 control-label">
+                    <label for="inputDate1" class="col-md-3 col-form-label text-md-right">
                       <xed:output i18n="component.mods.metaData.dictionary.dateIssued" />
                     </label>
                     <div class="col-md-2">
@@ -131,22 +131,39 @@
                   </xed:bind>
                 </div>
               <!-- Volltext -->
-                <div class="form-group">
-                  <div class="col-md-offset-3 col-md-9">
-                    <xed:bind xpath="condition[@field='derCount'][@value='0']/@operator"
-                      default="&gt;=">
-                      <label class="checkbox-inline">
-                        <input type="checkbox" value="&gt;" />
-                        <xed:output i18n="editor.search.mir.hasFiles" />
-                      </label>
-                    </xed:bind>
+                <div class="form-group row">
+                  <label for="inputFulltext1" class="col-md-3 col-form-label text-md-right">
+                    <xed:output i18n="mir.dropdown.content" />
+                  </label>
+                  <div class="col-md-9">
+                    <div class="input-group">
+                      <xed:bind xpath="condition[@field='derCount'][@value='0'][@operator='&gt;'][@selectable='true'][@id='condFullText']" />
+                      <xed:bind xpath="condition[@field='worldReadableComplete'][@value='true'][@operator='='][@selectable='true'][@id='condOpenAccess']" />
+                      <!-- selectCondition must always be after @selectable conditions for xed:cleanup-rule to work -->
+                      <xed:bind xpath="selectCondition[@delete='true']/@keep">
+                        <select class="form-control input-md" id="inputFulltext1">
+                          <option value="">
+                            <xed:output i18n="mir.select" />
+                          </option>
+                          <option value="condFullText">
+                            <xed:output i18n="editor.search.mir.hasFiles" />
+                          </option>
+                          <option value="condOpenAccess">
+                            <xed:output i18n="editor.search.mir.openAccess" />
+                          </option>
+                        </select>
+                        <span class="input-group-append" data-toggle="tooltip" data-html="true" title="{i18n:editor.search.fulltext.tooltip}">
+                          <i class="fas fa-info-circle input-group-text" />
+                        </span>
+                      </xed:bind>
+                    </div>
                   </div>
                 </div>
               </xed:bind>
             <!-- sort -->
               <xed:bind xpath="sortBy/field">
-                <div class="form-group">
-                  <label for="inputSortBy" class="col-md-3 control-label">
+                <div class="form-group row">
+                  <label for="inputSortBy" class="col-md-3 col-form-label text-md-right">
                     <xed:output i18n="editor.search.sortby" />
                   </label>
                   <div class="col-md-4">
@@ -177,11 +194,11 @@
               </xed:bind>
             </div>
           </div>
-        <!-- submit -->
-          <div class="panel-footer clearfix">
-            <div class="pull-right">
+          <!-- submit -->
+          <div class="card-footer clearfix">
+            <div class="float-right">
               <mir:template name="submitButton" i18n="editor.search.search"
-                target="servlet_MCRQLSearchServlet" order="primary-button"/>
+                            target="servlet_MCRQLSearchServlet" order="primary-button"/>
             </div>
           </div>
         </div>
@@ -189,3 +206,4 @@
     </xed:form>
   </section>
 </MyCoReWebPage>
+
