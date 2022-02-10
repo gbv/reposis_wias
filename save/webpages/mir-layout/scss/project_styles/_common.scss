@@ -212,43 +212,40 @@ html body #powered_by {
 .cbDescription {
   position: absolute;
   top: 0;
-  left: 200px;
+  left: 180px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 30em;
+  width: 50em;
   overflow: hidden;
 }
-
-/* Extra small devices (less than 768px) */
-@media (max-width: 767px) {
+ul.cbList li {
+  padding: 0px 0px 10px 10px;
+}
+.cbList li {
+  position: relative;
+  p {
+    color: $text-color;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .cbDescription {
+    width: 42em;
+  }
+}
+@include media-breakpoint-down(md) {
+  .cbDescription {
+    width: 28em;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .cbDescription {
+    width: 16em;
+  }
+}
+@include media-breakpoint-down(xs) {
   .cbDescription {
     display: none;
   }
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .cbDescription {
-    width: 30em;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .cbDescription {
-    width: 45em;
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .cbDescription {
-    width: 58em;
-  }
-}
-
-.cbList li {
-  position: relative;
 }
 
 
@@ -266,6 +263,9 @@ html body #powered_by {
   // add/overwrite styles for responsive level lg and lower
   #wias_logo_link {
     right: 36%;
+  }
+  .cbDescription {
+    width: 45em;
   }
 }
 
@@ -285,6 +285,9 @@ html body #powered_by {
   .mir-main-nav .searchfield_box .form-control {
     width: auto;
     margin-right: 0.5rem;
+  }
+  .cbDescription {
+    width: 30em;
   }
 }
 
@@ -311,6 +314,9 @@ html body #powered_by {
   #project_logo_box {
     margin-left: 60px;
   }
+  .cbDescription {
+    width: 20em;
+  }
 }
 
 // Extra small devices (portrait phones): <= 576px
@@ -331,5 +337,8 @@ html body #powered_by {
     .navbar {
       padding: 1.5rem 0;
     }
+  }
+  .cbDescription {
+    display: none;
   }
 }
