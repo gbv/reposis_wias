@@ -7,6 +7,16 @@
 // no (xl) media query necessary (desktop first)
 
 
+/* reset font size to font-size-base */
+
+.dateExtended_box .mir-fieldset-legend {
+  font-size: $font-size-base;
+}
+
+.datepicker {
+  font-size: $font-size-base;
+}
+
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
