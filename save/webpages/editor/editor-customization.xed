@@ -3,14 +3,54 @@
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
   <!-- ========== extend editor-genres.xed ========== -->
-  <xed:modify ref="genres.book">
-    <xed:include ref="wias.class.pacs"                after="sdnb.repeat" />
-  </xed:modify>
+
+  <xed:template id="genres.software">
+    <xed:include ref="title" />
+    <xed:include ref="subtitle" />
+    <xed:include ref="research.data.person.repeated" />
+    <xed:include ref="year.issued" />
+    <xed:include ref="identifier.managed" />
+    <xed:include ref="doi.handle.urn.repeated" />
+    <xed:include ref="sdnb.repeat" />
+    <xed:include ref="subject.simple" />
+    <xed:include ref="software.edition" />
+    <xed:include ref="software.extent" />
+    <xed:include ref="note.systemDetails" />
+    <xed:include ref="physical.description.note" />
+    <xed:include ref="link.repeated" />
+    <xed:include ref="abstract.simple" />
+    <xed:include ref="rights" />
+    <xed:include ref="institutes" />
+    <xed:include ref="comment" />
+  </xed:template>
+
+  <xed:template id="genres.preprint">
+    <xed:include ref="genres.publication.common" />
+  </xed:template>
+
+  <xed:template id="genres.event">
+    <xed:include ref="genres.publication.common" />
+  </xed:template>
+
+  <xed:template id="genres.technical_report">
+    <xed:include ref="genres.publication.common" />
+  </xed:template>
 
 
   <!-- ========== adopt some MIR templates ========== -->
+  
+      <!-- no shelfmark needed -->
   <xed:template id="shelfmark">
-    <!-- no shelfmark needed -->
+  </xed:template>
+  <xed:template id="shelfmark.journal.relItemsearch">
+  </xed:template>
+  <xed:template id="shelfmark.book.relItemsearch">
+  </xed:template>
+
+      <!-- add wias.box -->
+  <xed:template id="comment">
+    <xed:include ref="wias.box" />
+    <mir:textarea xpath="mods:note[@type='admin']" label="mir.comment" help-text="{i18n:mir.help.comment}" rows="2" />
   </xed:template>
 
   <xed:template id="comment.complex">
@@ -38,6 +78,14 @@
         </div>
       </xed:repeat>
     </fieldset>
+  </xed:template>
+
+  <!-- add link repeated  -->
+  <xed:template id="subject.simple">
+    <xed:bind xpath="mods:subject">
+      <mir:topic.repeated min="1" max="20" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" />
+    </xed:bind>
+    <xed:include ref="link.repeated" />
   </xed:template>
 
   <xed:template id="link.repeated">
@@ -80,6 +128,8 @@
     </xed:repeat>
   </xed:template>
 
+
+       <!-- select WIAS initially -->
   <xed:template id="institutes">
     <div class="form-group row">
       <label class="col-md-3 col-form-label text-right">
@@ -102,6 +152,29 @@
       </div>
       <mir:help-pmud help-text="{i18n:mir.help.institutes}" />
     </div>
+  </xed:template>
+
+    <!-- allow 40 subjects instead of 20 -->
+  <xed:template id="subject.simple">
+    <xed:bind xpath="mods:subject">
+      <mir:topic.repeated min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" />
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="subject.complex">
+    <xed:repeat xpath="mods:subject" min="1" max="40">
+      <fieldset>
+        <div class="row mir-fieldset-legend">
+          <legend class="col-md-9" style="margin-bottom:0px;padding-top:10px;">
+            <xed:output i18n="mir.subject.topic.complex" />
+          </legend>
+          <mir:help-pmud pmud="true" help-text="{i18n:mir.help.subject.topic.complex}" />
+        </div>
+        <div class="mir-fieldset-content">
+          <mir:textfield repeat="true" xpath="mods:topicSimple" min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
+        </div>
+      </fieldset>
+    </xed:repeat>
   </xed:template>
 
   <!-- ========== wias specific templates ========== -->
@@ -179,32 +252,6 @@
         <xed:include ref="wias.class.topic_domain" />
       </div>
     </fieldset>
-  </xed:template>
-
-  <xed:template id="subject.simple">
-    <xed:bind xpath="mods:subject">
-      <mir:topic.repeated min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" />
-    </xed:bind>
-  </xed:template>
-
-  <xed:template id="subject.complex">
-    <xed:repeat xpath="mods:subject" min="1" max="40">
-      <fieldset>
-        <div class="row mir-fieldset-legend">
-          <legend class="col-md-9" style="margin-bottom:0px;padding-top:10px;">
-            <xed:output i18n="mir.subject.topic.complex" />
-          </legend>
-          <mir:help-pmud pmud="true" help-text="{i18n:mir.help.subject.topic.complex}" />
-        </div>
-        <div class="mir-fieldset-content">
-          <mir:textfield repeat="true" xpath="mods:topicSimple" min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
-        </div>
-      </fieldset>
-    </xed:repeat>
-  </xed:template>
-
-  <xed:template id="creator.repeated">
-    <mir:role.repeated role="cre" label="mir.role.creator" help-text="{i18n:mir.help.role.creator}" />
   </xed:template>
 
   <xed:template id="software.edition">
