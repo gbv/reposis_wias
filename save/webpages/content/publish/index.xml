@@ -56,6 +56,7 @@
 
       <!-- more options -->
       <div id="more_options_box" class="row form-group">
+        <div class="col-12">
         <h5>Publikation aus Scopus, PubMed, CrossRef oder K10plus importieren</h5>
         <div class="row form-group">
           <label class="col-sm-3 col-lg-2 control-label">
@@ -73,6 +74,7 @@
           <div class="col-sm-7 col-md-5 col-lg-4">
             <input class="form-control" type="text" name="modsId" />
           </div>
+        </div>
         </div>
       </div>
 
