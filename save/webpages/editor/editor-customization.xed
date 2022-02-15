@@ -3,22 +3,113 @@
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
   <!-- ========== extend editor-genres.xed ========== -->
-  <xed:modify ref="admin.fields">
-    <xed:include ref="wias.class.pacs"                after="sdnb.repeat" />
-  </xed:modify>
-
   <xed:modify ref="genres.book">
     <xed:include ref="wias.class.pacs"                after="sdnb.repeat" />
   </xed:modify>
 
 
+  <!-- ========== adopt some MIR templates ========== -->
+  <xed:template id="shelfmark">
+    <!-- no shelfmark needed -->
+  </xed:template>
+
+  <xed:template id="comment.complex">
+    <xed:include ref="wias.box" />
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="mir.comment" />
+      </legend>
+      <xed:repeat xpath="mods:note" min="1" max="5">
+        <div class="mir-fieldset-content">
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label text-right">
+              <xed:output i18n="mir.comment.type" />
+            </label>
+            <div class="col-md-6">
+              <xed:bind xpath="@type">
+                <select class="form-control" style="font-weight:bold;">
+                  <xed:include uri="xslStyle:items2options,convertClassificationOptions:classification:editor:-1:children:noteTypes" />
+                </select>
+              </xed:bind>
+            </div>
+            <mir:help-pmud help-text="{i18n:mir.help.comment.type}" pmud="true" />
+          </div>
+          <mir:textarea xpath="." label="mir.comment" help-text="{i18n:mir.help.comment}" rows="3" />
+        </div>
+      </xed:repeat>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="link.repeated">
+    <xed:repeat xpath="mods:location/mods:url" min="1" max="5">
+      <fieldset>
+        <div class="row mir-fieldset-legend">
+          <legend class="col-md-9" style="margin-bottom:0px;padding-top:10px;">
+            <xed:output i18n="mir.link.legend" />
+          </legend>
+          <mir:help-pmud pmud="true" help-text="{i18n:mir.help.link}" />
+        </div>
+        <div class="mir-fieldset-content">
+        <div class="form-group row">
+          <div class="col-md-3">
+            <xed:bind xpath="@access">
+              <select class="form-control" style="text-align:right; font-weight:bold;">
+                <option value="">
+                  <xed:output i18n="mir.link" />
+                </option>
+                <option value="preview">
+                  <xed:output i18n="mir.link.preview" />
+                </option>
+                <option value="raw object">
+                  <xed:output i18n="mir.link.raw_object" />
+                </option>
+                <option value="object in context">
+                  <xed:output i18n="mir.link.object_in_context" />
+                </option>
+              </select>
+            </xed:bind>
+          </div>
+          <div class="col-md-6">
+            <input type="text" size="50" class="form-control form-control-inline {$xed-validation-marker}" />
+          </div>
+          <mir:help-pmud help-text="{i18n:mir.help.link.url}" />
+        </div>
+        <mir:textfield xpath="@displayLabel" label="mir.link.displayLabel" help-text="{i18n:mir.help.link.displayLabel}" />
+        </div>
+      </fieldset>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="institutes">
+    <div class="form-group row">
+      <label class="col-md-3 col-form-label text-right">
+        <xed:output i18n="mir.institution" />
+        :
+      </label>
+      <div class="col-md-6">
+        <xed:load-resource name="mir_institutes" uri="classification:metadata:-1:children:mir_institutes" />
+        <xed:bind xpath="mods:name[@type='corporate'][@authorityURI=$mir_institutes/label[@xml:lang='x-uri']/@text]">
+          <xed:bind xpath="mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']" initially="his" /><!--  Host institution [his] -->
+          <xed:bind xpath="@valueURIxEditor" initially="WIAS">
+            <select class="form-control form-control-inline mir-form__js-select--large">
+              <option value="">
+                <xed:output i18n="mir.select.optional" />
+              </option>
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_institutes" />
+            </select>
+          </xed:bind>
+        </xed:bind>
+      </div>
+      <mir:help-pmud help-text="{i18n:mir.help.institutes}" />
+    </div>
+  </xed:template>
 
   <!-- ========== wias specific templates ========== -->
   <xed:template id="wias.class.pacs">
     <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/pacs'][@displayLabel='pacs']" min="1" max="10" method="build">
       <xed:bind xpath="@valueURIxEditor">
-        <div class="form-group">
-          <label class="col-md-3 control-label">
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label text-right">
             <xed:output i18n="wias.class.pacs" />
           </label>
           <div class="col-md-6">
@@ -38,8 +129,8 @@
   <xed:template id="wias.class.msc2010">
     <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/msc2010'][@displayLabel='msc2010']" min="1" max="10" method="build">
       <xed:bind xpath="@valueURIxEditor">
-        <div class="form-group">
-          <label class="col-md-3 control-label">
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label text-right">
             <xed:output i18n="wias.class.msc2010" />
           </label>
           <div class="col-md-6">
@@ -59,8 +150,8 @@
   <xed:template id="wias.class.topic_domain">
     <xed:repeat xpath="mods:classification[@authorityURI='https://publications.wias-berlin.de/wias_topic_domain'][@displayLabel='topic_domain']" min="1" max="10" method="build">
       <xed:bind xpath="@valueURIxEditor">
-        <div class="form-group">
-          <label class="col-md-3 control-label">
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label text-right">
             <xed:output i18n="wias.class.topic_domain" />
           </label>
           <div class="col-md-6">
@@ -83,9 +174,9 @@
         <xed:output i18n="wias.information" />
       </legend>
       <div class="mir-fieldset-content">
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.class.pacs" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.class.msc2010" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-wias.xed" ref="wias.class.topic_domain" />
+        <xed:include ref="wias.class.pacs" />
+        <xed:include ref="wias.class.msc2010" />
+        <xed:include ref="wias.class.topic_domain" />
       </div>
     </fieldset>
   </xed:template>
@@ -127,124 +218,5 @@
   <xed:template id="note.systemDetails">
     <mir:textfield repeat="true" xpath="note[@type='system details']" min="1" max="5" label="mir.note.systemDetails" help-text="{i18n:mir.help.note.systemDetails}" />
   </xed:template> 
-
-  <!-- TODO: use variable in mir includes to make initially parameter configurable -->
-  <xed:template id="language.simple">
-    <div class="form-group {$xed-validation-marker}">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="mir.language" />
-      </label>
-      <div class="col-md-6">
-        <xed:bind xpath="(mods:language/mods:languageTerm[@authority='rfc4646'][@type='code'])" initially="en">
-          <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
-        </xed:bind>
-      </div>
-      <mir:help-pmud help-text="{i18n:mir.help.language}" />
-    </div>
-  </xed:template>
-
-  <xed:template id="language.simple.noText">
-    <div class="form-group {$xed-validation-marker}">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="mir.language.noText" />
-      </label>
-      <div class="col-md-6">
-        <xed:bind xpath="(mods:language/mods:languageTerm[@authority='rfc4646'][@type='code'])" initially="en">
-          <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
-        </xed:bind>
-      </div>
-      <mir:help-pmud help-text="{i18n:mir.help.language}" />
-    </div>
-  </xed:template>
-
-  <xed:template id="language.repeated">
-    <xed:repeat xpath="mods:language" max="5">
-      <div class="form-group {$xed-validation-marker}">
-        <label class="col-md-3 control-label">
-          <xed:output i18n="mir.language" />
-        </label>
-        <div class="col-md-6">
-          <xed:bind xpath="mods:languageTerm[@authority='rfc4646'][@type='code']" initially="en">
-            <div class="controls">
-              <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
-            </div>
-          </xed:bind>
-        </div>
-        <mir:help-pmud help-text="{i18n:mir.help.language}" pmud="true" />
-      </div>
-    </xed:repeat>
-  </xed:template>
-
-  <xed:template id="institutes">
-    <div class="form-group">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="mir.institution" />
-        :
-      </label>
-      <div class="col-md-6">
-        <xed:load-resource name="mir_institutes" uri="classification:metadata:-1:children:mir_institutes" />
-        <xed:bind xpath="mods:name[@type='corporate'][@authorityURI=$mir_institutes/label[@xml:lang='x-uri']/@text]">
-          <xed:bind xpath="mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']" initially="his" /><!--  Host institution [his] -->
-          <xed:bind xpath="@valueURIxEditor" initially="WIAS">
-            <select class="form-control form-control-inline">
-              <option value="">
-                <xed:output i18n="mir.select.optional" />
-              </option>
-              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_institutes" />
-            </select>
-          </xed:bind>
-        </xed:bind>
-      </div>
-      <mir:help-pmud help-text="{i18n:mir.help.institutes}" />
-    </div>
-  </xed:template>
-
-  <xed:template id="title">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" required="true"
-      required-i18n="mir.validation.title" />
-  </xed:template>
-
-
-  <xed:template id="link.repeated">
-    <xed:repeat xpath="mods:location/mods:url" min="1" max="5">
-      <fieldset>
-        <div class="row mir-fieldset-legend">
-          <legend class="col-md-9" style="margin-bottom:0px;padding-top:10px;">
-            <xed:output i18n="mir.link.legend" />
-          </legend>
-          <mir:help-pmud pmud="true" help-text="{i18n:mir.help.link}" />
-        </div>
-        <div class="mir-fieldset-content">
-        <div class="form-group">
-          <div class="col-md-3">
-            <xed:bind xpath="@access">
-              <select class="form-control" style="text-align:right; font-weight:bold;">
-                <option value="">
-                  <xed:output i18n="mir.link" />
-                </option>
-                <option value="preview">
-                  <xed:output i18n="mir.link.preview" />
-                </option>
-                <option value="raw object">
-                  <xed:output i18n="mir.link.raw_object" />
-                </option>
-                <option value="object in context">
-                  <xed:output i18n="mir.link.object_in_context" />
-                </option>
-              </select>
-            </xed:bind>
-          </div>
-          <div class="col-md-6">
-            <input type="text" size="50" class="form-control form-control-inline {$xed-validation-marker}" />
-          </div>
-          <mir:help-pmud help-text="{i18n:mir.help.link.url}" />
-        </div>
-        <mir:textfield xpath="@displayLabel" label="mir.link.displayLabel" help-text="{i18n:mir.help.link.displayLabel}" />
-        </div>
-      </fieldset>
-    </xed:repeat>
-  </xed:template>
-
-
 
 </xed:template>
