@@ -81,13 +81,6 @@
   </xed:template>
 
   <!-- add link repeated  -->
-  <xed:template id="subject.simple">
-    <xed:bind xpath="mods:subject">
-      <mir:topic.repeated min="1" max="20" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" />
-    </xed:bind>
-    <xed:include ref="link.repeated" />
-  </xed:template>
-
   <xed:template id="link.repeated">
     <xed:repeat xpath="mods:location/mods:url" min="1" max="5">
       <fieldset>
@@ -159,6 +152,7 @@
     <xed:bind xpath="mods:subject">
       <mir:topic.repeated min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" />
     </xed:bind>
+    <xed:include ref="link.repeated" />
   </xed:template>
 
   <xed:template id="subject.complex">
