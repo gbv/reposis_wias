@@ -17,7 +17,6 @@
     <xed:include ref="software.extent" />
     <xed:include ref="note.systemDetails" />
     <xed:include ref="physical.description.note" />
-    <xed:include ref="link.repeated" />
     <xed:include ref="abstract.simple" />
     <xed:include ref="rights" />
     <xed:include ref="institutes" />
@@ -147,7 +146,7 @@
     </div>
   </xed:template>
 
-    <!-- allow 40 subjects instead of 20 -->
+  <!-- allow 40 subjects instead of 20 and always add link.repeated for every genre -->
   <xed:template id="subject.simple">
     <xed:bind xpath="mods:subject">
       <mir:topic.repeated min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" />
@@ -156,7 +155,7 @@
   </xed:template>
 
   <xed:template id="subject.complex">
-    <xed:repeat xpath="mods:subject" min="1" max="40">
+    <xed:repeat xpath="mods:subject[not(mods:geographic)]" min="1" max="40">
       <fieldset>
         <div class="row mir-fieldset-legend">
           <legend class="col-md-9" style="margin-bottom:0px;padding-top:10px;">
@@ -165,7 +164,7 @@
           <mir:help-pmud pmud="true" help-text="{i18n:mir.help.subject.topic.complex}" />
         </div>
         <div class="mir-fieldset-content">
-          <mir:textfield repeat="true" xpath="mods:topicSimple" min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
+          <mir:topic.repeated min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" extended="true" />
         </div>
       </fieldset>
     </xed:repeat>
