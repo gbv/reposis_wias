@@ -4,6 +4,10 @@
 
   <!-- ========== extend editor-genres.xed ========== -->
 
+  <xed:modify ref="admin.fields">
+      <xed:remove  ref="related.item.other.search.of.all.items" />
+  </xed:modify>
+
   <xed:template id="genres.software">
     <xed:include ref="title" />
     <xed:include ref="subtitle" />
@@ -120,8 +124,7 @@
     </xed:repeat>
   </xed:template>
 
-
-       <!-- select WIAS initially -->
+   <!-- select WIAS initially -->
   <xed:template id="institutes">
     <div class="form-group row">
       <label class="col-md-3 col-form-label text-right">
@@ -146,29 +149,23 @@
     </div>
   </xed:template>
 
-  <!-- allow 40 subjects instead of 20 and always add link.repeated for every genre -->
   <xed:template id="subject.simple">
-    <xed:bind xpath="mods:subject">
-      <mir:topic.repeated min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" />
-    </xed:bind>
+    <xed:repeat xpath="mods:subjectXML" min="1" max="{$MIR.Editor.repeat.max.subject.simple}">
+      <div class="form-group row {$xed-validation-marker}">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="mir.subject.topic"/>
+        </label>
+        <div class="col-md-6">
+          <input type="hidden" class="subjectXML"/>
+          <div class="editorToolsApp" data-searchable="*" data-editor="*" data-search-filter-default="Topic" data-admin="false" data-required="false"> </div>
+        </div>
+        <mir:help-pmud help-text="{i18n:mir.help.subject.topic}" pmud="true"/>
+      </div>
+      <xed:validate class="org.mycore.mir.validation.MIRValidationHelper" method="validateSubject" display="global" i18n="mir.validation.subject.simple" />
+    </xed:repeat>
     <xed:include ref="link.repeated" />
   </xed:template>
 
-  <xed:template id="subject.complex">
-    <xed:repeat xpath="mods:subject[not(mods:geographic)]" min="1" max="40">
-      <fieldset>
-        <div class="row mir-fieldset-legend">
-          <legend class="col-md-9" style="margin-bottom:0px;padding-top:10px;">
-            <xed:output i18n="mir.subject.topic.complex" />
-          </legend>
-          <mir:help-pmud pmud="true" help-text="{i18n:mir.help.subject.topic.complex}" />
-        </div>
-        <div class="mir-fieldset-content">
-          <mir:topic.repeated min="1" max="40" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic.gnd}" extended="true" />
-        </div>
-      </fieldset>
-    </xed:repeat>
-  </xed:template>
 
   <!-- ========== wias specific templates ========== -->
   <xed:template id="wias.class.pacs">
