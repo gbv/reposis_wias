@@ -231,12 +231,34 @@
     </xed:repeat>
   </xed:template>
 
+  <xed:template id="wias.class.research_group">
+    <xed:repeat xpath="mods:classification[@authorityURI='hhttps://archive.wias-berlin.de/api/v2/classifications/wias_research_group'][@displayLabel='research_group']" min="1" max="10" method="build">
+      <xed:bind xpath="@valueURIxEditor">
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label text-right">
+            <xed:output i18n="wias.class.research_group" />
+          </label>
+          <div class="col-md-6">
+            <div class="controls">
+              <select class="form-control form-control-inline">
+                <option value=""><xed:output i18n="mir.select.optional" /></option>
+                <xed:include uri="xslStyle:items2options:classification:editor:-1:children:wias_research_group" />
+              </select>
+            </div>
+          </div>
+          <mir:help-pmud help-text="{i18n:wias.help.class.wias_research_group}" pmud="true" />
+        </div>
+      </xed:bind>
+    </xed:repeat>
+  </xed:template>
+
   <xed:template id="wias.box">
     <fieldset id="wias_box">
       <legend class="mir-fieldset-legend">
         <xed:output i18n="wias.information" />
       </legend>
       <div class="mir-fieldset-content">
+        <xed:include ref="wias.class.research_group" />
         <xed:include ref="wias.class.pacs" />
         <xed:include ref="wias.class.msc2010" />
         <xed:include ref="wias.class.topic_domain" />

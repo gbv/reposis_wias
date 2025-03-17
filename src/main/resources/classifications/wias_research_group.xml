@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="wias_research_group">
-  <label xml:lang="en" text="Research group" description="List of WIAS' research groups" />
   <label xml:lang="de" text="Forschungsgruppe" description="Liste der Forschungsgruppen am WIAS" />
-  <categories />
+  <label xml:lang="en" text="Research group" description="List of WIAS' research groups" />
+  <label xml:lang="x-uri" text="https://archive.wias-berlin.de/api/v2/classifications/wias_research_group" />
+  <categories>
+    <category ID="FG1">
+      <label xml:lang="de" text="Partielle Differentialgleichungen" />
+      <label xml:lang="en" text="Partial Differential Equations" />
+      <label xml:lang="x-contact" text="andrea.eismann@wias-berlin.de" />
+    </category>
+    <category ID="FG2">
+      <label xml:lang="de" text="Laserdynamik" />
+      <label xml:lang="en" text="Laser Dynamics" />
+      <label xml:lang="x-contact" text="veronica.bove@wias-berlin.de" />
+    </category>
+    <category ID="FG3">
+      <label xml:lang="de" text="Numerische Mathematik und Wissenschaftliches Rechnen" />
+      <label xml:lang="en" text="Numerical Mathematics and Scientific Computing" />
+      <label xml:lang="x-contact" text="imke.weitkamp@wias-berlin.de" />
+    </category>
+    <category ID="FG4">
+      <label xml:lang="de" text="Nichtlineare Optimierung und Inverse Probleme" />
+      <label xml:lang="en" text="Nonlinear Optimization and Inverse Problems" />
+      <label xml:lang="x-contact" text="anke.giese@wias-berlin.de" />
+    </category>
+    <category ID="FG5">
+      <label xml:lang="de" text="Stochastische Systeme mit Wechselwirkung" />
+      <label xml:lang="en" text="Interacting Random Systems" />
+      <label xml:lang="x-contact" text="vandesand@wias-berlin.de" />
+    </category>
+    <category ID="FG6">
+      <label xml:lang="de" text="Stochastische Algorithmen und Nichtparametrische Statistik" />
+      <label xml:lang="en" text="Stochastic Algorithms and Nonparametric Statistics" />
+      <label xml:lang="x-contact" text="christine.schneider@wias-berlin.de" />
+    </category>
+    <category ID="FG7">
+      <label xml:lang="de" text="Thermodynamische Modellierung und Analyse von Phasenübergängen" />
+      <label xml:lang="en" text="Thermodynamic Modeling and Analysis of Phase Transitions" />
+      <label xml:lang="x-contact" text="ina.hohn@wias-berlin.de" />
+    </category>
+    <category ID="FG8">
+      <label xml:lang="de" text="Nichtglatte Variationsprobleme und Operatorgleichungen" />
+      <label xml:lang="en" text="Nonsmooth Variational Problems and Operator Equations" />
+      <label xml:lang="x-contact" text="pia.pfau@wias-berlin.de" />
+    </category>
+    <category ID="FFP">
+      <label xml:lang="de" text="Flexible Forschungsplattformen" />
+      <category ID="WG2">
+        <label xml:lang="de" text="Datengetriebene Optimierung und Steuerung" />
+        <label xml:lang="en" text="Data-driven Optimization and Control" />
+        <label xml:lang="x-contact" text="christine.schneider@wias-berlin.de" />
+      </category>
+      <category ID="WG3">
+        <label xml:lang="de" text="Erhaltungssätze und Bilanzgleichungen für Multikomponentensysteme" />
+        <label xml:lang="en" text="Multi-species Balance Laws" />
+        <label xml:lang="x-contact" text="andrea.eismann@wias-berlin.de" />
+      </category>
+      <category ID="LG5">
+        <label xml:lang="de" text="Numerische Methoden für innovative Halbleiter-Bauteile" />
+        <label xml:lang="en" text="Numerical Methods for Innovative Semiconductor Devices" />
+        <label xml:lang="x-contact" text="imke.weitkamp@wias-berlin.de" />
+      </category>
+      <category ID="LG6">
+        <label xml:lang="de" text="Probabilistische Methoden für dynamische Kommunikationsnetzwerke" />
+        <label xml:lang="en" text="Probabilistic Methods for Dynamic Communication Networks" />
+        <label xml:lang="x-contact" text="vandesand@wias-berlin.de" />
+      </category>
+    </category>
+  </categories>
 </mycoreclass>
