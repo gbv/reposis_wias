@@ -80,14 +80,17 @@
                   <mir:template name="textInput"
                     xpath="condition[@field='id,isbn,mods.identifier']/@value" id="inputIdentifier1"
                     i18n="editor.search.mir.identifier" tooltip="editor.search.mir.identifier.tooltip" />
+                  <!-- Research Group -->
+                    <mir:template name="selectInput" xpath="condition[@field='category'][1]/@value" id="inputResearchGroup1" i18n="editor.search.wias.research_group"
+                      tooltip="editor.search.wias.research_group.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:wias_research_group" />
                   <!-- PACS -->
-                    <mir:template name="selectInput" xpath="condition[@field='category'][1]/@value" id="inputPacs1" i18n="editor.search.wias.pacs"
+                    <mir:template name="selectInput" xpath="condition[@field='category'][2]/@value" id="inputPacs1" i18n="editor.search.wias.pacs"
                       tooltip="editor.search.wias.pacs.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:PACS" />
                   <!-- MSC2010 -->
-                    <mir:template name="selectInput" xpath="condition[@field='category'][2]/@value" id="inputMsc20101" i18n="editor.search.wias.msc2010"
+                    <mir:template name="selectInput" xpath="condition[@field='category'][3]/@value" id="inputMsc20101" i18n="editor.search.wias.msc2010"
                       tooltip="editor.search.wias.msc2010.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:MSC2010" />
                   <!-- WIAS topic domain -->
-                    <mir:template name="selectInput" xpath="condition[@field='category'][3]/@value" id="inputTopicDomain1" i18n="editor.search.wias.topic_domain"
+                    <mir:template name="selectInput" xpath="condition[@field='category'][4]/@value" id="inputTopicDomain1" i18n="editor.search.wias.topic_domain"
                       tooltip="editor.search.wias.topic_domain.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:wias_topic_domain" />
                   <!-- Institution -->
                   <mir:template name="selectInput"
