@@ -71,6 +71,10 @@
             <label xml:lang="de">Themengebiete</label>
             <label xml:lang="en">Themengebiete</label>
         </item>
+        <item href="/content/browse/research_group.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Forschungsgruppe</label>
+            <label xml:lang="en">Research Group</label>
+        </item>
         <item href="/content/browse/genres.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Dokumenttypen</label>
             <label xml:lang="en">Genres</label>
