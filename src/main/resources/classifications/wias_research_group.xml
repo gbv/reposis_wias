@@ -46,6 +46,7 @@
     </category>
     <category ID="FFP">
       <label xml:lang="de" text="Flexible Forschungsplattformen" />
+      <label xml:lang="en" text="Flexible Research Platforms" />
       <category ID="WG2">
         <label xml:lang="de" text="Datengetriebene Optimierung und Steuerung" />
         <label xml:lang="en" text="Data-driven Optimization and Control" />
