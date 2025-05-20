@@ -103,6 +103,10 @@
             <label xml:lang="de">Dokument einreichen (Admin)</label>
             <label xml:lang="en">Submit new document (admin)</label>
         </item>
+        <item href="/servlets/solr/select?q=createdby:{CurrentUser}&amp;fq=objectType:mods" type="intern" replaceMenu="false" constrainPopUp="false">
+          <label xml:lang="de">Meine Einreichungen</label>
+          <label xml:lang="en">My submissions</label>
+        </item>
         <item href="/content/publish/faq.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">FAQ</label>
             <label xml:lang="en">FAQ</label>
