@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
 
-  $("#submit_publication .btn-default").on("click", function(e){
+  $("#submit_publication .btn-secondary").on("click", function(e){
       e.preventDefault();
       var selectedGenre = $( "#genre option:selected" ).val();
 
@@ -34,6 +34,14 @@ $(document).ready(function() {
           $('#submit_publication').submit();
       }
 
+  });
+  $('select[class*="autocomplete"]').selectpicker({
+    liveSearch:true,
+    liveSearchNormalize:true,
+    virtualScroll:true,
+    showSubtext:true,
+    size:10,
+    dropupAuto: false
   });
 
 });
