@@ -63,9 +63,9 @@
             <label xml:lang="de">PACS</label>
             <label xml:lang="en">PACS</label>
         </item>
-        <item href="/content/browse/msc2010.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">MSC 2010</label>
-            <label xml:lang="en">MSC 2010</label>
+        <item href="/content/browse/msc2020.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">MSC 2020</label>
+            <label xml:lang="en">MSC 2020</label>
         </item>
         <item href="/content/browse/topic_domain.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Themengebiete</label>
