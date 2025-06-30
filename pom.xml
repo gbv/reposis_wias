@@ -27,7 +27,6 @@
         <version>2023.06-SNAPSHOT</version>
     </parent>
 
-    <groupId>de.gbv.reposis</groupId>
     <artifactId>reposis_wias</artifactId>
     <version>2023.06-SNAPSHOT</version>
     <properties>
@@ -51,42 +50,11 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <id>ossrhs01</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-        <repository>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>central-portal-snapshots</id>
+            <name>Central Portal Snapshots</name>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
         </repository>
     </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>ossrhs01</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </pluginRepository>
-        <pluginRepository>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </pluginRepository>
-    </pluginRepositories>
     <dependencies>
         <!-- enable theese if you write code using them
         <dependency>
@@ -109,6 +77,11 @@
         <dependency>
             <groupId>org.mycore</groupId>
             <artifactId>selenium-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
