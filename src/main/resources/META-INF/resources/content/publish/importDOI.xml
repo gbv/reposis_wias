@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MyCoReWebPage>
+  <section title="Publizieren (DOI-Import)" xml:lang="de">
+    <head>
+      <meta name="title" content="Publizieren (DOI-Import)"/>
+      <meta name="description" content="Publizieren mit Hilfe des DOI-Imports"/>
+    </head>
+  </section>
+  <section title="Publication (DOI Import)" xml:lang="en"/>
+  <section xml:lang="de">
+    <form id="submit_publication_doi"
+          class="form-horizontal"
+          role="form"
+          method="get"
+          action="../../editor/editor-admins.xed">
+
+
+        <h2>Publizieren (DOI-Import)</h2>
+        <div class="row">
+          <div class="col-sm-9 offset-sm-3 col-md-7 offset-md-3 col-lg-5 offset-lg-2">
+            <p>
+              Bitte geben Sie eine DOI zum Import an.
+            </p>
+          </div>
+        </div>
+
+<!-- doi -->
+      <div class="row form-group">
+        <label for="genre" class="col-sm-3 col-lg-2 control-label">DOI:</label>
+        <div class="col-sm-7 col-md-5  col-lg-4">
+          <input type="text" name="modsId" id="modsId" class="form-control" size="20" placeholder="z.B. 10.1515/bfp-2019-2013" />
+          <input type="hidden" name="type" id="type" value="doi" />
+        </div>
+        <div class="d-xs-none col-sm-3 d-lg-none"></div>
+        <div class="col-sm-7 col-md-4 col-lg-5">
+          <p>
+            Sollten die Daten bereits über den Verlag erfasst sein, können Sie diese über Angabe der DOI in die Erfassungsmaske
+            übernehmen.
+          </p>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-sm-3 col-md-2"></div>
+        <div class="col-sm-5 col-md-4">
+          <button type="submit" class="btn btn-secondary">Weiter</button>
+        </div>
+      </div>
+
+    </form>
+  </section>
+  <section xml:lang="en">
+    <form id="submit_publication_doi"
+          class="form-horizontal"
+          role="form"
+          method="get"
+          action="../../editor/editor-admins.xed">
+
+
+      <h2>Publish (DOI Import)</h2>
+      <div class="row">
+        <div class="col-sm-9 offset-sm-3 col-md-7 offset-md-3 col-lg-5 offset-lg-2">
+          <p>
+            Please enter a DOI for import.
+          </p>
+        </div>
+      </div>
+
+      <!-- doi -->
+      <div class="row form-group">
+        <label for="genre" class="col-sm-3 col-lg-2 control-label">DOI:</label>
+        <div class="col-sm-7 col-md-5  col-lg-4">
+          <input type="text" name="doi" id="doi" class="form-control" size="20" placeholder="e.g. 10.1515/bfp-2019-2013" />
+        </div>
+        <div class="d-xs-none col-sm-3 d-lg-none"></div>
+        <div class="col-sm-7 col-md-4 col-lg-5">
+          <p>
+            If the data is already entered in a DOI database, you can copy these into the entry mask by
+            entering the DOI.
+          </p>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-sm-3 col-md-2"></div>
+        <div class="col-sm-5 col-md-4">
+          <button type="submit" class="btn btn-secondary">Next</button>
+        </div>
+      </div>
+
+    </form>
+  </section>
+</MyCoReWebPage>

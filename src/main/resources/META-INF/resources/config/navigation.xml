@@ -99,6 +99,10 @@
             <label xml:lang="de">Dokument einreichen</label>
             <label xml:lang="en">Submit new document</label>
         </item>
+        <item href="/content/publish/importDOI.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Dokument via DOI importieren</label>
+            <label xml:lang="en">Import new document using DOI</label>
+        </item>
         <item href="/editor/editor-admins.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Dokument einreichen (Admin)</label>
             <label xml:lang="en">Submit new document (admin)</label>
