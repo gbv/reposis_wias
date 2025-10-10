@@ -136,7 +136,7 @@
             Weierstraß-Institut für angewandte<br />
             Analysis und Stochastik<br /><br />
 
-            Mohrenstr. 39 · 10117 Berlin<br />
+            Anton-Wilhelm-Amo-Str. 39 · 10117 Berlin<br />
             <span class="madress">contact [at] wias-berlin.de</span><br />
             Tel. 030 20372-0<br />
             Fax. 030 20372-303
