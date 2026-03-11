@@ -27,8 +27,8 @@
         <version>2023.06-SNAPSHOT</version>
     </parent>
 
+    <groupId>de.gbv.reposis</groupId>
     <artifactId>reposis_wias</artifactId>
-    <version>2023.06-SNAPSHOT</version>
     <properties>
         <MCR.AppName>wias</MCR.AppName>
     </properties>
