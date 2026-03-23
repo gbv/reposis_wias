@@ -44,16 +44,14 @@ public class WiasStrategy extends MIRStrategy {
 
     @Override
     public boolean checkPermission(String id, String permission) {
-        if (!super.checkPermission(id, permission)) {
-            return false;
-        }
         String doiServiceId = getDoiServiceId();
         if (!doiServiceId.isBlank()
             && ("register-" + doiServiceId).equals(permission)
-            && MCRObjectID.isValid(id)) {
-            return canGenerateDOI(MCRObjectID.getInstance(id));
+            && MCRObjectID.isValid(id)
+            && !canGenerateDOI(MCRObjectID.getInstance(id))) {
+            return false;
         }
-        return true;
+        return super.checkPermission(id, permission);
     }
 
     private boolean canGenerateDOI(MCRObjectID objectId) {
