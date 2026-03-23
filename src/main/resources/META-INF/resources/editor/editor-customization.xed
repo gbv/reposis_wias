@@ -4,6 +4,22 @@
 
   <!-- ========== extend editor-genres.xed ========== -->
 
+  <!-- in.out just copied from mir and changed post-processor -->
+  <xed:template id="in.out">
+    <xed:source uri="xslStyle:import/remove-genres,import/mods2mycoreobject,editor/mods2xeditor:enrich:import:buildxml:_rootName_=mods:mods&amp;mods:identifier={$modsId}&amp;mods:identifier/@type={$type}" />
+    <xed:source uri="xslStyle:RDF-mods-journal,editor/mods2xeditor:http://ld.zdb-services.de/data/{$zdbid}.rdf" />
+    <xed:source uri="xslStyle:mycoreobject-editor,editor/mods2xeditor:mcrobject:{$id}" />
+    <xed:source uri="xslStyle:mycoreobject-copyof,editor/mods2xeditor:mcrobject:{$copyofid}" />
+    <xed:source uri="xslStyle:mods-addPreceding,mycoreobject-copyof,editor/mods2xeditor:mcrobject:{$oldVersion}" />
+    <xed:source uri="xslStyle:as{$relatedItemType},editor/mods2xeditor:mcrobject:{$relatedItemId}" />
+
+    <xed:cancel
+      url="../servlets/MCRLockServlet?action=unlock&amp;id={$id}&amp;url=/receive/{$id}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:cancel url="{$cancelUrl}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:cancel url="../index.html?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:post-processor class="de.vzg.reposis.wias.WiasPostProcessor" xsl="editor/xeditor2mods.xsl" />
+  </xed:template>
+
   <xed:modify ref="admin.fields">
       <xed:remove  ref="related.item.other.search.of.all.items" />
   </xed:modify>
