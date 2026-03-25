@@ -47,9 +47,13 @@
         <label xml:lang="de" text="Interagierende stochastische Vielteilchensysteme" />
         <label xml:lang="en" text="Interacting stochastic particle systems" />
       </category>
+      <category ID="MF4ML">
+        <label xml:lang="de" text="Maschinelles Lernen: Mathematische Grundlagen und Anwendungen" />
+        <label xml:lang="en" text="Machine Learning: Mathematical foundations to applications" />
+      </category>
       <category ID="Mehrskalen">
         <label xml:lang="de" text="Mehrskalenmodellierung, asymptotische Analysis und Hybridmodelle" />
-        <label xml:lang="en" text="Multi=scale modeling, asymptotic analysis, and hybrid models" />
+        <label xml:lang="en" text="Multi-scale modeling, asymptotic analysis, and hybrid models" />
       </category>
       <category ID="controlproblems">
         <label xml:lang="de" text="Methoden für Stopp- und Kontrollprobleme" />
@@ -93,7 +97,7 @@
       </category>
       <category ID="Dynsys">
         <label xml:lang="de" text="Theorie dynamischer Systeme" />
-        <label xml:lang="en" text="Theory of dynamical system" />
+        <label xml:lang="en" text="Theory of dynamical systems" />
       </category>
       <category ID="Variationsrechnung">
         <label xml:lang="de" text="Variationsrechnung" />
@@ -113,7 +117,7 @@
       </category>
       <category ID="optionpricing">
         <label xml:lang="de" text="Bewertung von komplex strukturierten Produkten in Finanz- und Energiemärkten" />
-        <label xml:lang="en" text="Calibration and risk assesment of stock and interest rate models" />
+        <label xml:lang="en" text="Valuation of complex structured instruments in financial and energy markets" />
       </category>
       <category ID="diffstatphys">
         <label xml:lang="de" text="Diffusionsmodelle der Statistischen Physik" />
@@ -190,6 +194,22 @@
       <category ID="Elektrochemie">
         <label xml:lang="de" text="Thermodynamische Modelle elektrochemischer Systeme" />
         <label xml:lang="en" text="Thermodynamic models for electrochemical systems" />
+      </category>
+    </category>
+    <category ID="its">
+      <label xml:lang="de" text="Infrastrukturthemen" />
+      <label xml:lang="en" text="Infrastructure Topics" />
+      <category ID="mRDM">
+        <label xml:lang="de" text="Mathematisches Forschungsdatenmanagement" />
+        <label xml:lang="en" text="Mathematical Research Data Management" />
+      </category>
+      <category ID="RSE">
+        <label xml:lang="de" text="Wissenschaftliche Softwareentwicklung" />
+        <label xml:lang="en" text="Research Software Engineering" />
+      </category>
+      <category ID="ontologies">
+        <label xml:lang="de" text="Wissensgraphen und Ontologien" />
+        <label xml:lang="en" text="Knowledge Graphs and Ontologies" />
       </category>
     </category>
     <category ID="archive">

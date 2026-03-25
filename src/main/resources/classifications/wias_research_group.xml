@@ -52,6 +52,11 @@
         <label xml:lang="en" text="Data-driven Optimization and Control" />
         <label xml:lang="x-contact" text="christine.schneider@wias-berlin.de" />
       </category>
+      <category ID="W4">
+        <label xml:lang="de" text="Energie-variationelle Methoden für innovative Materialien" />
+        <label xml:lang="en" text="Energy-variational Methods for Innovative Materials" />
+        <label xml:lang="x-contact" text="giese@wias-berlin.de" />
+      </category>
       <category ID="WG3">
         <label xml:lang="de" text="Erhaltungssätze und Bilanzgleichungen für Multikomponentensysteme" />
         <label xml:lang="en" text="Multi-species Balance Laws" />
@@ -66,6 +71,42 @@
         <label xml:lang="de" text="Probabilistische Methoden für dynamische Kommunikationsnetzwerke" />
         <label xml:lang="en" text="Probabilistic Methods for Dynamic Communication Networks" />
         <label xml:lang="x-contact" text="vandesand@wias-berlin.de" />
+      </category>
+      <category ID="FP2">
+        <label xml:lang="de" text="Simulation von Halbleiterbauelementen für Quantentechnologien" />
+        <label xml:lang="en" text="Simulation of Semiconductor Devices for Quantum Technologies" />
+      </category>
+    </category>
+    <category ID="FFP_former">
+      <label xml:lang="de" text="Ehemalige Gruppen" />
+      <label xml:lang="en" text="Former Groups" />
+      <category ID="E1">
+        <label xml:lang="de" text="Elliptische Partielle Differentialgleichungen und Symmetrie von Grenzflächen und Schichten für ungerade Nichtlinearitäten" />
+        <label xml:lang="en" text="Elliptic Partial Differential Equations and Symmetry of Interfaces and Layers for Odd Nonlinearities" />
+      </category>
+      <category ID="E2">
+        <label xml:lang="de" text="Entropieformulierung von zeitabhängigen Phasenübergängen" />
+        <label xml:lang="en" text="Entropy Formulation of Evolutionary Phase Transitions" />
+      </category>
+      <category ID="WG1">
+        <label xml:lang="de" text="Modellierung, Analysis und Skalenübergänge von Volumen-Grenzschicht-Prozessen" />
+        <label xml:lang="en" text="Modeling, Analysis, and Scaling Limits for Bulk-Interface Processes" />
+      </category>
+      <category ID="LG1">
+        <label xml:lang="de" text="Gekoppelte Strömungsprozesse in Energie- und Umweltforschung" />
+        <label xml:lang="en" text="Coupled flow processes in energy and environmental research" />
+      </category>
+      <category ID="LG2">
+        <label xml:lang="de" text="Modellierung von Schädigungsprozessen" />
+        <label xml:lang="en" text="Modeling of Damage Processes" />
+      </category>
+      <category ID="LG3">
+        <label xml:lang="de" text="Mathematische Modelle für Lithium-Ionen-Batterien" />
+        <label xml:lang="en" text="Mathematical Models for Lithium-Ion Batteries" />
+      </category>
+      <category ID="LG4">
+        <label xml:lang="de" text="Probabilistische Methoden für mobile Ad-hoc-Netzwerke" />
+        <label xml:lang="en" text="Probabilistic Methods for Mobile Ad-hoc Networks" />
       </category>
     </category>
   </categories>
