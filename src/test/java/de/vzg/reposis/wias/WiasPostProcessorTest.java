@@ -1,6 +1,7 @@
 package de.vzg.reposis.wias;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -9,6 +10,8 @@ import org.junit.Test;
 import org.mycore.backend.jpa.MCREntityManagerProvider;
 import org.mycore.common.MCRConstants;
 import org.mycore.common.MCRJPATestCase;
+import org.mycore.common.MCRSessionMgr;
+import org.mycore.common.MCRSystemUserInformation;
 import org.mycore.common.MCRTestConfiguration;
 import org.mycore.common.MCRTestProperty;
 
@@ -36,13 +39,15 @@ public class WiasPostProcessorTest extends MCRJPATestCase {
     @Override
     public void setUp() throws Exception {
         super.setUp();
+        MCRSessionMgr.getCurrentSession()
+            .setUserInformation(MCRSystemUserInformation.getSuperUserInstance());
         processor = new WiasPostProcessor();
     }
 
     @Test
     public void testVolumeMissingIsAssignedFromDB() throws Exception {
         // DB is empty → MAX returns null → next volume = 1
-        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, null);
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, null, true);
         Document result = processor.process(doc);
 
         String volume = extractVolume(result);
@@ -55,7 +60,7 @@ public class WiasPostProcessorTest extends MCRJPATestCase {
         EntityManager em = MCREntityManagerProvider.getCurrentEntityManager();
         em.persist(new WiasPreprintNumberEntity("test_mods_00000001", 41));
 
-        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, null);
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, null, true);
         Document result = processor.process(doc);
 
         String volume = extractVolume(result);
@@ -64,7 +69,7 @@ public class WiasPostProcessorTest extends MCRJPATestCase {
 
     @Test
     public void testExistingVolumeIsNotOverwritten() throws Exception {
-        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, "3259");
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, "3259", true);
         Document result = processor.process(doc);
 
         String volume = extractVolume(result);
@@ -73,12 +78,76 @@ public class WiasPostProcessorTest extends MCRJPATestCase {
 
     @Test
     public void testNonMatchingSeriesIsNotModified() throws Exception {
-        Document doc = buildMycoreobjectDoc(OTHER_SERIES, null);
+        Document doc = buildMycoreobjectDoc(OTHER_SERIES, null, true);
         Document result = processor.process(doc);
 
         // No volume should be assigned since the series doesn't match
         String volume = extractVolume(result);
         assertEquals("Non-matching series should not receive a volume", null, volume);
+    }
+
+    @Test
+    public void testVolumeNotAssignedWithoutGenerateAttribute() throws Exception {
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, null, false);
+        Document result = processor.process(doc);
+
+        String volume = extractVolume(result);
+        assertEquals("Volume should not be assigned without generate attribute", null, volume);
+    }
+
+    @Test
+    public void testGenerateAttributeRemovedAfterProcessing() throws Exception {
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, null, true);
+        Document result = processor.process(doc);
+
+        assertNull("@generate-volume must be removed from output",
+            extractSeriesItem(result).getAttributeValue("generate-volume"));
+    }
+
+    @Test
+    public void testGenerateAttributeRemovedEvenWhenVolumeExists() throws Exception {
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, "3259", true);
+        Document result = processor.process(doc);
+
+        assertNull("@generate-volume must be removed even when volume already set",
+            extractSeriesItem(result).getAttributeValue("generate-volume"));
+    }
+
+    @Test
+    public void testVolumeNotAssignedWithoutRequiredRole() throws Exception {
+        // Set a guest user (no editor/admin role)
+        MCRSessionMgr.getCurrentSession()
+            .setUserInformation(MCRSystemUserInformation.getGuestInstance());
+
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, null, true);
+        Document result = processor.process(doc);
+
+        String volume = extractVolume(result);
+        assertEquals("Volume should not be assigned without editor/admin role", null, volume);
+    }
+
+    @Test
+    public void testVolumeStrippedFromPreprintSeriesWithoutRequiredRole() throws Exception {
+        MCRSessionMgr.getCurrentSession()
+            .setUserInformation(MCRSystemUserInformation.getGuestInstance());
+
+        Document doc = buildMycoreobjectDoc(PREPRINT_SERIES, "999", false);
+        Document result = processor.process(doc);
+
+        String volume = extractVolume(result);
+        assertNull("Volume must be removed for unauthorized user on preprint series", volume);
+    }
+
+    @Test
+    public void testVolumeNotStrippedFromOtherSeriesWithoutRequiredRole() throws Exception {
+        MCRSessionMgr.getCurrentSession()
+            .setUserInformation(MCRSystemUserInformation.getGuestInstance());
+
+        Document doc = buildMycoreobjectDoc(OTHER_SERIES, "42", false);
+        Document result = processor.process(doc);
+
+        String volume = extractVolume(result);
+        assertEquals("Volume on non-preprint series must not be touched", "42", volume);
     }
 
     // --- builders ---
@@ -88,10 +157,13 @@ public class WiasPostProcessorTest extends MCRJPATestCase {
      * that {@code fixVolume}'s XPath expects:
      * {@code /mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']}.
      */
-    private Document buildMycoreobjectDoc(String seriesId, String volume) {
+    private Document buildMycoreobjectDoc(String seriesId, String volume, boolean generate) {
         Element relatedItem = new Element("relatedItem", MCRConstants.MODS_NAMESPACE)
             .setAttribute("type", "series")
             .setAttribute("href", seriesId, MCRConstants.XLINK_NAMESPACE);
+        if (generate) {
+            relatedItem.setAttribute("generate-volume", "true");
+        }
         if (volume != null) {
             Element detail = new Element("detail", MCRConstants.MODS_NAMESPACE).setAttribute("type", "volume");
             detail.addContent(new Element("number", MCRConstants.MODS_NAMESPACE).setText(volume));
@@ -142,5 +214,16 @@ public class WiasPostProcessorTest extends MCRJPATestCase {
         }
         Element number = detail.getChild("number", MCRConstants.MODS_NAMESPACE);
         return number == null ? null : number.getTextTrim();
+    }
+
+    private Element extractSeriesItem(Document doc) {
+        return doc.getRootElement()
+            .getChild("metadata")
+            .getChild("def.modsContainer")
+            .getChild("modsContainer")
+            .getChild("mods", MCRConstants.MODS_NAMESPACE)
+            .getChildren("relatedItem", MCRConstants.MODS_NAMESPACE).stream()
+            .filter(e -> "series".equals(e.getAttributeValue("type")))
+            .findFirst().orElse(null);
     }
 }

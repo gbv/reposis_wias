@@ -38,6 +38,14 @@ public class WiasStrategy extends MIRStrategy {
         return MCRConfiguration2.getString("MCR.PI.Generator.DOIGenerator.AnnualReportSeriesId").orElse("");
     }
 
+    private static String getTechReportSeriesId() {
+        return MCRConfiguration2.getString("MCR.PI.Generator.DOIGenerator.TechReportSeriesId").orElse("");
+    }
+
+    private static String getReportSeriesId() {
+        return MCRConfiguration2.getString("MCR.PI.Generator.DOIGenerator.ReportSeriesId").orElse("");
+    }
+
     private static final String GENRE_XPATH = "mods:genre[@type='intern']";
     private static final String DATE_ISSUED_XPATH = "mods:originInfo[@eventType='publication']/mods:dateIssued";
     private static final String ARR_SERIES_XPATH_TEMPLATE = ".//mods:relatedItem[@xlink:href='%s']";
@@ -68,8 +76,18 @@ public class WiasStrategy extends MIRStrategy {
             return switch (genre) {
                 case "preprint" -> hasVolumeInSeries(wrapper, getPreprintSeriesId());
                 case "research_data", "software" -> true;
-                case "report" -> referencesArrSeries(wrapper) ? hasDateIssued(wrapper)
-                    : hasVolumeInSeries(wrapper, null);
+                case "report" -> {
+                    if (referencesArrSeries(wrapper)) {
+                        yield hasDateIssued(wrapper);
+                    }
+                    if (referencesTechReportSeries(wrapper)) {
+                        yield true;
+                    }
+                    if (referencesReportSeries(wrapper)) {
+                        yield hasVolumeInSeries(wrapper, getReportSeriesId());
+                    }
+                    yield false;
+                }
                 case "article", "chapter" -> referencesArrSeries(wrapper) && hasDateIssued(wrapper);
                 default -> false;
             };
@@ -105,6 +123,24 @@ public class WiasStrategy extends MIRStrategy {
             return false;
         }
         String xpath = String.format(ARR_SERIES_XPATH_TEMPLATE, arrSeriesId);
+        return wrapper.getElement(xpath) != null;
+    }
+
+    private boolean referencesTechReportSeries(MCRMODSWrapper wrapper) {
+        String techReportSeriesId = getTechReportSeriesId();
+        if (techReportSeriesId.isBlank()) {
+            return false;
+        }
+        String xpath = "mods:relatedItem[@type='series'][@xlink:href='" + techReportSeriesId + "']";
+        return wrapper.getElement(xpath) != null;
+    }
+
+    private boolean referencesReportSeries(MCRMODSWrapper wrapper) {
+        String reportSeriesId = getReportSeriesId();
+        if (reportSeriesId.isBlank()) {
+            return false;
+        }
+        String xpath = "mods:relatedItem[@type='series'][@xlink:href='" + reportSeriesId + "']";
         return wrapper.getElement(xpath) != null;
     }
 

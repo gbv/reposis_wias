@@ -28,7 +28,7 @@ import org.mycore.pi.exceptions.MCRPersistentIdentifierException;
  *   <li>Preprint (genre=preprint): {@code 10.20347/WIAS.PREPRINT.<Volume>} – volume from series relatedItem</li>
  *   <li>Research data (genre=research_data): {@code 10.20347/WIAS.DATA.<N>} – auto-incremented counter</li>
  *   <li>Software (genre=software): {@code 10.20347/WIAS.SOFTWARE.<N>} – auto-incremented counter per prefix</li>
- *   <li>Technical report (genre=report, REPORT series): {@code 10.20347/WIAS.REPORT.<Volume>} – volume from series relatedItem</li>
+ *   <li>Technical report (genre=report, TECHREPORT series): {@code 10.20347/WIAS.TECHREPORT.<N>} – auto-incremented counter</li>
  *   <li>Annual report (genre=report, ARR series): {@code 10.20347/WIAS.ARR.<YY>000}</li>
  *   <li>Article in annual report (genre=article, nested ARR series ref): {@code 10.20347/WIAS.ARR.<YY><NNN>} – year-based counter</li>
  * </ul>
@@ -38,6 +38,7 @@ import org.mycore.pi.exceptions.MCRPersistentIdentifierException;
  * MCR.PI.Generator.DOIGenerator=de.vzg.reposis.wias.WiasDOIGenerator
  * MCR.PI.Generator.DOIGenerator.Prefix=10.20347
  * MCR.PI.Generator.DOIGenerator.AnnualReportSeriesId=wias_mods_00000034
+ * MCR.PI.Generator.DOIGenerator.TechReportSeriesId=wias_mods_00000035
  * </pre>
  */
 public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier> {
@@ -60,6 +61,10 @@ public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier>
 
     private String annualReportSeriesId;
 
+    private String techReportSeriesId;
+
+    private String reportSeriesId;
+
     @MCRPostConstruction
     public void init(String property) {
         super.init(property);
@@ -67,6 +72,8 @@ public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier>
         doiPrefix = properties.get("Prefix");
         preprintSeriesId = properties.getOrDefault("PreprintSeriesId", "");
         annualReportSeriesId = properties.getOrDefault("AnnualReportSeriesId", "");
+        techReportSeriesId = properties.getOrDefault("TechReportSeriesId", "");
+        reportSeriesId = properties.getOrDefault("ReportSeriesId", "");
     }
 
     @Override
@@ -108,19 +115,32 @@ public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier>
     }
 
     /**
-     * A report is either the annual report itself (linked to ARR series → WIAS.ARR.YY000)
-     * or a technical report (linked to the REPORT series → WIAS.REPORT.Volume).
+     * A report is either the annual report itself (linked to ARR series → WIAS.ARR.YY000),
+     * a technical report (linked to the TECHREPORT series → WIAS.TECHREPORT.N with counter),
+     * or a generic report (→ WIAS.REPORT.Volume).
      */
     private String buildReportDOI(MCRMODSWrapper wrapper) throws MCRPersistentIdentifierException {
         if (!annualReportSeriesId.isBlank() && referencesAnnualReportSeries(wrapper)) {
             return doiPrefix + "/WIAS.ARR." + getTwoDigitYear(wrapper) + "000";
         }
-        String volume = wrapper.getElementValue(
-            "mods:relatedItem[@type='series']/mods:part/mods:detail[@type='volume']/mods:number");
-        if (volume == null || volume.isBlank()) {
-            throw new MCRPersistentIdentifierException("No volume found in series relatedItem");
+        if (!techReportSeriesId.isBlank() && referencesTechReportSeries(wrapper)) {
+            return doiPrefix + "/WIAS.TECHREPORT." + getNextCounter(counterPattern("WIAS\\.TECHREPORT"));
         }
-        return doiPrefix + "/WIAS.REPORT." + volume.strip();
+        if (!reportSeriesId.isBlank() && referencesReportSeries(wrapper)) {
+            return doiPrefix + "/WIAS.REPORT." + getSeriesVolume(wrapper, reportSeriesId);
+        }
+        throw new MCRPersistentIdentifierException(
+            "Report does not reference a known series (ARR, TechReport, or Report)");
+    }
+
+    private boolean referencesTechReportSeries(MCRMODSWrapper wrapper) {
+        String xpath = String.format("mods:relatedItem[@type='series'][@xlink:href='%s']", techReportSeriesId);
+        return wrapper.getElement(xpath) != null;
+    }
+
+    private boolean referencesReportSeries(MCRMODSWrapper wrapper) {
+        String xpath = String.format("mods:relatedItem[@type='series'][@xlink:href='%s']", reportSeriesId);
+        return wrapper.getElement(xpath) != null;
     }
 
     /**

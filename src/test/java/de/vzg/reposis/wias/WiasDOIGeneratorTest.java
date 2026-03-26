@@ -28,6 +28,8 @@ public class WiasDOIGeneratorTest extends MCRStoreTestCase {
     private static final String PREFIX = "10.20347";
     private static final String PREPRINT_SERIES = "test_mods_00000012";
     private static final String ARR_SERIES = "test_mods_00000034";
+    private static final String TECHREPORT_SERIES = "test_mods_00000035";
+    private static final String REPORT_SERIES = "test_mods_00000021";
 
     private WiasDOIGenerator generator;
 
@@ -39,7 +41,9 @@ public class WiasDOIGeneratorTest extends MCRStoreTestCase {
         generator.setProperties(Map.of(
             "Prefix", PREFIX,
             "PreprintSeriesId", PREPRINT_SERIES,
-            "AnnualReportSeriesId", ARR_SERIES));
+            "AnnualReportSeriesId", ARR_SERIES,
+            "TechReportSeriesId", TECHREPORT_SERIES,
+            "ReportSeriesId", REPORT_SERIES));
         generator.init("MCR.PI.Generator.DOIGenerator");
     }
 
@@ -105,6 +109,13 @@ public class WiasDOIGeneratorTest extends MCRStoreTestCase {
     }
 
     @Test
+    public void testTechReportDOI() throws MCRPersistentIdentifierException {
+        MCRObject obj = buildObject("test_mods_00002223", buildTechReportMods(TECHREPORT_SERIES));
+        String doi = generator.generate(obj, "").asString();
+        assertEquals(PREFIX + "/WIAS.TECHREPORT.1", doi);
+    }
+
+    @Test
     public void testAnnualReportDOI() throws MCRPersistentIdentifierException {
         MCRObject obj = buildObject("test_mods_00005555", buildAnnualReportMods(ARR_SERIES, "2026"));
         String doi = generator.generate(obj, "").asString();
@@ -150,10 +161,17 @@ public class WiasDOIGeneratorTest extends MCRStoreTestCase {
         return mods;
     }
 
+    private Element buildTechReportMods(String techReportSeriesId) {
+        Element mods = new Element("mods", MCRConstants.MODS_NAMESPACE);
+        mods.addContent(genre("report"));
+        mods.addContent(relatedItem("series", techReportSeriesId));
+        return mods;
+    }
+
     private Element buildReportMods(String volume) {
         Element mods = new Element("mods", MCRConstants.MODS_NAMESPACE);
         mods.addContent(genre("report"));
-        Element ri = relatedItem("series", null);
+        Element ri = relatedItem("series", REPORT_SERIES);
         ri.addContent(volumePart(volume));
         mods.addContent(ri);
         return mods;

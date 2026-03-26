@@ -16,6 +16,9 @@
   <xsl:param name="MIR.CustomLayout.CSS" select="''" />
   <xsl:param name="MIR.CustomLayout.JS" select="''" />
   <xsl:param name="MIR.Layout.Theme" />
+  <xsl:param name="WIAS.PostProcessor.PreprintSeriesId" select="''" />
+  <xsl:param name="MCR.PI.Generator.DOIGenerator.TechReportSeriesId" select="''" />
+  <xsl:param name="MCR.PI.Generator.DOIGenerator.ReportSeriesId" select="''" />
 
   <xsl:variable name="PageTitle" select="/*/@title" />
 
@@ -45,6 +48,13 @@
           <script src="{$WebApplicationBaseURL}js/{$MIR.CustomLayout.JS}"></script>
         </xsl:if>
         <xsl:call-template name="mir.prop4js" />
+        <script>
+          <xsl:text>window["wiasConfig"] = {</xsl:text>
+          <xsl:text>preprintSeriesId: "</xsl:text><xsl:value-of select="$WIAS.PostProcessor.PreprintSeriesId" /><xsl:text>",</xsl:text>
+          <xsl:text>techReportSeriesId: "</xsl:text><xsl:value-of select="$MCR.PI.Generator.DOIGenerator.TechReportSeriesId" /><xsl:text>",</xsl:text>
+          <xsl:text>reportSeriesId: "</xsl:text><xsl:value-of select="$MCR.PI.Generator.DOIGenerator.ReportSeriesId" /><xsl:text>"</xsl:text>
+          <xsl:text>};</xsl:text>
+        </script>
       </head>
 
       <body>

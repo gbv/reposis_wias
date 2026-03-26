@@ -56,6 +56,52 @@
   </xed:template>
 
 
+  <!-- ========== override host.volume to add generate checkbox for preprint series ========== -->
+  <xed:template id="host.volume">
+    <xed:if test="@xlink:href = $MCR.PI.Generator.DOIGenerator.PreprintSeriesId">
+      <div class="form-group row mir-modspart">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="mir.volume" />
+        </label>
+        <div class="col-md-6">
+          <xed:bind xpath="mods:part/mods:detail[@type='volume']/mods:number">
+            <input type="text" class="form-control" readonly="readonly" />
+          </xed:bind>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+      <xed:if test="string-length(mods:part/mods:detail[@type='volume']/mods:number) = 0">
+        <xed:bind xpath="@generate-volume">
+          <div class="form-group row mir-modspart">
+            <div class="offset-md-3 col-md-6">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="true" />
+                <label class="form-check-label">
+                  <xed:output i18n="wias.series.volume.generate" />
+                </label>
+              </div>
+            </div>
+          </div>
+        </xed:bind>
+      </xed:if>
+    </xed:if>
+    <xed:if test="not(@xlink:href = $MCR.PI.Generator.DOIGenerator.PreprintSeriesId)">
+      <div class="form-group row mir-modspart">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="mir.volume" />
+        </label>
+        <div class="col-md-6">
+          <xed:bind xpath="mods:part/mods:detail[@type='volume']/mods:number">
+            <input type="text" class="form-control" />
+          </xed:bind>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+    </xed:if>
+  </xed:template>
+
   <!-- ========== adopt some MIR templates ========== -->
   
       <!-- no shelfmark needed -->
@@ -291,7 +337,7 @@
   </xed:template>
 
   <xed:template id="note.systemDetails">
-    <mir:textfield repeat="true" xpath="note[@type='system details']" min="1" max="5" label="mir.note.systemDetails" help-text="{i18n:mir.help.note.systemDetails}" />
+    <mir:textfield repeat="true" xpath="mods:note[@type='system details']" min="1" max="5" label="mir.note.systemDetails" help-text="{i18n:mir.help.note.systemDetails}" />
   </xed:template> 
 
 

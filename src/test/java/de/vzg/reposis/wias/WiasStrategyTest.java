@@ -33,12 +33,16 @@ import org.mycore.common.MCRSessionMgr;
     @MCRTestProperty(key = "MCR.MODS.Types", string = "mods"),
     @MCRTestProperty(key = "WIAS.Strategy.DOIServiceId", string = "Datacite"),
     @MCRTestProperty(key = "MCR.PI.Generator.DOIGenerator.PreprintSeriesId", string = "test_mods_00000012"),
-    @MCRTestProperty(key = "MCR.PI.Generator.DOIGenerator.AnnualReportSeriesId", string = "test_mods_00000034")
+    @MCRTestProperty(key = "MCR.PI.Generator.DOIGenerator.AnnualReportSeriesId", string = "test_mods_00000034"),
+    @MCRTestProperty(key = "MCR.PI.Generator.DOIGenerator.TechReportSeriesId", string = "test_mods_00000035"),
+    @MCRTestProperty(key = "MCR.PI.Generator.DOIGenerator.ReportSeriesId", string = "test_mods_00000021")
 })
 public class WiasStrategyTest extends MCRStoreTestCase {
 
     private static final String PREPRINT_SERIES = "test_mods_00000012";
     private static final String ARR_SERIES = "test_mods_00000034";
+    private static final String TECHREPORT_SERIES = "test_mods_00000035";
+    private static final String REPORT_SERIES = "test_mods_00000021";
 
     private WiasStrategy strategy;
     private Method canGenerateDOI;
@@ -102,11 +106,35 @@ public class WiasStrategyTest extends MCRStoreTestCase {
     }
 
     @Test
+    public void testTechReportDOIAlwaysAllowed() throws Exception {
+        Element mods = new Element("mods", MCRConstants.MODS_NAMESPACE);
+        mods.addContent(genre("report"));
+        mods.addContent(new Element("relatedItem", MCRConstants.MODS_NAMESPACE)
+            .setAttribute("type", "series")
+            .setAttribute("href", TECHREPORT_SERIES, MCRConstants.XLINK_NAMESPACE));
+        MCRObjectID id = store("test_mods_00002003", mods);
+        assertTrue(invoke(id));
+    }
+
+    @Test
     public void testReportWithoutVolumeDOIDenied() throws Exception {
         Element mods = new Element("mods", MCRConstants.MODS_NAMESPACE);
         mods.addContent(genre("report"));
-        mods.addContent(new Element("relatedItem", MCRConstants.MODS_NAMESPACE).setAttribute("type", "series"));
+        mods.addContent(new Element("relatedItem", MCRConstants.MODS_NAMESPACE)
+            .setAttribute("type", "series")
+            .setAttribute("href", REPORT_SERIES, MCRConstants.XLINK_NAMESPACE));
         MCRObjectID id = store("test_mods_00002002", mods);
+        assertFalse(invoke(id));
+    }
+
+    @Test
+    public void testReportWithUnknownSeriesDOIDenied() throws Exception {
+        Element mods = new Element("mods", MCRConstants.MODS_NAMESPACE);
+        mods.addContent(genre("report"));
+        mods.addContent(new Element("relatedItem", MCRConstants.MODS_NAMESPACE)
+            .setAttribute("type", "series")
+            .setAttribute("href", "test_mods_00000099", MCRConstants.XLINK_NAMESPACE));
+        MCRObjectID id = store("test_mods_00002004", mods);
         assertFalse(invoke(id));
     }
 
@@ -189,7 +217,9 @@ public class WiasStrategyTest extends MCRStoreTestCase {
     private Element buildReportMods(String volume) {
         Element mods = new Element("mods", MCRConstants.MODS_NAMESPACE);
         mods.addContent(genre("report"));
-        Element ri = new Element("relatedItem", MCRConstants.MODS_NAMESPACE).setAttribute("type", "series");
+        Element ri = new Element("relatedItem", MCRConstants.MODS_NAMESPACE)
+            .setAttribute("type", "series")
+            .setAttribute("href", REPORT_SERIES, MCRConstants.XLINK_NAMESPACE);
         Element detail = new Element("detail", MCRConstants.MODS_NAMESPACE).setAttribute("type", "volume");
         detail.addContent(new Element("number", MCRConstants.MODS_NAMESPACE).setText(volume));
         ri.addContent(new Element("part", MCRConstants.MODS_NAMESPACE).addContent(detail));

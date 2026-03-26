@@ -10,6 +10,7 @@ import org.jdom2.xpath.XPathExpression;
 import org.jdom2.xpath.XPathFactory;
 import org.mycore.backend.jpa.MCREntityManagerProvider;
 import org.mycore.common.MCRConstants;
+import org.mycore.common.MCRSessionMgr;
 import org.mycore.common.config.MCRConfiguration2;
 import org.mycore.mir.editor.MIRPostProcessor;
 
@@ -45,7 +46,9 @@ public class WiasPostProcessor extends MIRPostProcessor {
     @Override
     public Document process(Document oldXML) throws IOException, JDOMException {
         Document result = super.process(oldXML);
+        stripUnauthorizedVolume(result);
         fixVolume(result);
+        removeGenerateAttributes(result);
         return result;
     }
 
@@ -63,6 +66,14 @@ public class WiasPostProcessor extends MIRPostProcessor {
 
         String seriesId = seriesItem.getAttributeValue("href", MCRConstants.XLINK_NAMESPACE);
         if (!getPreprintSeriesId().equals(seriesId)) {
+            return;
+        }
+
+        if (!hasRequiredRole()) {
+            return;
+        }
+
+        if (!hasGenerateAttribute(seriesItem)) {
             return;
         }
 
@@ -92,6 +103,49 @@ public class WiasPostProcessor extends MIRPostProcessor {
         }
 
         numberElement.setText(String.valueOf(nextVolume));
+    }
+
+    /**
+     * If the current user is not an editor or admin, removes any volume number
+     * from the configured preprint series relatedItem. This prevents unauthorized
+     * users from manually assigning a preprint volume.
+     */
+    private void stripUnauthorizedVolume(Document document) {
+        if (hasRequiredRole()) {
+            return;
+        }
+        Element seriesItem = SERIES_ITEM_XPATH.evaluateFirst(document);
+        if (seriesItem == null) {
+            return;
+        }
+        String seriesId = seriesItem.getAttributeValue("href", MCRConstants.XLINK_NAMESPACE);
+        if (!getPreprintSeriesId().equals(seriesId)) {
+            return;
+        }
+        Element numberElement = VOLUME_NUMBER_XPATH.evaluateFirst(seriesItem);
+        if (numberElement != null) {
+            numberElement.detach();
+        }
+    }
+
+    /**
+     * Removes the {@code @generate-volume} attribute from the series relatedItem,
+     * since it is not valid MODS and only used as an editor form signal.
+     */
+    private void removeGenerateAttributes(Document document) {
+        Element seriesItem = SERIES_ITEM_XPATH.evaluateFirst(document);
+        if (seriesItem != null) {
+            seriesItem.removeAttribute("generate-volume");
+        }
+    }
+
+    private boolean hasRequiredRole() {
+        var userInfo = MCRSessionMgr.getCurrentSession().getUserInformation();
+        return userInfo.isUserInRole("editor") || userInfo.isUserInRole("admin");
+    }
+
+    private boolean hasGenerateAttribute(Element seriesItem) {
+        return "true".equals(seriesItem.getAttributeValue("generate-volume"));
     }
 
     /**
