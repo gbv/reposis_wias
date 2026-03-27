@@ -20,6 +20,11 @@
       <label xml:lang="en" text="statement of responsibility" />
       <label xml:lang="x-access" text="guest" />
     </category>
+    <category ID="publicationStatus">
+      <label xml:lang="de" text="Publikationsstatus (Verlag)" />
+      <label xml:lang="en" text="Publication status (publisher)" />
+      <label xml:lang="x-access" text="editor admin" />
+    </category>
     <category ID="publications">
       <label xml:lang="de" text="Veröffentlichungen" />
       <label xml:lang="en" text="publications" />

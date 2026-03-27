@@ -10,6 +10,9 @@
   font-size: 1.1rem;
 }
 
+#mir_admindata_panel .card-body {
+  font-size: 90%;
+}
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
