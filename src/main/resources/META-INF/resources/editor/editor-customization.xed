@@ -116,6 +116,9 @@
       <!-- add wias.box -->
   <xed:template id="comment">
     <xed:include ref="wias.box" />
+     <xed:if test="//mods:mods/mods:genre[(contains(@valueURIxEditor,'article'))]">
+      <xed:include ref="wias.publicationStatus.comment" />
+    </xed:if>
     <mir:textarea xpath="mods:note[@type='admin']" label="mir.comment" help-text="{i18n:mir.help.comment}" rows="2" />
   </xed:template>
 
