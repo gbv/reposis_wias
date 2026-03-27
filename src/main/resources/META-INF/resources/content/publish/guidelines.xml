@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage><section xml:lang="de" title="Erfassungsrichtlinien für Reposis"><div>
+<h2>Erfassungsrichtlinien für Reposis</h2>
+<h3>1. Allgemeine Schreibweise</h3>
+<table class="table table-bordered"><colgroup><col style="width: 29.5766%;"/><col style="width: 70.5602%;"/></colgroup>
+<tbody>
+<tr>
+<th scope="row">3D: </th>
+<td>D im Englischen groß</td>
+</tr>
+<tr>
+<th scope="row">Groß- und Kleinschreibung</th>
+<td>Titel von <span style="text-decoration: underline;"><span style="color: #000000; text-decoration: underline;">Artikel</span></span> und <span style="text-decoration: underline;">Vorträgen</span>: bis auf das erste Wort und auf Eigennamen klein.<br/>Titel von <span style="text-decoration: underline;">Monographien</span> und <span style="text-decoration: underline;">Workshops</span>: bis auf Artikel und Präpositionen groß, auch dann, wenn die Schreibung auf den Homepages der Workshops davon abweicht.</td>
+</tr>
+<tr>
+<th scope="row">Striche/Doppelpunkte</th>
+<td><span style="text-decoration: underline;">Gedankenstriche</span> mit Leerzeichen sind mit zwei Strichen einzutragen (Beispiel: GHICA -- Risk analysis with...);<br/><span style="text-decoration: underline;">Doppelstriche</span> ohne Leerzeichen zwischen zwei Eigennamen (z. B. Galton--Watson processes, Penrose--Fife model) und zwischen zwei Zahlen 99--199.<br/>Für alle anderen <span style="text-decoration: underline;">Bindestriche</span> gilt ein LaTeX-Strich, z. B. das Penrose–<br/>Fife-Modell.<br/><span style="text-decoration: underline;">Anführungsstriche</span> mit dem schrägen Strich am Anfang (wie kleine 6) und dem geraden Strich am Ende (wie kleine 9) schreiben (‘‘ .... ’’).<br/>Das Wort hinter einem Doppelpunkt oder einem Gedankenstrich wird groß geschrieben.</td>
+</tr>
+<tr>
+<th scope="row">Umlaute/Sonderzeichen</th>
+<td>LaTeX oder tatsächliche Umlaute eingeben (die Datenbank wandelt Sonderzeichen in LaTeX um).<br/>Sonderzeichen werden in Latex wie folgt richtig geschrieben:<br/>{\^e}, {\"o}, {\’i}, \v{c}, \&amp;<br/>Das Ergebnis = ê, ö, í, č, &amp;</td>
+</tr>
+<tr>
+<th scope="row">Initialen</th>
+<td>Die Namen der Mitarbeiter/innen werden wie im Mitarbeiterverzeichnis geschrieben (z. B. Karl Mustermann und nicht K. Mustermann und Jane G. M. Musterfrau und nicht Jane Musterfrau oder J. Musterfrau)<br/>Mehrere Initialen sind durch ein Leerzeichen voneinander getrennt zu<br/>schreiben (z. B. K. K. Mustermann oder Karl K. Mustermann).<br/>Dies gilt auch für Mitautor*innen, die nicht zum WIAS gehören.</td>
+</tr>
+<tr>
+<th scope="row">Institutionsnamen</th>
+<td>Die Namen von deutschen, österreichischen und Schweizer Institutionen oder Institutionen in deutschsprachigen Ländern bleiben Deutsch.<br/>Abkürzungen (MPI etc.) vermeiden.<br/>Spanische, französische, italienische und englische Einrichtungen in Originalsprache aufnehmen. Alle anderen Namen (russische etc.) in ihrer englischen Übersetzung.</td>
+</tr>
+</tbody>
+</table>
+<h3>2. Allgemeine Hinweise</h3>
+<p>Seit dem 17. März 2026 werden sämtliche Publikationen von WIAS-Mitarbeiter*innen auf dem Publika-<br/>tionsserver Reposis abgelegt. Alle anderen Daten werden weiterhin in der Datenbank erfasst. Die Autor*innen reichen ihre akzeptierten und veröffentlichten Publikationen wie Preprints, technische<br/>Dokumentationen, Reports, Artikel/Aufsätze, Buchkapitel, Monografien, Dissertations- und Habilitationsschriften und Softwares selbst ein. Nach Speichern der Datensätze werden ihre mit Editor-Rechten ausgestatteten Team-Assistenzen von Reposis über die neuen Einträge benachrichtigt. Die Assistenzen genehmigen, prüfen und vervollständigen die Einträge im Admin-Editor, den sie öffnen, indem sie die Einträge aufrufen und “Aktionen” und dann “Bearbeiten im Admin-Editor” anklicken.</p>
+<p>Erst mit der Genehmigung werden Einträge von Außen sichtbar. Unter “Genehmigung” ist zu verste-<br/>hen, dass im Admin-Editor der Status von “eingereicht” auf “veröffentlicht” gesetzt wird. Solange die<br/>Einträge noch den Status “eingereicht” haben, können sie von den Autor*innen geändert und gelöscht<br/>werden.</p>
+<p>Die DOI- und Nummernzuweisung für WIAS-Veröffentlichungen wie WIAS-Preprints, Reports, technische Dokumentationen, Software, Jahresforschungsberichte und Highlight Artikeln erfolgt über Reposis und wird ausschließlich von den Assistenzen vorgenommen.</p>
+<p>Oberkategorien wie Serien (z.B. Preprintreihen), Zeitschriften, Tagungsbände, Sammelwerke und Reports (z.B. WIAS-Jahresforschungsberichte) können nur von Nutzer*innen mit Editor-Rechten angelegt werden.</p>
+<p>Deshalb sollten Autor*innen vor der Eingabe ihrer Publikationen prüfen, ob die jeweiligen Serien oder<br/>Zeitschriften etc. schon in Reposis eingepflegt wurden und ggfs. ihre Assistenzen benachrichtigen.<br/>Wenn der DOI einer Publikation bereits vorhanden ist, kann der Eintrag von den Autor*innen und den Assistenzen über die Eingabemaske “Dokument via DOI importieren” vorgenommen werden. Dabei werden die Metadaten der Publikation automatisch übernommen. Dennoch sollte der Eintrag vor dem Speichern geprüft und ggfs. unter Berücksichtigung von “1.1 Allgemeine Schreibweise” korrigiert werden, da es bei dem Datenimport zu Fehlern kommen kann.</p>
+<p>Die mit einem *Asterisk gekennzeichneten Felder sind Muss-Felder. Der Eintrag kann nur dann gespeichert werden, wenn diese Felder ausgefüllt sind. Was aber nicht bedeutet, dass nur diese Felder ausgefüllt werden. Wir bitten um Sorgfalt und Vollständigkeit.</p>
+<h3>3. Preprints</h3>
+<p>Erscheint eine Publikation in der WIAS-Preprintreihe und mit unverändertem Inhalt in einer anderen Preprintreihe, so wird in Reposis nur das WIAS-Preprint erfasst.</p>
+<h4>3.1 WIAS-Preprints</h4>
+<ul>
+<li>Der zuständigen Gruppenleitung ein PDF und die Quelldateien des Preprints per E-Mail schicken, dabei die Assistenz in CC setzen, die das Layout prüft. Sobald die Gruppenleitung der Veröffentlichung in der WIAS-Preprintreihe zustimmt, kann das Preprint in Reposis eingereicht werden:</li>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, den Publikationstyp “Preprint” festlegen und “Weiter”.</li>
+<li>Das erscheinende Eingabeformular ausfüllen, als “*Lizenz” CC BY 4.0 festlegen, speichern. Nach dem Speichern benachrichtigt Reposis die zuständige Assistenz über die neue Einreichung.</li>
+<li>Die Assistenz genehmigt und bearbeitet den Eintrag im Admin-Editor und generiert den DOI. Die Preprintnummer (d.h., die letzten vier Ziffern des DOI) ist unter “Volume” einzutragen.</li>
+<li>Die Assistenz verknüpft den Eintrag mit der WIAS-Preprintreihe, indem sie unter “Related Item” “In Serie” anklickt und unter “Publikation auswählen” die WIAS-Preprintreihe auswählt.</li>
+<li>Zuletzt lädt die Assistenz unter “Dateien/Verzeichnisse zum Anhängen ablegen oder durchsuchen.” ein mit der WIAS-Preprintnummer versehenes PDF des Preprints hoch.</li>
+</ul>
+<h4>3.2 Externe Preprints</h4>
+<ul>
+<li>Prüfen, ob die entsprechende Preprintreihe schon in Reposis enthalten ist. Wenn nicht, so ist die zuständige Assistenz zu benachrichtigen, die den Eintrag der Serie vornimmt.</li>
+<li>“Dokumente einreichen”, dann “Dokument via DOI importieren”, den DOI eintragen und “Weiter”.</li>
+<li>In dem erscheinenden Eingabeformular den “*Publikationstyp” “Preprint” festlegen, die übernommenen Daten prüfen, vervollständigen, korrigieren und den Eintrag speichern.</li>
+<li>Nach der Benachrichtigung durch Reposis genehmigt und bearbeitet die Assistenz den Eintrag im Admin-Editor. Dabei klickt sie unter “Related Item” “In Serie” an und wählt dann unter “Publikation auswählen” die entsprechende Preprintreihe aus.</li>
+</ul>
+<h3>4 Artikel/Aufsätze</h3>
+<p>In diese Kategorie fallen Artikel in referierten Fachzeitschriften, Beiträge in Festschriften, Sammelwerken und Tagungsbänden und Highlight-Artikel für WIAS-Jahresforschungsberichte.</p>
+<ul>
+<li>Prüfen, ob die Zeitschrift, Festschrift, etc. schon in Reposis erfasst wurde. Wenn nicht, so ist die zuständige Assistenz zu benachrichtigen, die den Eintrag vornimmt.</li>
+<li>Angenommene Artikel/Aufsätze: “Dokumente einreichen”, dann “Dokument einreichen” anklicken, in der erscheinenden Maske den Publikationstyp “Artikel/Aufsatz” festlegen und in dem darunterliegenden Drop-down-Menü den Publikationstyp, in dem die Arbeit erscheinen soll. Dann auf “Weiter”, das Eingabeformular ausfüllen und speichern. Bei Veröffentlichung ist die Assistenz zu informieren, die dann im Admin-Editor den Eintrag genehmigt und den Publikationsstatus von “angenommen” auf “veröffentlicht” setzt. Der Eintrag ist jetzt nach Außen sichtbar.</li>
+<li>Veröffentlichte Artikel/Aufsätze: “Dokumente einreichen”, dann “Dokument via DOI importieren” anklicken, DOI eingeben, dann auf “Weiter”. Im erscheinenden Eingabeformular den “*Publikationstyp” “Artikel/Aufsatz” festlegen, die übernommenenen Daten prüfen und ggfs. korrigieren und “Speichern”. Ggfs. die Assistenz bitten, den entsprechenden Eintrag des angenommenen Artikels zu löschen. Nach der Benachrichtigung durch Reposis genehmigt und bearbeitet die Assistenz den Eintrag im Admin-Editor, dabei klickt sie unter “Related Item” “Erschienen in” an und wählt dann unter “Publikation auswählen” die entsprechende Zeitschrift oder andere Publikationsform aus.</li>
+</ul>
+<h4>4.1 Verknüpfung von Artikeln/Aufsätzen mit Preprints</h4>
+<p>Der Admin-Editor bietet die Möglichkeit, Einträge von Artikeln/Aufsätzen mit Einträgen der Preprints zu verknüpfen, auf deren Grundlage die Artikel/Aufsätze entstanden sind.</p>
+<ul>
+<li>Herunterscrollen zu “Related Item” und ein weiteres “Related Item” durch Anklicken des roten Buttons mit dem Pluszeichen erzeugen. In dem zweiten Drop-down-Menü unter “Related Item” “Vorgänger” auswählen, dann “Publikation auswählen” anklicken und das entsprechende Preprint auswählen. WIAS-Preprintnummern sind in dem Feld “Volume” einzutragen.</li>
+</ul>
+<h4>4.2 Erstellung neuer Versionen von Einträgen</h4>
+<ul>
+<li>Den Preprint-Eintrag aufrufen, rechts auf den roten “Aktionen”-Button und dann auf “Neue Version dieses Eintrags erstellen” klicken.</li>
+<li>Achtung: In der jetzt erscheinenden Maske wurden sämtliche Daten des Preprint-Eintrags übernommen. Deshalb müssen die Daten folgender Felder geändert bzw. gelöscht werden: “*Publikationstyp” ändern zu “Artikel/Aufsatz”, “Veröffentlichung” ggfs. entsprechend ändern, “Erscheinungsort” und “Verlag” löschen, “*Lizenz” ggfs. ändern, den richtigen DOI eintragen.</li>
+<li>Die Assistenz öffnet den Eintrag im Admin-Editor und ändert “Related Item” von “In Serie” zu “Vorgänger”. WIAS-Preprintnummern sind bei “Volume” einzutragen. Dann erzeugt sie ein weiteres “Related Item” mit “Erschienen in”, indem sie den roten Button mit dem Pluszeichen anklickt. In “Publikation auswählen” die entsprechende Zeitschrift auswählen.</li>
+</ul>
+<h3>5 Zeitschriften</h3>
+<ul>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, im oberen Dropdown-Menü “Zeitschrift” und im unteren “ISSN” anklicken und in dem Feld rechts die ISSN eintragen (ISSN-Suche über https://zdb-katalog.de/), dann “Weiter”.</li>
+<li>Die in der erscheinenden Maske übernommenen Daten überprüfen, ggfs. korrigieren, den Eintrag vervollständigen und speichern.</li>
+<li>Den Eintrag im Admin-Editor öffnen, den Eintrag genehmgigen, indem der “Publikationsstatus” auf “veröffentlicht” gesetzt wird, das Formular vervollständigen und speichern.</li>
+<li>Achtung: Gedruckte und Online-Ausgaben haben eigene ISSNs.</li>
+</ul>
+<h3>6 Technische Dokumentationen</h3>
+<ul>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, als Publikatonstyp “Technische Dokumentation” festlegen, dann “Weiter” und das Eingabeformular ausfüllen und speichern. Weitere Bearbeitung und DOI-Erzeugung durch die Assistenzen wie bei WIAS-Preprints, die Genehmigung erfolgt durch die Dienstbesprechung.</li>
+</ul>
+<h3>7 Reports</h3>
+<ul>
+<li>WIAS-Reports: “Dokumente einreichen”, dann “Dokument einreichen” anklicken, als Publikatonstyp “Report” festlegen, dann “Weiter” und das Eingabeformular ausfüllen und speichern. Weitere Bearbeitung und DOI- und Nummernerzeugung durch die Assistenzen wie bei WIAS-Preprints, die Genehmigung erfolgt durch die Dienstbesprechung.</li>
+<li>WIAS-Jahresforschungsberichte: werden nur von den Assistenzen eingetragen. Die einzelnen Berichte sind Teile einer Serie. Deshalb: In der Eingabemaske in dem Drop-down-Menü unter “Related Item” “In Serie” anklicken und unter “Publikation auswählen” “Annual Research Report” des jeweiligen Jahres auswählen.</li>
+</ul>
+<h3>8 Buchkapitel</h3>
+<ul>
+<li>Vor der Einreichung prüfen, ob die entsprechende Monografie oder das Sammelwerk schon erfasst wurde. Wenn nicht: Zuerst die Monografie eintragen bzw. die Assistenz bitten, das Sammelwerk einzutragen.</li>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, als Publikationstyp “Buchkapitel” festlegen und “Monografie” oder “Sammelwerk” auswählen. Dann auf “Weiter”, Eingabeformular ausfüllen und speichern.</li>
+<li>Nach der Benachrichtigung durch Reposis genehmigt und bearbeitet die zuständige Assistenz den Eintrag im Admin-Editor, dabei klickt sie unter “Related Item” “Erschienen in” an und wählt dann unter “Publikation” die entsprechende Monografie oder das Sammelwerk aus.</li>
+</ul>
+<h3>9 Sammelwerke, Festschriften, Tagungsbände und Monografien</h3>
+<ul>
+<li>Prüfen, ob das Sammelwerk, die Festschrift, etc. in einer Serie erscheint und ob diese Serie schon erfasst ist. Wenn nicht, so ist zuerst der Eintrag der Serie vorzunehmen.</li>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, im oberen Dropdown-Menü den entsprechenden Publikationstypen und im unteren “DOI” anklicken und in dem Feld rechts die DOI eintragen, dann “Weiter”.</li>
+<li>Die in der erscheinenden Maske übernommenen Daten überprüfen, ggfs. korrigieren, den Eintrag vervollständigen und speichern.</li>
+<li>Den Eintrag im Admin-Editor öffnen, den Eintrag genehmigen, indem der “Publikationsstatus” auf “veröffentlicht” gesetzt wird, das Formular vervollständigen und speichern.</li>
+</ul>
+<h3>10 Dissertationen und Habilitationen</h3>
+<ul>
+<li>Vor der Einreichung prüfen, ob die Schrift Teil einer Serie ist und ggfs. die Assistenz bitten, die Serie einzutragen.</li>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, den Publikationstyp festlegen und ggfs. “Serie” auswählen. Dann auf “Weiter”, Eingabeformular ausfüllen und speichern.</li>
+<li>Nach der Benachrichtigung durch Reposis genehmigt und bearbeitet die zuständige Assistenz den Eintrag im Admin-Editor.</li>
+</ul>
+<h3>11 Serien</h3>
+<ul>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, im oberen Drop-down-Menü “Serie” und im unteren “ISSN” auswählen und in dem Feld rechts die ISSN eintragen (ISSN-Suche über https://zdb-katalog.de/), dann “Weiter”.</li>
+<li>Die in der erscheinenden Maske übernommenen Daten überprüfen, ggfs. korrigieren, den Eintrag vervollständigen und speichern.</li>
+</ul>
+<h3>12 Softwares</h3>
+<ul>
+<li>Die Genehmigung von Softwares erfolgt durch die zuständigen Forschungsgruppenleitungen.</li>
+<li>“Dokumente einreichen”, dann “Dokument einreichen” anklicken, im Drop-down-Menü “Software” anklicken, dann “Weiter”, das Eingabeformular ausfüllen und speichern.</li>
+<li>Die Assistenz öffnet den Eintrag im Admin-Editor, bearbeitet und genehmigt ihn und generiert den DOI. Sie verknüpft den Eintrag mit dem Eintrag der dazugehörigen schriftlichen Dokumentation (das kann ein Preprint, eine technische Dokumentation oder ein Artikel/Aufsatz sein), indem sie unter “Related Item” “Wird referenziert von” und dann die entsprechende Publikation auswählt.</li>
+</ul>
+</div></section><section xml:lang="en" title="Guidelines for Reposis"><div>
+<h2>Reposis guidelines</h2>
+<h3>1 Spelling rules</h3>
+<table class="table table-bordered"><colgroup><col style="width: 29.5766%;"/><col style="width: 70.5602%;"/></colgroup>
+<tbody>
+<tr>
+<th scope="row">3D: </th>
+<td>D capitalized.</td>
+</tr>
+<tr>
+<th scope="row">Capitalization rules</th>
+<td>
+<p>Titles of <span style="text-decoration: underline;">articles</span> and <span style="text-decoration: underline;">lectures</span>: lower case except for the first word and proper nouns.<br/>Titles of <span style="text-decoration: underline;">monographs</span> and <span style="text-decoration: underline;">workshops</span>: upper case except for noun markers and prepositions, even if the spelling on the workshop homepages differs.</p>
+</td>
+</tr>
+<tr>
+<th scope="row"><span>Dashes/colons</span><span class="ͼv"/></th>
+<td>Dashes with spaces should be entered with two dashes (example: GHICA – Risk analysis with...);<br/>double dashes without spaces between two proper names (e.g. Galton–Watson processes, Penrose–Fife model) and between two numbers 99–199.<br/>For all other hyphens, a LaTeX dash is used, e.g. the Penrose– Fife model.<br/>Quotation marks with a slanted dash at the beginning (like a small 6) and a straight dash at the end (like a small 9) are written (“ .... ”).<br/>The word after a colon or a dash is capitalised.</td>
+</tr>
+<tr>
+<th scope="row"><span>Umlauts/special characters</span><span class="ͼv"/></th>
+<td>
+<p><span>Enter LaTeX or actual umlauts (the database converts special characters to LaTeX).</span><br/><span>Special characters are written correctly in LaTeX as follows:</span><br/><span>{\^e}, {\"o}, {\’i}, \v{c}, \&amp;<br/></span><span>The result = </span>ê, ö, í, č, &amp;</p>
+</td>
+</tr>
+<tr>
+<th scope="row"><span class="ͼv"><span>Initials</span><span class="ͼv"/></span></th>
+<td>The names of employees are written as they appear in the employee directory (e.g. John Smith and not J. Smith, and Jane G. M. Doe and not Jane Doe or J. Doe). Multiple initials should be separated by a space (e.g. K. K. Smith or Karl K. Smith).<br/>This also applies to co-authors who do not belong to WIAS.</td>
+</tr>
+<tr>
+<th scope="row"><span>Names of institutions</span><span class="ͼv"/></th>
+<td>The names of German, Austrian and Swiss institutions or institutions in German-speaking countries remain in German.<br/>Avoid abbreviations (MPI etc.).<br/>Spanish, French, Italian and English institutions are listed in their original language. All other names (Russian etc.) are listed in their English translation.</td>
+</tr>
+</tbody>
+</table>
+<h3>2 General information</h3>
+<p>Since March 17, 2026 all publications by WIAS co-workers are stored on the repository server Reposis. All other data continue to be recorded in the database.</p>
+<p>Authors submit to Reposis their accepted and published works such as preprints, technical reports, reports, articles/chapters, book chapters, monographs, doctoral and habilitation theses, and software. After submission the team assistants, who have editor rights, are notified about the new entries by Reposis. The assistants are in charge of checking, completing, and authorizing entries in the admin editor, which they do by calling up the entries, clicking on “Actions” and then on “Edit in admin editor”.</p>
+<p>Entries are made visible to the outside by authorization. In this context, “authorization” means that the status is changed from “submitted” to “published” by using the admin editor. Authors can edit and delete their entries as long as they have the status “submitted”.</p>
+<p>DOIs and numbers of WIAS publications such as WIAS preprints, reports, technical reports, software, annual research reports and highlight articles are assigned via Reposis exclusively. Assignations are carried out in the admin editor by the assistants.</p>
+<p>Upper categories such as series (such as preprint series), journals, proceedings, collections, and reports (such as WIAS annual research reports) are entered by users with editor rights only, i.e., the assistants. Therefore, authors should check whether the respective series or journals etc. are already filed in Reposis before submitting their publications and, if needed, notify their assistants.</p>
+<p>If DOIs are already available, publications can be entered by authors and assistants via the input mask “Import new document using DOI”. By this, metadata are automatically carried over. Even so, entries are to be checked and, if need be, corrected taking account of “1.1 Spelling rules” before saving because inaccurate data imports are possible.</p>
+<p>Boxes marked with an *asterisk are mandatory boxes. Entries can be saved only if these boxes are filled in. Which does not mean that only these boxes are to be filled in. We ask for accuracy and completeness.</p>
+<h3>3 Preprints</h3>
+<p>If a work is published in the WIAS preprint series and with equal content in another preprint series, only the WIAS preprint is to be entered.</p>
+<h4>3.1 WIAS preprints</h4>
+<ul>
+<li>E-mail the research group head a PDF and the source files of the preprint, copy the assistant in, who is responsible for checking the layout. As soon as the publication in the WIAS preprint series is approved by the group head, the preprint can be submitted to Reposis:</li>
+<li>Click on “Submit Document”, then on “Submit new document”, select publication type “Preprint” and click on “Next”.</li>
+<li>Fill in the appearing submission form, select CC BY 4.0 as “*Licence”, then “Save”. After saving, Reposis notifies the assistant in charge about the new submission.</li>
+<li>The assistant opens the entry in the admin editor, edits and authorizes it, generates the DOI together with the preprint number (i.e., the last four digits of the DOI), and links the entry to the entry of the WIAS preprint series by selecting “In Series” in the drow-down box below “Related Item”, clicking on “Choose publication, and choosing the WIAS preprint series.</li>
+<li>Finally, the assistant uploads a PDF of the preprint containing the WIAS preprint number via “Drop files or directories to attach or browse.”.</li>
+</ul>
+<h3>3.2 External preprints</h3>
+<ul>
+<li>Check whether the respective preprint series is recorded yet and, if need be, notify the assistant in charge.</li>
+<li>Click on “Submit Document”, then on “Import new document using DOI”, insert DOI, click on “Next”, choose “Preprint” as “*Type of publication” in the appearing submission form, check and, if need be, edit the imported data, complete and safe the submission form.</li>
+<li>After notification by Reposis, the assistant authorizes and edits the entry in the admin editor and links it to the entry of the respective preprint series by selecting “In Series” in the drop-down box below “Related Item”, clicking on “Choose publication”, and choosing the series.</li>
+</ul>
+<h3>4 Articles/Chapters</h3>
+<p>Into this category fall papers in peer-reviewed journals, contributions to commemorative publications (or “Festschriften”), collections, and proceedings and scientific highlight articles for WIAS annual research reports.</p>
+<ul>
+<li>Check whether the respective journal, commemorative publication, collection, or proceeding is recorded yet and, if necessary, notify the assistant in charge.</li>
+<li>Accepted articles/chapters: Click on “Submit Document”, then on “Submit new document”, set in the appearing input mask “Article/Chapter” as the publication type and in the drop-down menu below the publication type in which the paper is to be published. Then click on “Next”, complete the appearing submission form, and save. Upon publication, notify the assistant who will open the entry in the admin editor and then authorize it by changing the publication status from “accepted” to “published”. The entry is now visible to the outside.</li>
+<li>Published articles/chapters: Click on “Submit Document”, then on “Import new document using DOI”, enter DOI, click on “Next”. Choose “Article/Chapter” as “*Type of publication” in the appearing submission form, check and, if need be, edit the imported data. If necessary, ask the assistant to delete the corresponding entry of the accepted article/chapter. After notification by Reposis, the assistant authorizes and edits the entry in the admin editor and links it to the entry of the respective journal of other type of publication by selecting “Appears In” in the drop-down box below “Related Item”, clicking on “Choose publication”, and choosig the publication.</li>
+</ul>
+<h4>4.1 Linking articles/chapters to preprints</h4>
+<p>The admin editor provides a feature for linking article/chapter entries to entries of preprints on which the articles/chapters are based.</p>
+<ul>
+<li>Scroll down to “Related Item” and generate another “Related Item” by clicking on the red plus button. Select “Preceding” in the second drop-down box below “Related Item”, click on “Choose publication”, and choose the corresponding preprint. WIAS preprint numbers are to be entered into the box “Volume”.</li>
+</ul>
+<h4>4.2 Creating new versions of entries</h4>
+<ul>
+<li>Call up the respective preprint entry, click on the red “Actions”-button on the right hand side, and then on “create new version of”.</li>
+<li>Keep in mind that all data of the preprint entry are imported into the new submission form. Therefore, the data of the following boxes are to be changed or deleted: alter “*Type of publication” to “Article/Chapter”; correct the year of “Publication”, if necessary; delete the data of the boxes “Place of publication” and “Publisher”; select the correct “*Licence”, if need be; fill in the correct DOI.</li>
+<li>The assistant opens the entry in the admin-editor and alters the “Related Item” to “Preceding”. WIAS preprint numbers are to be inserted into the box “Volume”. Then she generates a second “Related Item” by clicking on the red plus button, selecting “Appears in” in the second drop-down below “Related Item”, and selecting in “Choose publication” the respective journal or other type of publication.</li>
+</ul>
+<h3>5 Journals</h3>
+<p>Data import using the ISSN is recommended.</p>
+<ul>
+<li>Click on “Submit document”, then on “Submit new document”, set “Journal” as publication type, select in the drop-down menu below “ISSN” and insert in the box on the right hand side the ISSN (ISSN search via https://portal.issn.org/), and click on “Next” to arrive at the submission form.</li>
+<li>Check and, if necessary, correct the imported data, complete the form and save it.</li>
+<li>Open the entry in the admin-editor, authorize it by setting the “Publication state” to “published”, complete the form and save it.</li>
+<li>Keep in mind that paper and online editions have separate ISSNs.</li>
+</ul>
+<h3>6 Technical reports</h3>
+<p>Into this category fall WIAS technical reports.</p>
+<ul>
+<li>Click on “Submit document”, then on “Submit new document”, set “Technical Report” as publication type, and click on “Next”, complete and safe the submission form. Editing and DOI and number assignment by the assistants as with WIAS preprints, approval of publication by the Director’s Meeting.</li>
+</ul>
+<h3>7 Reports</h3>
+<p>Into this category fall WIAS reports and individual WIAS annual research reports.</p>
+<ul>
+<li>WIAS reports: Click on “Submit document”, then on “Submit new document”, set “Report” as publication type, and click on “Next”, complete and safe the submission form. Editing and DOI and number assignment by the assistants as with WIAS preprints, approval of publication by the Director’s Meeting.</li>
+<li>WIAS annual research reports are to be exclusively entered by the assistants. The individual reports are part of a series. Therefore, select “In Series” in the drop-down menu below “Related Item”, click on “Choose publication” and select “Annual research report”.</li>
+</ul>
+<h3>8 Book chapters</h3>
+<p>Appear in monographs or collected editions.</p>
+<ul>
+<li>Check before submission whether the respective monograph or collection is recorded yet. If not, submit the monograph or ask the assistant to enter the collection first.</li>
+<li>Click on “Submit document”, then on “Submit new document”, set “book chapter” as publication type, choose “Monograph” or “Collection”, click on “Next”, complete and safe the submission form.</li>
+<li>After notification by Reposis, the assistant authorizes and edits the entry in the admin editor. In doing so, she selects “Appears In” in the drop-down box below “Related Item” and chooses the respective monograph or collected edition by clicking on “Choose publication”.</li>
+</ul>
+<h3>9 Collected editions, “Festschriften”, conference proceedings, and monographs</h3>
+<p>Data import using the DOI is recommended.</p>
+<ul>
+<li>Check whether the collected edition, conference proceeding, etc. is published in a series and whether this series is recorded yet. If not, the series entry is to be made first.</li>
+<li>Click on “Submit document”, then on “Submit new document”, set the respective publication type, select in the drop-down menu below “DOI” and insert in the box on the right hand side the DOI, and click on “Next” to arrive at the submission form.</li>
+<li>Check and, if necessary, correct the imported data, complete the form and save it.</li>
+<li>Open the entry in the admin-editor, authorize it by setting the “Publication state” to “published”, complete the form and save it.</li>
+</ul>
+<h3>10 Dissertations and habilitations</h3>
+<p>The database records who obtained their doctorates or habilitations and when. Doctoral and habilitation theses are to be recorded in Reposis.</p>
+<ul>
+<li>Check before submission whether the thesis is published in a series and whether this series is recorded yet; if need be, notify the assistant in charge.</li>
+<li>Click on “Submit Document”, then on “Submit new document”, select the publication type and, if applicable, “Series”, and click on “Next”, and complete and safe the submission form.</li>
+<li>After notification by Reposis, the assistant authorizes and edits the entry in the admin editor.</li>
+</ul>
+<h3>11 Series</h3>
+<p>Data import using the ISSN is recommended.</p>
+<ul>
+<li>Click on “Submit Document”, then on “Submit new document”, select “Series” as publication type and “ISSN” in the drop-down-box below and insert the ISSN into the box on the right hand side (ISSN search via https://zdb-katalog.de/), click on “Next”, check the imported data, complete the form and safe.</li>
+</ul>
+<h4>12 Softwares</h4>
+<ul>
+<li>Softwares are authorized by the concernded research group heads.</li>
+<li>Click on “Submit document”, then on “Submit new document”, set “Software” as publication type, and click on “Next”, complete and safe the submission form.</li>
+<li>The assistant edits the entry in the admin editor. She assigns the DOI and links the entry to the corresponding documentation (which may be a preprint, a technical documentation, or an article/chapter) by selecting “Is referenced by” in the drop-down box below “Related Item” and choosing in “Choose publication” the respective publication.</li>
+</ul>
+</div></section><meta><log lastEditor="administrator" date="2026-03-26" time="12:10"/></meta></MyCoReWebPage>
