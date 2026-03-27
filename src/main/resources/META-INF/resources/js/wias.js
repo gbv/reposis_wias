@@ -10,23 +10,25 @@ $(document).ready(function() {
   });
 
 
-  $("#submit_publication .btn-secondary").on("click", function(e){
+  var wiasConf = window["wiasConfig"] || {};
+
+  $("#submit_publication .btn-primary").on("click", function(e){
       e.preventDefault();
       var selectedGenre = $( "#genre option:selected" ).val();
 
       switch(selectedGenre) {
         case "preprint":
-          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="wias_mods_00000012" />');
+          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="' + wiasConf.preprintSeriesId + '" />');
           $('#submit_publication').append('<input type="hidden" name="relatedItemType" value="series" />');
           $('#submit_publication').submit();
           break;
         case "report":
-          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="wias_mods_00000021" />');
+          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="' + wiasConf.reportSeriesId + '" />');
           $('#submit_publication').append('<input type="hidden" name="relatedItemType" value="series" />');
           $('#submit_publication').submit();
           break;
         case "technical_report":
-          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="wias_mods_00000035" />');
+          $('#submit_publication').append('<input type="hidden" name="relatedItemId" value="' + wiasConf.techReportSeriesId + '" />');
           $('#submit_publication').append('<input type="hidden" name="relatedItemType" value="series" />');
           $('#submit_publication').submit();
           break;
@@ -43,5 +45,39 @@ $(document).ready(function() {
     size:10,
     dropupAuto: false
   });
+
+  // --- Preprint series: lock volume field ---
+  var PREPRINT_SERIES_ID = wiasConf.preprintSeriesId || '';
+
+  function getSeriesVolumeInput() {
+    return $('#relItem-series').closest('fieldset.mir-relatedItem')
+      .find('.mir-modspart input[type="text"]');
+  }
+
+  function updateVolumeForSeries(seriesId) {
+    var volumeInput = getSeriesVolumeInput();
+    if (volumeInput.length === 0) {
+      return;
+    }
+    if (seriesId === PREPRINT_SERIES_ID) {
+      volumeInput.val('');
+      volumeInput.prop('disabled', true);
+    } else {
+      volumeInput.prop('disabled', false);
+    }
+  }
+
+  // Hook into fillFieldset so volume is updated after series data is loaded
+  if (typeof fillFieldset === 'function') {
+    var originalFillFieldset = fillFieldset;
+    fillFieldset = function(fieldset, xml) {
+      originalFillFieldset(fieldset, xml);
+      var seriesInput = fieldset.find('#relItem-series');
+      if (seriesInput.length > 0) {
+        updateVolumeForSeries(seriesInput.val());
+      }
+    };
+  }
+
 
 });
