@@ -22,6 +22,7 @@
 
   <xed:modify ref="admin.fields">
       <xed:remove  ref="related.item.other.search.of.all.items" />
+      <xed:include ref="wias.publicationStatus.comment" after="publisher" />
   </xed:modify>
 
   <xed:template id="genres.software">
@@ -124,7 +125,7 @@
       <legend class="mir-fieldset-legend">
         <xed:output i18n="mir.comment" />
       </legend>
-      <xed:repeat xpath="mods:note" min="1" max="5">
+      <xed:repeat xpath="mods:note[not(@type='publicationStatus')]" min="1" max="5">
         <div class="mir-fieldset-content">
           <div class="form-group row">
             <label class="col-md-3 col-form-label text-right">
@@ -312,6 +313,26 @@
         </div>
       </xed:bind>
     </xed:repeat>
+  </xed:template>
+
+  <xed:template id="wias.publicationStatus.comment">
+    <xed:bind xpath="mods:note[@type='publicationStatus']">
+      <div class="form-group row">
+        <label class="col-md-3 col-form-label text-right">
+          <xed:output i18n="wias.publicationStatus.comment" />
+        </label>
+        <div class="col-md-6">
+          <div class="controls">
+            <select class="form-control form-control-inline">
+              <option value=""><xed:output i18n="mir.select.optional" /></option>
+              <option value="accepted"><xed:output i18n="wias.publicationStatus.accepted" /></option>
+              <option value="published"><xed:output i18n="wias.publicationStatus.published" /></option>
+            </select>
+          </div>
+        </div>
+        <mir:help-pmud help-text="{i18n:wias.help.publicationStatus.comment}" pmud="false" />
+      </div>
+    </xed:bind>
   </xed:template>
 
   <xed:template id="wias.box">

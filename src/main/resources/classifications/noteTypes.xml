@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="noteTypes">
+  <label xml:lang="de" text="Kommentartyp" />
+  <label xml:lang="en" text="Type of note" />
+  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/noteTypes" />
+  <url xlink:href="http://www.loc.gov/standards/mods/mods-notes.html" xlink:type="locator" />
+  <categories>
+    <category ID="thesis">
+      <label xml:lang="de" text="Hochschulvermerk" />
+      <label xml:lang="en" text="Dissertation note" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="system_details">
+      <label xml:lang="de" text="System Angaben" />
+      <label xml:lang="en" text="system details" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="statement_of_responsibility">
+      <label xml:lang="de" text="Verfasserangabe" />
+      <label xml:lang="en" text="statement of responsibility" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="publications">
+      <label xml:lang="de" text="Veröffentlichungen" />
+      <label xml:lang="en" text="publications" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="date/sequential_designation">
+      <label xml:lang="de" text="Datierte / Nummerierte Veröffentlichungen" />
+      <label xml:lang="en" text="date/sequential designation" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="handwritten">
+      <label xml:lang="de" text="Identifikationsmerkmale" />
+      <label xml:lang="en" text="handwritten" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="content">
+      <label xml:lang="de" text="Inhalt" />
+      <label xml:lang="en" text="content" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="citation/reference">
+      <label xml:lang="de" text="Zitierungen / Referenzen" />
+      <label xml:lang="en" text="citation/reference" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="bibliographic_history">
+      <label xml:lang="de" text="Bibliographische Geschichte" />
+      <label xml:lang="en" text="bibliographic history" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="action">
+      <label xml:lang="de" text="Arbeitsgang" />
+      <label xml:lang="en" text="action" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="accrual_policy">
+      <label xml:lang="de" text="Abgrenzungspolitik" />
+      <label xml:lang="en" text="accrual policy" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="accrual_method">
+      <label xml:lang="de" text="Periodenrechnung" />
+      <label xml:lang="en" text="accrual method" />
+      <label xml:lang="x-access" text="guest" />
+    </category>
+    <category ID="admin">
+      <label xml:lang="de" text="interner Kommentar" />
+      <label xml:lang="en" text="intern comment" />
+      <label xml:lang="x-access" text="editor admin" />
+    </category>
+  </categories>
+</mycoreclass>
