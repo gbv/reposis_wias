@@ -46,6 +46,7 @@
 
   <xed:template id="genres.preprint">
     <xed:include ref="genres.publication.common" />
+    <xed:include ref="year.issued.required"/>
   </xed:template>
 
   <xed:template id="genres.event">
@@ -147,6 +148,12 @@
         </div>
       </xed:repeat>
     </fieldset>
+  </xed:template>
+
+  <xed:template id="year.issued.required">
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']"
+                   label="mir.date.issued.5" help-text="{i18n:mir.help.date.issued.4}"
+                   placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.year.issued.required" />
   </xed:template>
 
   <!-- add link repeated  -->
