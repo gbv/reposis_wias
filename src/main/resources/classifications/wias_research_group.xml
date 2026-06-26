@@ -34,10 +34,9 @@
       <label xml:lang="en" text="Stochastic Algorithms and Nonparametric Statistics" />
       <label xml:lang="x-contact" text="christine.schneider@wias-berlin.de" />
     </category>
-    <category ID="FG7">
-      <label xml:lang="de" text="Thermodynamische Modellierung und Analyse von Phasenübergängen" />
-      <label xml:lang="en" text="Thermodynamic Modeling and Analysis of Phase Transitions" />
-      <label xml:lang="x-contact" text="ina.hohn@wias-berlin.de" />
+    <category ID="FG7b">
+      <label xml:lang="de" text="Datengetriebene Mathematische Modellierung" />
+      <label xml:lang="en" text="Data-Driven Mathematical Modeling" />
     </category>
     <category ID="FG8">
       <label xml:lang="de" text="Nichtglatte Variationsprobleme und Operatorgleichungen" />
@@ -80,6 +79,11 @@
     <category ID="FFP_former">
       <label xml:lang="de" text="Ehemalige Gruppen" />
       <label xml:lang="en" text="Former Groups" />
+      <category ID="FG7">
+        <label xml:lang="de" text="Thermodynamische Modellierung und Analyse von Phasenübergängen" />
+        <label xml:lang="en" text="Thermodynamic Modeling and Analysis of Phase Transitions" />
+        <label xml:lang="x-contact" text="ina.hohn@wias-berlin.de" />
+      </category>
       <category ID="E1">
         <label xml:lang="de" text="Elliptische Partielle Differentialgleichungen und Symmetrie von Grenzflächen und Schichten für ungerade Nichtlinearitäten" />
         <label xml:lang="en" text="Elliptic Partial Differential Equations and Symmetry of Interfaces and Layers for Odd Nonlinearities" />
