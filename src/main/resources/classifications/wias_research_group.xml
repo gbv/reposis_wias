@@ -37,6 +37,7 @@
     <category ID="FG7b">
       <label xml:lang="de" text="Datengetriebene Mathematische Modellierung" />
       <label xml:lang="en" text="Data-Driven Mathematical Modeling" />
+      <label xml:lang="x-contact" text="ina.hohn@wias-berlin.de" />
     </category>
     <category ID="FG8">
       <label xml:lang="de" text="Nichtglatte Variationsprobleme und Operatorgleichungen" />
