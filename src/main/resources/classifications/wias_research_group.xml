@@ -4,112 +4,112 @@
   <label xml:lang="en" text="Research group" description="List of WIAS' research groups" />
   <label xml:lang="x-uri" text="https://archive.wias-berlin.de/api/v2/classifications/wias_research_group" />
   <categories>
-    <category ID="FG1">
+    <category ID="fg1">
       <label xml:lang="de" text="Partielle Differentialgleichungen" />
       <label xml:lang="en" text="Partial Differential Equations" />
       <label xml:lang="x-contact" text="andrea.eismann@wias-berlin.de" />
     </category>
-    <category ID="FG2">
+    <category ID="fg2">
       <label xml:lang="de" text="Laserdynamik" />
       <label xml:lang="en" text="Laser Dynamics" />
       <label xml:lang="x-contact" text="veronica.bove@wias-berlin.de" />
     </category>
-    <category ID="FG3">
+    <category ID="fg3">
       <label xml:lang="de" text="Numerische Mathematik und Wissenschaftliches Rechnen" />
       <label xml:lang="en" text="Numerical Mathematics and Scientific Computing" />
       <label xml:lang="x-contact" text="imke.weitkamp@wias-berlin.de" />
     </category>
-    <category ID="FG4">
+    <category ID="fg4">
       <label xml:lang="de" text="Nichtlineare Optimierung und Inverse Probleme" />
       <label xml:lang="en" text="Nonlinear Optimization and Inverse Problems" />
       <label xml:lang="x-contact" text="anke.giese@wias-berlin.de" />
     </category>
-    <category ID="FG5">
+    <category ID="fg5">
       <label xml:lang="de" text="Stochastische Systeme mit Wechselwirkung" />
       <label xml:lang="en" text="Interacting Random Systems" />
       <label xml:lang="x-contact" text="vandesand@wias-berlin.de" />
     </category>
-    <category ID="FG6">
+    <category ID="fg6">
       <label xml:lang="de" text="Stochastische Algorithmen und Nichtparametrische Statistik" />
       <label xml:lang="en" text="Stochastic Algorithms and Nonparametric Statistics" />
       <label xml:lang="x-contact" text="christine.schneider@wias-berlin.de" />
     </category>
-    <category ID="FG7b">
+    <category ID="fg7">
       <label xml:lang="de" text="Datengetriebene Mathematische Modellierung" />
       <label xml:lang="en" text="Data-Driven Mathematical Modeling" />
       <label xml:lang="x-contact" text="ina.hohn@wias-berlin.de" />
     </category>
-    <category ID="FG8">
+    <category ID="fg8">
       <label xml:lang="de" text="Nichtglatte Variationsprobleme und Operatorgleichungen" />
       <label xml:lang="en" text="Nonsmooth Variational Problems and Operator Equations" />
       <label xml:lang="x-contact" text="pia.pfau@wias-berlin.de" />
     </category>
-    <category ID="FFP">
+    <category ID="ffp">
       <label xml:lang="de" text="Flexible Forschungsplattformen" />
       <label xml:lang="en" text="Flexible Research Platforms" />
-      <category ID="WG2">
+      <category ID="wg2">
         <label xml:lang="de" text="Datengetriebene Optimierung und Steuerung" />
         <label xml:lang="en" text="Data-driven Optimization and Control" />
         <label xml:lang="x-contact" text="christine.schneider@wias-berlin.de" />
       </category>
-      <category ID="W4">
+      <category ID="wg4">
         <label xml:lang="de" text="Energie-variationelle Methoden für innovative Materialien" />
         <label xml:lang="en" text="Energy-variational Methods for Innovative Materials" />
         <label xml:lang="x-contact" text="giese@wias-berlin.de" />
       </category>
-      <category ID="WG3">
+      <category ID="wg3">
         <label xml:lang="de" text="Erhaltungssätze und Bilanzgleichungen für Multikomponentensysteme" />
         <label xml:lang="en" text="Multi-species Balance Laws" />
         <label xml:lang="x-contact" text="andrea.eismann@wias-berlin.de" />
       </category>
-      <category ID="LG5">
+      <category ID="lg5">
         <label xml:lang="de" text="Numerische Methoden für innovative Halbleiter-Bauteile" />
         <label xml:lang="en" text="Numerical Methods for Innovative Semiconductor Devices" />
         <label xml:lang="x-contact" text="imke.weitkamp@wias-berlin.de" />
       </category>
-      <category ID="LG6">
+      <category ID="lg6">
         <label xml:lang="de" text="Probabilistische Methoden für dynamische Kommunikationsnetzwerke" />
         <label xml:lang="en" text="Probabilistic Methods for Dynamic Communication Networks" />
         <label xml:lang="x-contact" text="vandesand@wias-berlin.de" />
       </category>
-      <category ID="FP2">
+      <category ID="fp2">
         <label xml:lang="de" text="Simulation von Halbleiterbauelementen für Quantentechnologien" />
         <label xml:lang="en" text="Simulation of Semiconductor Devices for Quantum Technologies" />
       </category>
     </category>
-    <category ID="FFP_former">
+    <category ID="ffp_former">
       <label xml:lang="de" text="Ehemalige Gruppen" />
       <label xml:lang="en" text="Former Groups" />
-      <category ID="FG7">
+      <category ID="fg7thermo">
         <label xml:lang="de" text="Thermodynamische Modellierung und Analyse von Phasenübergängen" />
         <label xml:lang="en" text="Thermodynamic Modeling and Analysis of Phase Transitions" />
         <label xml:lang="x-contact" text="ina.hohn@wias-berlin.de" />
       </category>
-      <category ID="E1">
+      <category ID="e1">
         <label xml:lang="de" text="Elliptische Partielle Differentialgleichungen und Symmetrie von Grenzflächen und Schichten für ungerade Nichtlinearitäten" />
         <label xml:lang="en" text="Elliptic Partial Differential Equations and Symmetry of Interfaces and Layers for Odd Nonlinearities" />
       </category>
-      <category ID="E2">
+      <category ID="e2">
         <label xml:lang="de" text="Entropieformulierung von zeitabhängigen Phasenübergängen" />
         <label xml:lang="en" text="Entropy Formulation of Evolutionary Phase Transitions" />
       </category>
-      <category ID="WG1">
+      <category ID="wg1">
         <label xml:lang="de" text="Modellierung, Analysis und Skalenübergänge von Volumen-Grenzschicht-Prozessen" />
         <label xml:lang="en" text="Modeling, Analysis, and Scaling Limits for Bulk-Interface Processes" />
       </category>
-      <category ID="LG1">
+      <category ID="lg1">
         <label xml:lang="de" text="Gekoppelte Strömungsprozesse in Energie- und Umweltforschung" />
         <label xml:lang="en" text="Coupled flow processes in energy and environmental research" />
       </category>
-      <category ID="LG2">
+      <category ID="lg2">
         <label xml:lang="de" text="Modellierung von Schädigungsprozessen" />
         <label xml:lang="en" text="Modeling of Damage Processes" />
       </category>
-      <category ID="LG3">
+      <category ID="lg3">
         <label xml:lang="de" text="Mathematische Modelle für Lithium-Ionen-Batterien" />
         <label xml:lang="en" text="Mathematical Models for Lithium-Ion Batteries" />
       </category>
-      <category ID="LG4">
+      <category ID="lg4">
         <label xml:lang="de" text="Probabilistische Methoden für mobile Ad-hoc-Netzwerke" />
         <label xml:lang="en" text="Probabilistic Methods for Mobile Ad-hoc Networks" />
       </category>
