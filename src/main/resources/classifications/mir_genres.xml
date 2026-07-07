@@ -4,11 +4,16 @@
   <label xml:lang="en" text="genre" description="A list of publication types" />
   <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_genres" />
   <categories>
-    <category ID="article">
-      <label xml:lang="de" text="Artikel / Aufsatz" />
-      <label xml:lang="en" text="Article / Chapter" />
-      <label xml:lang="x-hosts" text="journal collection festschrift proceedings standalone" />
-      <label xml:lang="x-mapping" text="marcgt:article diniPublType:article" />
+    <category ID="contribution">
+      <label xml:lang="de" text="Beitrag"/>
+      <label xml:lang="en" text="Contribution"/>
+      <label xml:lang="x-group" text="true"/>
+      <category ID="article">
+        <label xml:lang="de" text="Artikel / Aufsatz" />
+        <label xml:lang="en" text="Article / Chapter" />
+        <label xml:lang="x-hosts" text="journal collection festschrift proceedings standalone" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType:article" />
+      </category>
       <category ID="chapter">
         <label xml:lang="de" text="Buchkapitel" />
         <label xml:lang="en" text="book chapter" />
