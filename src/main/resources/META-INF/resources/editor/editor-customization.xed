@@ -152,7 +152,8 @@
 
   <xed:template id="year.issued.required">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']"
-                   label="mir.date.issued.5" help-text="{i18n:mir.help.date.issued.4}"
+                   label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}"
+                   class="required"
                    placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.year.issued.required" />
   </xed:template>
 
