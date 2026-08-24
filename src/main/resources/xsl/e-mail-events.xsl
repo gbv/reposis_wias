@@ -16,8 +16,10 @@
   <xsl:variable name="institutemember" select="$categories/category[mcrxsl:isCurrentUserInRole(concat('mir_institutes:',@ID))]" />
   
   <!-- WIAS specific group contact -->
-  <xsl:variable name="researchgroups" select="document('classification:metadata:1:children:wias_research_group')/mycoreclass/categories" />
-  <xsl:variable name="groupmember" select="$researchgroups//category[mcrxsl:isCurrentUserInRole(concat('wias_research_group:',@ID))]" />
+  <xsl:variable name="researchgroups" select="document('classification:metadata:-1:children:wias_research_group')/mycoreclass/categories" />
+  <xsl:variable name="groupmatches" select="$researchgroups//category[mcrxsl:isCurrentUserInRole(concat('wias_research_group:',@ID))]" />
+  <!-- role membership is inherited upwards, so keep only the most specific matches -->
+  <xsl:variable name="groupmember" select="$groupmatches[not(descendant::category/@ID = $groupmatches/@ID)]" />
   <xsl:variable name="groupcontact" select="$groupmember/label[@xml:lang='x-contact']/@text" />
 
   <xsl:template match="/">

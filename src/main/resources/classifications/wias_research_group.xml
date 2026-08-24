@@ -75,6 +75,7 @@
       <category ID="fp2">
         <label xml:lang="de" text="Simulation von Halbleiterbauelementen für Quantentechnologien" />
         <label xml:lang="en" text="Simulation of Semiconductor Devices for Quantum Technologies" />
+        <label xml:lang="x-contact" text="veronica.bove@wias-berlin.de" />
       </category>
     </category>
     <category ID="ffp_former">
