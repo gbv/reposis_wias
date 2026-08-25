@@ -1,0 +1,29 @@
+name: Snapshot Deploy (PR)
+
+on:
+  pull_request:
+    types: [labeled, synchronize, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-pr:
+    concurrency:
+      group: snapshot-deploy-pr-${{ github.repository }}-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+    if: |
+      github.event_name == 'pull_request' &&
+      contains(github.event.pull_request.labels.*.name, 'snapshot-deploy') &&
+      contains(github.event.pull_request.body, 'deploy.name:') &&
+      !contains(github.event.pull_request.body, 'deploy.name: <required>')
+    uses: gbv/reposis_workflows/.github/workflows/maven-deploy-from-pr.yml@v1
+    with:
+      actor: ${{ github.actor }}
+      java-version: '17'
+      labels: ${{ join(github.event.pull_request.labels.*.name, ',') }}
+      payload: ${{ github.event.pull_request.body }}
+      required-label: 'snapshot-deploy'
+    secrets:
+      MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+      MAVEN_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}

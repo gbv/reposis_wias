@@ -3,6 +3,7 @@ package de.vzg.reposis.wias;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -134,12 +135,13 @@ public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier>
     }
 
     private boolean referencesTechReportSeries(MCRMODSWrapper wrapper) {
-        String xpath = String.format("mods:relatedItem[@type='series'][@xlink:href='%s']", techReportSeriesId);
+        String xpath =
+            String.format(Locale.ROOT, "mods:relatedItem[@type='series'][@xlink:href='%s']", techReportSeriesId);
         return wrapper.getElement(xpath) != null;
     }
 
     private boolean referencesReportSeries(MCRMODSWrapper wrapper) {
-        String xpath = String.format("mods:relatedItem[@type='series'][@xlink:href='%s']", reportSeriesId);
+        String xpath = String.format(Locale.ROOT, "mods:relatedItem[@type='series'][@xlink:href='%s']", reportSeriesId);
         return wrapper.getElement(xpath) != null;
     }
 
@@ -155,7 +157,7 @@ public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier>
             // Pattern captures all ARR numbers for this year (including 000 for the report itself)
             String counterPattern = "(?i)" + Pattern.quote(doiPrefix) + "/WIAS\\.ARR\\." + year + "(\\d{3})";
             int num = getNextCounter(counterPattern);
-            return doiPrefix + "/WIAS.ARR." + year + String.format("%03d", num);
+            return doiPrefix + "/WIAS.ARR." + year + String.format(Locale.ROOT, "%03d", num);
         }
         throw new MCRPersistentIdentifierException(
             "No DOI rule configured for genre '" + genre + "': "
@@ -179,7 +181,7 @@ public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier>
      * at any nesting level (direct for the annual report itself, nested for its articles).
      */
     private boolean referencesAnnualReportSeries(MCRMODSWrapper wrapper) {
-        String xpath = String.format(ARR_SERIES_XPATH_TEMPLATE, annualReportSeriesId);
+        String xpath = String.format(Locale.ROOT, ARR_SERIES_XPATH_TEMPLATE, annualReportSeriesId);
         return wrapper.getElement(xpath) != null;
     }
 
@@ -188,7 +190,7 @@ public class WiasDOIGenerator extends MCRPIGenerator<MCRDigitalObjectIdentifier>
         if (seriesId.isBlank()) {
             throw new MCRPersistentIdentifierException("No series ID configured for volume lookup");
         }
-        String xpath = String.format(SERIES_VOLUME_XPATH_TEMPLATE, seriesId);
+        String xpath = String.format(Locale.ROOT, SERIES_VOLUME_XPATH_TEMPLATE, seriesId);
         String volume = wrapper.getElementValue(xpath);
         if (volume == null || volume.isBlank()) {
             throw new MCRPersistentIdentifierException(
