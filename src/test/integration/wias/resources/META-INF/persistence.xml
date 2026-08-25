@@ -14,6 +14,8 @@
     <mapping-file>META-INF/mycore-viewer-mappings.xml</mapping-file>
     <!-- required for MIR only: -->
     <mapping-file>META-INF/mir-module-mappings.xml</mapping-file>
+    <!-- required for reposis_wias only: -->
+    <mapping-file>META-INF/wias-mappings.xml</mapping-file>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
       <property name="javax.persistence.jdbc.url" value="jdbc:h2:${MCR.Home.Integration}/${MCR.AppName}/data/h2/mir" />
