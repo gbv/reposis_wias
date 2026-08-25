@@ -1,5 +1,7 @@
 package de.vzg.reposis.wias;
 
+import java.util.Locale;
+
 import org.mycore.backend.jpa.MCREntityManagerProvider;
 import org.mycore.common.config.MCRConfiguration2;
 import org.mycore.common.events.MCREvent;
@@ -60,7 +62,7 @@ public class WiasPreprintNumberEventHandler extends MCREventHandlerBase {
             return;
         }
 
-        String xpath = String.format(VOLUME_XPATH_TEMPLATE, preprintSeriesId);
+        String xpath = String.format(Locale.ROOT, VOLUME_XPATH_TEMPLATE, preprintSeriesId);
         String volumeStr = wrapper.getElementValue(xpath);
 
         if (volumeStr == null || volumeStr.isBlank()) {
