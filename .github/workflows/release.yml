@@ -1,0 +1,19 @@
+name: Release Deploy
+
+on:
+  release:
+    types: [created]
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    concurrency:
+      group: release-deploy-${{ github.repository }}-${{ github.ref_name }}
+    uses: gbv/reposis_workflows/.github/workflows/maven-release.yml@v1
+    with:
+      java-version: '17'
+    secrets:
+      MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+      MAVEN_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
