@@ -1,0 +1,22 @@
+name: Snapshot Deploy (main)
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-snapshot-on-push:
+    concurrency:
+      group: snapshot-deploy-main-${{ github.repository }}
+      cancel-in-progress: true
+    uses: gbv/reposis_workflows/.github/workflows/maven-deploy.yml@v1
+    with:
+      java-version: '17'
+    secrets:
+      MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+      MAVEN_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
