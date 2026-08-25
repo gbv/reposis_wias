@@ -1,5 +1,7 @@
 package de.vzg.reposis.wias;
 
+import java.util.Locale;
+
 import org.jdom2.Element;
 import org.mycore.common.config.MCRConfiguration2;
 import org.mycore.datamodel.metadata.MCRMetadataManager;
@@ -122,7 +124,7 @@ public class WiasStrategy extends MIRStrategy {
         if (arrSeriesId.isBlank()) {
             return false;
         }
-        String xpath = String.format(ARR_SERIES_XPATH_TEMPLATE, arrSeriesId);
+        String xpath = String.format(Locale.ROOT, ARR_SERIES_XPATH_TEMPLATE, arrSeriesId);
         return wrapper.getElement(xpath) != null;
     }
 
