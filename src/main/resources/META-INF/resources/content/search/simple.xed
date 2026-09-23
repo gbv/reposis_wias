@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+
+  <section xml:lang="de">
+    <head>
+      <meta name="title" content="Einfache Suche" />
+      <meta name="description" content="Einfache Suche über alle Publikationen" />
+    </head>
+  </section>
+  <section xml:lang="en">
+    <head>
+      <meta name="title" content="Simple search mask" />
+      <meta name="description" content="Simple search mask for all publications" />
+    </head>
+  </section>
+
+  <section xml:lang="all" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir"
+      i18n="component.mods.editor.search.simple.pagetitle">
+
+    <xed:form class="form-horizontal" role="form">
+      <xed:cleanup-rule xpath="//condition" relevant-if="(string-length(@value) &gt; 0) or value[string-length(text()) &gt; 0 ]" />
+      <xed:cleanup-rule xpath="//boolean" relevant-if="boolean|condition" />
+      <xed:cleanup-rule xpath="//condition[@selectable='true']" relevant-if="@id = ../selectCondition/@keep" />
+      <xed:cleanup-rule xpath="//*/@selectable|//selectCondition" relevant-if="false()" />
+      <xed:source uri="searchInput:{$id}" />
+      <xed:source uri="webapp:editor/search/template/simple.xml" />
+      <xed:bind xpath="query">
+        <xed:bind xpath="@mask" default="content/main/search/simple.xed" />
+        <xed:bind xpath="conditions/boolean">
+          <xed:bind xpath="boolean[@operator='or']/condition[@field='createdby']/@value" default="{$CurrentUser}" />
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <xed:output i18n="component.mods.editor.search.label" />
+              </h3>
+            </div>
+            <div class="card-body">
+            <!-- Title -->
+              <mir:template name="textInput" xpath="condition[@field='mods.title']/@value" id="inputTitle1" i18n="editor.search.mir.title" tooltip="editor.search.mir.title.tooltip" />
+            <!-- Name -->
+              <mir:template name="textInput" xpath="condition[@field='mods.name']/@value" id="inputName1" i18n="editor.search.mir.name" tooltip="editor.search.mir.name.tooltip" />
+            <!-- Metadata -->
+              <mir:template name="textInput" xpath="condition[@field='allMeta']/@value" id="inputMeta1" i18n="editor.search.metadata" tooltip="editor.search.metadata.tooltip" />
+            <!-- Content -->
+              <mir:template name="textInput" xpath="condition[@field='content']/@value" id="inputContent1" i18n="editor.search.derivate" tooltip="editor.search.derivate.tooltip" />
+            <!--Fulltext -->
+              <div class="form-group row">
+                <label for="inputFulltext1" class="col-md-3 col-form-label text-right">
+                  <xed:output i18n="mir.dropdown.content" />
+                </label>
+                <div class="col-md-9">
+                  <div class="input-group">
+                    <xed:bind xpath="condition[@field='derCount'][@value='0'][@operator='&gt;'][@selectable='true'][@id='condFullText']" />
+                    <xed:bind xpath="condition[@field='worldReadableComplete'][@value='true'][@operator='='][@selectable='true'][@id='condOpenAccess']" />
+                    <!-- selectCondition must always be after @selectable conditions for xed:cleanup-rule to work -->
+                    <xed:bind xpath="selectCondition[@delete='true']/@keep">
+                      <select class="form-control input-md" id="inputFulltext1">
+                        <option value="">
+                          <xed:output i18n="mir.select" />
+                        </option>
+                        <option value="condFullText">
+                          <xed:output i18n="editor.search.mir.hasFiles" />
+                        </option>
+                        <option value="condOpenAccess">
+                          <xed:output i18n="editor.search.mir.openAccess" />
+                        </option>
+                      </select>
+                      <span class="input-group-append" data-toggle="tooltip" data-html="true" title="{i18n:editor.search.fulltext.tooltip}">
+                        <i class="fas fa-info-circle input-group-text" />
+                      </span>
+                    </xed:bind>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- submit -->
+            <div class="card-footer clearfix">
+              <div class="float-right">
+                <mir:template name="submitButton" i18n="editor.search.search" target="servlet_MCRQLSearchServlet" />
+              </div>
+            </div>
+          </div>
+        </xed:bind>
+      </xed:bind>
+    </xed:form>
+  </section>
+
+</MyCoReWebPage>
