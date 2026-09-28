@@ -306,7 +306,7 @@
   </xed:template>
 
   <xed:template id="wias.class.research_group">
-    <xed:repeat xpath="mods:classification[@authorityURI='hhttps://archive.wias-berlin.de/api/v2/classifications/wias_research_group'][@displayLabel='research_group']" min="1" max="20" method="build">
+    <xed:repeat xpath="mods:classification[@authorityURI='https://archive.wias-berlin.de/api/v2/classifications/wias_research_group'][@displayLabel='research_group']" min="1" max="20" method="build">
       <xed:bind xpath="@valueURIxEditor">
         <div class="form-group row">
           <label class="col-md-3 col-form-label text-right">
