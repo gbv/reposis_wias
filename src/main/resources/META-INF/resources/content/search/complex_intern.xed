@@ -81,30 +81,30 @@
                     xpath="condition[@field='id,isbn,mods.identifier']/@value" id="inputIdentifier1"
                     i18n="editor.search.mir.identifier" tooltip="editor.search.mir.identifier.tooltip" />
                   <!-- Research Group -->
-                    <mir:template name="selectInput" xpath="condition[@field='category'][1]/@value" id="inputResearchGroup1" i18n="editor.search.wias.research_group"
+                    <mir:template name="selectInput" xpath="condition[@field='category.top'][1]/@value" id="inputResearchGroup1" i18n="editor.search.wias.research_group"
                       tooltip="editor.search.wias.research_group.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:wias_research_group" />
                   <!-- PACS -->
-                    <mir:template name="selectInput" xpath="condition[@field='category'][2]/@value" id="inputPacs1" i18n="editor.search.wias.pacs"
+                    <mir:template name="selectInput" xpath="condition[@field='category'][1]/@value" id="inputPacs1" i18n="editor.search.wias.pacs"
                       tooltip="editor.search.wias.pacs.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:PACS" />
                   <!-- MSC2010 -->
-                    <mir:template name="selectInput" xpath="condition[@field='category'][3]/@value" id="inputMsc20101" i18n="editor.search.wias.msc2010"
+                    <mir:template name="selectInput" xpath="condition[@field='category'][2]/@value" id="inputMsc20101" i18n="editor.search.wias.msc2010"
                       tooltip="editor.search.wias.msc2010.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:MSC2010" />
                   <!-- WIAS topic domain -->
-                    <mir:template name="selectInput" xpath="condition[@field='category'][4]/@value" id="inputTopicDomain1" i18n="editor.search.wias.topic_domain"
+                    <mir:template name="selectInput" xpath="condition[@field='category'][3]/@value" id="inputTopicDomain1" i18n="editor.search.wias.topic_domain"
                       tooltip="editor.search.wias.topic_domain.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:wias_topic_domain" />
                   <!-- DNB Sachgruppe -->
                   <mir:template name="selectInput"
-                    xpath="condition[@field='category.top'][4]/@value" id="inputSDNB1"
+                    xpath="condition[@field='category.top'][2]/@value" id="inputSDNB1"
                     i18n="editor.search.mir.sdnb" tooltip="editor.search.mir.sdnb.tooltip"
                     uri="xslStyle:items2options:classification:editorComplete:-1:children:SDNB" />
                   <!-- Genre -->
                   <mir:template name="selectInput"
-                    xpath="condition[@field='category.top'][5]/@value" id="inputGenre1"
+                    xpath="condition[@field='category.top'][3]/@value" id="inputGenre1"
                     i18n="editor.search.mir.genre" tooltip="editor.search.genre.tooltip"
                     uri="xslStyle:items2options?allSelectable=true:classification:editorComplete:-1:children:mir_genres" />
                   <!-- Licenses -->
                   <mir:template name="selectInput"
-                    xpath="condition[@field='category.top'][6]/@value" id="inputLicense1"
+                    xpath="condition[@field='category.top'][4]/@value" id="inputLicense1"
                     i18n="editor.search.mir.license" tooltip="editor.search.license.tooltip"
                     uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_licenses" />
                   <!-- Status -->
