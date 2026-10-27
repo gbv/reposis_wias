@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="rfc5646">
+<mycoreclass ID="rfc5646"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
   <label xml:lang="de" text="Sprache" description="nach RFC 5646" />
   <label xml:lang="en" text="Language" description="as defined in RFC 5646" />
   <label xml:lang="it" text="Lingue" description="RFC 5646" />
@@ -23,12 +25,6 @@
       <label xml:lang="x-bibl" text="fre" />
       <label xml:lang="x-term" text="fra" />
     </category>
-    <category ID="el">
-      <label xml:lang="de" text="Griechisch" />
-      <label xml:lang="en" text="Modern Greek (1453-)" />
-      <label xml:lang="x-bibl" text="gre" />
-      <label xml:lang="x-term" text="ell" />
-    </category>
     <category ID="it">
       <label xml:lang="de" text="Italienisch" />
       <label xml:lang="en" text="Italian" />
@@ -46,30 +42,6 @@
       <label xml:lang="en" text="Spanish" />
       <label xml:lang="x-bibl" text="spa" />
       <label xml:lang="x-term" text="spa" />
-    </category>
-    <category ID="grc">
-      <label xml:lang="de" text="Altgriechisch" />
-      <label xml:lang="en" text="Ancient Greek (to 1453)" />
-      <label xml:lang="x-bibl" text="grc" />
-      <label xml:lang="x-term" text="grc" />
-    </category>
-    <category ID="la">
-      <label xml:lang="de" text="Latein" />
-      <label xml:lang="en" text="Latin" />
-      <label xml:lang="x-bibl" text="lat" />
-      <label xml:lang="x-term" text="lat" />
-    </category>
-    <category ID="tlh">
-      <label xml:lang="de" text="Klingonisch" />
-      <label xml:lang="en" text="Klingon" />
-      <label xml:lang="x-bibl" text="tlh" />
-      <label xml:lang="x-term" text="tlh" />
-    </category>
-    <category ID="sjn">
-      <label xml:lang="de" text="Sindarin" />
-      <label xml:lang="en" text="Sindarin" />
-      <label xml:lang="x-bibl" text="sjn" />
-      <label xml:lang="x-term" text="sjn" />
     </category>
   </categories>
 </mycoreclass>

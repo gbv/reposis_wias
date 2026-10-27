@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="wias_topic_domain">
+<mycoreclass ID="wias_topic_domain"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
   <label xml:lang="de" text="Themengebiet" description="Liste der Themengebiete des WIAS" />
   <label xml:lang="en" text="Topic " description="List of WIAS research topics" />
   <label xml:lang="x-uri" text="https://publications.wias-berlin.de/wias_topic_domain" />

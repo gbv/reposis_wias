@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_institutes">
-  <label xml:lang="x-uri" text="https://publications.wias-berlin.de/wgl" />
-  <label xml:lang="en" text="WGL" description="WGL members" />
+<mycoreclass ID="mir_institutes"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
   <label xml:lang="de" text="Wissenschaftsgemeinschaft Gottfried Wilhelm Leibniz" description="Liste aller Mitglieder der WGL" />
+  <label xml:lang="en" text="WGL" description="WGL members" />
+  <label xml:lang="x-uri" text="https://publications.wias-berlin.de/wgl" />
   <categories>
     <category ID="AIP">
       <label xml:lang="de" text="Astrophysikalisches Institut Potsdam" description="Bundesland: Brandenburg, Sektion: D, Mitglied von 1992" />

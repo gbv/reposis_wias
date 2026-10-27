@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="wias_research_group">
+<mycoreclass ID="wias_research_group"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
   <label xml:lang="de" text="Forschungsgruppe" description="Liste der Forschungsgruppen am WIAS" />
   <label xml:lang="en" text="Research group" description="List of WIAS' research groups" />
   <label xml:lang="x-uri" text="https://archive.wias-berlin.de/api/v2/classifications/wias_research_group" />

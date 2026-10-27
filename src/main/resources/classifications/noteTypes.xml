@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="noteTypes">
+<mycoreclass ID="noteTypes"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
   <label xml:lang="de" text="Kommentartyp" />
   <label xml:lang="en" text="Type of note" />
   <label xml:lang="x-uri" text="http://www.mycore.org/classifications/noteTypes" />
-  <url xlink:href="http://www.loc.gov/standards/mods/mods-notes.html" xlink:type="locator" />
+  <url xlink:type="locator" xlink:href="http://www.loc.gov/standards/mods/mods-notes.html" />
   <categories>
     <category ID="thesis">
       <label xml:lang="de" text="Hochschulvermerk" />
