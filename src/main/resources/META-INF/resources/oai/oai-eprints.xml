@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description>
+  <eprints
+    xmlns="http://www.openarchives.org/OAI/1.1/eprints"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.openarchives.org/OAI/1.1/eprints http://www.openarchives.org/OAI/1.1/eprints.xsd">
+    <content>
+      <text>
+        This repository is a publication server containing a growing number of research publications. With this
+        publication server, WIAS supports its scientists in their efforts to publish open access.
+      </text>
+      <URL>https://archive.wias-berlin.de</URL>
+    </content>
+    <metadataPolicy>
+      <text>
+        All bibliographic metadata provided via this interface, except abstracts, is hereby made available under CC0
+        license, free to share and re-use.
+      </text>
+      <URL>https://creativecommons.org/publicdomain/zero/1.0/deed.de</URL>
+    </metadataPolicy>
+    <dataPolicy>
+      <text>
+        The publications and electronic documents provided here must be used according to copyright laws, all rights
+        reserved if not otherwise explicitly specified.
+      </text>
+      <URL>https://archive.wias-berlin.de/content/publish/guidelines.xml</URL>
+    </dataPolicy>
+    <submissionPolicy>
+      <text>
+        All publications like preprints, reports, teaching material, research data, software, etc. be it primary or
+        secondary publications can be stored on the server. Moreover, it is possible to enter bibliographic data without
+        full text in order to create publication lists.
+      </text>
+      <URL>https://archive.wias-berlin.de/content/publish/contract.xml</URL>
+    </submissionPolicy>
+    <comment>
+      This institutional repository is powered by the MyCoRe repository software, see https://www.mycore.org/ for more
+      information.
+    </comment>
+  </eprints>
+</description>
