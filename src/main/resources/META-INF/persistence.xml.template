@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence version="2.0"
+  xmlns="http://java.sun.com/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="MyCoRe" transaction-type="RESOURCE_LOCAL">
+    <!-- http://stackoverflow.com/questions/15026302/multiple-jars-single-persistence-unit-solution -->
+    <mapping-file>META-INF/mycore-base-mappings.xml</mapping-file>
+    <mapping-file>META-INF/mycore-ifs-mappings.xml</mapping-file>
+    <mapping-file>META-INF/mycore-iview2-mappings.xml</mapping-file>
+    <mapping-file>META-INF/mycore-pi-mappings.xml</mapping-file>
+    <mapping-file>META-INF/mycore-user2-mappings.xml</mapping-file>
+    <!-- required for MIR only: -->
+    <mapping-file>META-INF/mir-module-mappings.xml</mapping-file>
+    <mapping-file>META-INF/wias-mappings.xml</mapping-file>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://.../reposis-test" />
+      <property name="javax.persistence.jdbc.user" value="" />
+      <property name="javax.persistence.jdbc.password" value="" />
+      <property name="hibernate.default_schema" value="wias"/>
+      <property name="hibernate.hbm2ddl.auto" value="update" /><!-- ggf. "validate" für *nur* Tabellen-Prüfung -->
+
+      <!-- removed ehcache configuration, since there is no ehcache configuration in MyCoRe -->
+      <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.internal.NoCachingRegionFactory" />
+      <property name="hibernate.cache.use_second_level_cache" value="false" />
+      <property name="hibernate.cache.use_query_cache" value="false" />
+
+
+      <!-- configuration pool via hikari -->
+      <!-- Homepage: https://github.com/brettwooldridge/HikariCP -->
+      <!--
+      <property name="hibernate.connection.provider_class" value="org.hibernate.hikaricp.internal.HikariCPConnectionProvider" />
+      <property name="hibernate.hikari.maximumPoolSize" value="30" />
+      <property name="hibernate.hikari.leakDetectionThreshold" value="9000" />
+      <property name="hibernate.hikari.registerMbeans" value="true" />
+      -->
+
+      <!-- configuration pool via c3p0 -->
+      <!-- HowTo: http://howtodoinjava.com/hibernate/hibernate-c3p0-connection-pool-configuration-tutorial/ -->
+      <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />
+      <property name="hibernate.c3p0.min_size" value="5" />
+      <property name="hibernate.c3p0.max_size" value="60" />
+      <property name="hibernate.c3p0.timeout" value="300" />
+
+      <property name="hibernate.c3p0.max_statements" value="150" />
+      <property name="hibernate.c3p0.idle_test_period" value="3000" />
+
+      <!-- property name="hibernate.c3p0.min_size" value="5" />
+      <property name="hibernate.c3p0.max_size" value="50" />
+      <property name="hibernate.c3p0.acquire_increment" value="2" />
+      <property name="hibernate.c3p0.max_statements" value="30" />
+      <property name="hibernate.c3p0.timeout" value="1800" / -->
+    </properties>
+  </persistence-unit>
+</persistence>
