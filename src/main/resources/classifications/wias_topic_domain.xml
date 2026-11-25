@@ -13,15 +13,15 @@
         <label xml:lang="de" text="Analysis gewöhnlicher und partieller stochastischer Differentialgleichungen" />
         <label xml:lang="en" text="Analysis of ordinary and partial stochastic differential equations" />
       </category>
-      <category ID="AnaPDE">
+      <category ID="anapde">
         <label xml:lang="de" text="Analysis partieller Differentialgleichungen und Evolutionsgleichungen" />
         <label xml:lang="en" text="Analysis of Partial Differential Equations and Evolutionary Equations" />
       </category>
-      <category ID="Maxwell">
+      <category ID="maxwell">
         <label xml:lang="de" text="Direkte und inverse Probleme für die Maxwellgleichungen" />
         <label xml:lang="en" text="Direct and inverse problems for the Maxwell equations" />
       </category>
-      <category ID="Thermomechanik">
+      <category ID="thermomechanik">
         <label xml:lang="de" text="Direkte und inverse Probleme in der Thermomechanik" />
         <label xml:lang="en" text="Direct and inverse problems in thermomechanics" />
       </category>
@@ -29,11 +29,11 @@
         <label xml:lang="de" text="Entwicklung und Analyse von Finanzmodellen" />
         <label xml:lang="en" text="Development and analysis of financial models" />
       </category>
-      <category ID="FreieRaender">
+      <category ID="freieraender">
         <label xml:lang="de" text="Freie Randwertprobleme für partielle Differentialgleichungen" />
         <label xml:lang="en" text="Free boundary problems for partial differential equations" />
       </category>
-      <category ID="Operatortheorie">
+      <category ID="operatortheorie">
         <label xml:lang="de" text="Funktionalanalysis und Operatortheorie" />
         <label xml:lang="en" text="Functional analysis and operator theory" />
       </category>
@@ -41,19 +41,19 @@
         <label xml:lang="de" text="Große Abweichungen" />
         <label xml:lang="en" text="Large deviation" />
       </category>
-      <category ID="HystOp">
+      <category ID="hystop">
         <label xml:lang="de" text="Hysterese-Operatoren und ratenunabhängige Systeme" />
         <label xml:lang="en" text="Hysteresis operators and rate-independent systems" />
       </category>
-      <category ID="RandPart">
+      <category ID="randpart">
         <label xml:lang="de" text="Interagierende stochastische Vielteilchensysteme" />
         <label xml:lang="en" text="Interacting stochastic particle systems" />
       </category>
-      <category ID="MF4ML">
+      <category ID="mf4ml">
         <label xml:lang="de" text="Maschinelles Lernen: Mathematische Grundlagen und Anwendungen" />
         <label xml:lang="en" text="Machine Learning: Mathematical foundations to applications" />
       </category>
-      <category ID="Mehrskalen">
+      <category ID="mehrskalen">
         <label xml:lang="de" text="Mehrskalenmodellierung, asymptotische Analysis und Hybridmodelle" />
         <label xml:lang="en" text="Multi-scale modeling, asymptotic analysis, and hybrid models" />
       </category>
@@ -61,7 +61,7 @@
         <label xml:lang="de" text="Methoden für Stopp- und Kontrollprobleme" />
         <label xml:lang="en" text="Methods for optimal stopping and control" />
       </category>
-      <category ID="Phasenfeld">
+      <category ID="phasenfeld">
         <label xml:lang="de" text="Modellierung, Analysis und Numerik von lokalen und nichtlokalen Phasenfeldmodellen" />
         <label xml:lang="en" text="Modeling, analysis and numerics of phase field models" />
       </category>
@@ -69,15 +69,15 @@
         <label xml:lang="de" text="Numerische Methoden für partielle Differentialgleichungen mit stochastischen Koeffizienten" />
         <label xml:lang="en" text="Numerical Methods for PDEs with Stochastic Data" />
       </category>
-      <category ID="DiffKonv">
+      <category ID="diffkonv">
         <label xml:lang="de" text="Numerische Verfahren für Probleme der Strömungsmechanik" />
         <label xml:lang="en" text="Numerical methods for problems from fluid dynamics" />
       </category>
-      <category ID="Optimalst">
+      <category ID="optimalst">
         <label xml:lang="de" text="Optimale Steuerung partieller Differentialgleichungen und nichtlineare Optimierung" />
         <label xml:lang="en" text="Optimal control of partial differential equations and nonlinear optimization" />
       </category>
-      <category ID="OptimTrans">
+      <category ID="optimtrans">
         <label xml:lang="de" text="Optimaler Transport: Statistik, Numerik und Partielle Differentialgleichungen" />
         <label xml:lang="en" text="Optimal Transport: Statistics, Numerics, and Partial Differential Equations" />
       </category>
@@ -93,15 +93,15 @@
         <label xml:lang="de" text="Stochastische Optimierung" />
         <label xml:lang="en" text="Stochastic Optimization" />
       </category>
-      <category ID="NumPDE">
+      <category ID="numpde">
         <label xml:lang="de" text="Systeme partieller Differentialgleichungen: Modellierung, numerische Analysis und Simulation" />
         <label xml:lang="en" text="Systems of partial differential equations: modeling, numerical analysis and simulation" />
       </category>
-      <category ID="Dynsys">
+      <category ID="dynsys">
         <label xml:lang="de" text="Theorie dynamischer Systeme" />
         <label xml:lang="en" text="Theory of dynamical systems" />
       </category>
-      <category ID="Variationsrechnung">
+      <category ID="variationsrechnung">
         <label xml:lang="de" text="Variationsrechnung" />
         <label xml:lang="en" text="Variational methods" />
       </category>
@@ -113,7 +113,7 @@
     <category ID="ats">
       <label xml:lang="de" text="Anwendungsthemen" />
       <label xml:lang="en" text="Application topics" />
-      <category ID="Diffract">
+      <category ID="diffract">
         <label xml:lang="de" text="Anwendungen der diffraktiven Optik" />
         <label xml:lang="en" text="Applications in diffractive optics" />
       </category>
@@ -125,7 +125,7 @@
         <label xml:lang="de" text="Diffusionsmodelle der Statistischen Physik" />
         <label xml:lang="en" text="Diffusion models in statistical physics" />
       </category>
-      <category ID="Dynamik">
+      <category ID="dynamik">
         <label xml:lang="de" text="Dynamik von Halbleiterlasern" />
         <label xml:lang="en" text="Dynamics of semiconductor lasers" />
       </category>
@@ -137,11 +137,11 @@
         <label xml:lang="de" text="Kalibrierung und Risikobewertung von Zins- und Aktienmodellen" />
         <label xml:lang="en" text="Calibration and risk assesment of stock and interest rate models" />
       </category>
-      <category ID="Koagulation">
+      <category ID="koagulation">
         <label xml:lang="de" text="Koagulation" />
         <label xml:lang="en" text="Coagulation" />
       </category>
-      <category ID="Speicher">
+      <category ID="speicher">
         <label xml:lang="de" text="Mathematische Modelle und Methoden für Lithium-Ionen-Batterien" />
         <label xml:lang="en" text="Mathematical Models and Methods for Lithium-ion Batteries" />
       </category>
@@ -157,7 +157,7 @@
         <label xml:lang="de" text="Modellierung dünner Filme und Nanostrukturen auf Substraten" />
         <label xml:lang="en" text="Modeling of thin films and nano structures on substrates" />
       </category>
-      <category ID="Halbleiter">
+      <category ID="halbleiter">
         <label xml:lang="de" text="Modellierung und Simulation von Halbleiterstrukturen" />
         <label xml:lang="en" text="Modeling and simulation of semiconductor structures" />
       </category>
@@ -169,7 +169,7 @@
         <label xml:lang="de" text="Nichtlineare Materialmodelle, multifunktionale Materialien und Hysterese im Zusammenhang mit elasto-plastischen Prozessen" />
         <label xml:lang="en" text="Nonlinear material models, multifunctional materials and hysteresis in connection with elasto-plastic processes" />
       </category>
-      <category ID="Elektrizitaet">
+      <category ID="elektrizitaet">
         <label xml:lang="de" text="Optimierungsprobleme in der Energiewirtschaft" />
         <label xml:lang="en" text="Optimization Problems in Energy Management" />
       </category>
@@ -177,23 +177,23 @@
         <label xml:lang="de" text="Partikelbasierte Modellierung in den Naturwissenschaften" />
         <label xml:lang="en" text="Particle-based modeling in the Sciences" />
       </category>
-      <category ID="Schaedigung">
+      <category ID="schaedigung">
         <label xml:lang="de" text="Phasenfeldmodelle für komplexe Materialien und Grenzflächen" />
         <label xml:lang="en" text="Phase field models for complex materials and interfaces" />
       </category>
-      <category ID="Pulse">
+      <category ID="pulse">
         <label xml:lang="de" text="Pulse in optisch nichtlinearen Medien" />
         <label xml:lang="en" text="Optical pulses in nonlinear media" />
       </category>
-      <category ID="Quantenmech">
+      <category ID="quantenmech">
         <label xml:lang="de" text="Quantenmechanische Modelle für Halbleiter" />
         <label xml:lang="en" text="Quantum models for semiconductors" />
       </category>
-      <category ID="Produktionsprozesse">
+      <category ID="produktionsprozesse">
         <label xml:lang="de" text="Simulation und Optimierung von Industrieprozessen" />
         <label xml:lang="en" text="Simulation and optimization of industrial processes" />
       </category>
-      <category ID="Elektrochemie">
+      <category ID="elektrochemie">
         <label xml:lang="de" text="Thermodynamische Modelle elektrochemischer Systeme" />
         <label xml:lang="en" text="Thermodynamic models for electrochemical systems" />
       </category>
@@ -201,11 +201,11 @@
     <category ID="its">
       <label xml:lang="de" text="Infrastrukturthemen" />
       <label xml:lang="en" text="Infrastructure Topics" />
-      <category ID="mRDM">
+      <category ID="mrdm">
         <label xml:lang="de" text="Mathematisches Forschungsdatenmanagement" />
         <label xml:lang="en" text="Mathematical Research Data Management" />
       </category>
-      <category ID="RSE">
+      <category ID="rse">
         <label xml:lang="de" text="Wissenschaftliche Softwareentwicklung" />
         <label xml:lang="en" text="Research Software Engineering" />
       </category>
@@ -220,19 +220,19 @@
       <category ID="archive_rts">
         <label xml:lang="de" text="Mathematische Forschungsthemen" />
         <label xml:lang="en" text="Mathematical Research Topics" />
-        <category ID="Delaunay">
+        <category ID="delaunay">
           <label xml:lang="de" text="Algorithmen für die Erzeugung 3D randkonformer Delaunaygitter" />
           <label xml:lang="en" text="Algorithms for the generation of 3D boundary conforming Delaunay meshes" />
         </category>
-        <category ID="MaxwellHetDom">
+        <category ID="maxwellhetdom">
           <label xml:lang="de" text="Magnetohydrodynamik" />
           <label xml:lang="en" text="Magnetohydrodynamics" />
         </category>
-        <category ID="KinGl">
+        <category ID="kingl">
           <label xml:lang="de" text="Nichtlineare kinetische Gleichungen" />
           <label xml:lang="en" text="Nonlinear kinetic equations" />
         </category>
-        <category ID="Platten">
+        <category ID="platten">
           <label xml:lang="de" text="Platten, Balken, Schalen und Bögen" />
           <label xml:lang="en" text="Plates, Beams, Shells and Arches" />
         </category>
@@ -244,23 +244,23 @@
       <category ID="archive_ats">
         <label xml:lang="de" text="Anwendungsthemen" />
         <label xml:lang="en" text="Application Topics" />
-        <category ID="Kristallzucht">
+        <category ID="kristallzucht">
           <label xml:lang="de" text="Kristallzüchtung unter dem Einfluss von elektromagnetischen Feldern" />
           <label xml:lang="en" text="Crystal growth under the influence of electromagnetic fields" />
         </category>
-        <category ID="Photoresists">
+        <category ID="photoresists">
           <label xml:lang="de" text="Modellierung und Simulation von Photoresists für die Herstellung von Halbleiterbauelementen" />
           <label xml:lang="en" text="Modeling and simulation of photoresists" />
         </category>
-        <category ID="Praezipitate">
+        <category ID="praezipitate">
           <label xml:lang="de" text="Nukleation und Evolution unerwünschter Ausscheidungen bei der Wärmebehandlung von Einkristallen" />
           <label xml:lang="en" text="Unwanted precipitates during heat treatment of GaAs single crystals" />
         </category>
-        <category ID="Faellung">
+        <category ID="faellung">
           <label xml:lang="de" text="Numerische Verfahren zur Simulation von Populationsbilanzsystemen" />
           <label xml:lang="en" text="Numerical methods for the simulation of population balance systems" />
         </category>
-        <category ID="Photovoltaik">
+        <category ID="photovoltaik">
           <label xml:lang="de" text="Photovoltaik" />
           <label xml:lang="en" text="Photovoltaics" />
         </category>
@@ -268,7 +268,7 @@
           <label xml:lang="de" text="Produktion von Solarsilizium" />
           <label xml:lang="en" text="Production of solar silicon" />
         </category>
-        <category ID="Verfahrenstechnik">
+        <category ID="verfahrenstechnik">
           <label xml:lang="de" text="Statische und dynamische Simulation verfahrenstechnischer Prozesse" />
           <label xml:lang="en" text="Static and dynamic simulation in process engineering" />
         </category>
